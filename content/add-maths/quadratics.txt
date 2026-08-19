@@ -1,0 +1,56 @@
+# =============================================================
+#  TOPIC PAGE — Additional Mathematics
+#  URL: /add-maths/quadratics/
+#
+#  Lecture videos are not on this page yet. When you have them, add a
+#  section like this and they'll appear above the notes:
+#
+#      === videos ===
+#      Part 1 — first idea | YOUTUBE_ID
+#      Part 2 — worked examples | YOUTUBE_ID
+#
+#  The two resource sections below already name the PDFs. Drop the real
+#  files into static/worksheets/ , static/papers/ and static/solutions/
+#  using exactly these filenames and the links switch on by themselves.
+#  Until then they show "Coming soon" — nothing is broken.
+# =============================================================
+
+=== meta ===
+title: Quadratics
+order: 2
+description: Quadratics for CIE Additional Mathematics (4037) — syllabus points, worksheets, topical past papers and fully worked solutions.
+
+
+=== intro ===
+Everything about a quadratic follows from its completed-square form. Once you can write it as a(x + p)² + q you can read off the vertex, the maximum or minimum, the line of symmetry and the range without drawing anything.
+
+
+=== syllabus ===
+- Complete the square and use it to find the vertex, line of symmetry and range
+- Find the discriminant and use it to determine the number of real roots
+- Solve quadratic equations by factorising, completing the square and the formula
+- Solve quadratic inequalities and represent the solution correctly
+- Solve equations in x that are quadratic in some function of x
+
+
+=== worksheets ===
+Completing the square | 4037-am-quadratics-completing-the-square-worksheet.pdf
+Completing the square — answers | 4037-am-quadratics-completing-the-square-answers.pdf
+The discriminant | 4037-am-quadratics-discriminant-worksheet.pdf
+The discriminant — answers | 4037-am-quadratics-discriminant-answers.pdf
+Quadratic inequalities | 4037-am-quadratics-inequalities-worksheet.pdf
+Quadratic inequalities — answers | 4037-am-quadratics-inequalities-answers.pdf
+Step-by-step solutions | 4037-am-quadratics-worksheet-solutions.pdf | solutions
+
+
+=== topical ===
+Topical questions | 4037-am-quadratics-topical.pdf
+Mark scheme | 4037-am-quadratics-topical-ms.pdf
+Step-by-step worked solutions | 4037-am-quadratics-worked-solutions.pdf | solutions
+
+
+=== mistakes ===
+- Forgetting to factor the coefficient of x² out of the first two terms before completing the square.
+- Writing the vertex as (p, q) when the form is a(x + p)² + q — the x-coordinate is −p.
+- Giving a quadratic inequality's answer as a single chain like 2 < x < 5 when the parabola opens upward and the solution is actually x < 2 or x > 5. Sketch it.
+- Losing the second solution when solving a disguised quadratic — remember to go back and solve for the original variable.

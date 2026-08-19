@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!-- =====================================================================
+     THE LAYOUT. Every page on the site is this file with the double-brace
+     slots filled in by build.py. Edit here and it changes everywhere.
+     Don't rename or delete a slot — build.py looks for them by name.
+     ===================================================================== -->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>{{ TITLE }}</title>
+<meta name="description" content="{{ DESCRIPTION }}">
+<link rel="canonical" href="{{ CANONICAL }}">
+
+<!-- how the link looks when shared in WhatsApp, Instagram DMs, etc. -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="{{ SITE_NAME }}">
+<meta property="og:title" content="{{ OG_TITLE }}">
+<meta property="og:description" content="{{ DESCRIPTION }}">
+<meta property="og:url" content="{{ CANONICAL }}">
+<meta property="og:image" content="{{ OG_IMAGE }}">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="/img/favicon-32.png" sizes="32x32">
+<link rel="icon" href="/img/favicon.png" sizes="512x512">
+<link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- ALL site styling lives in one file: static/assets/site.css -->
+<link rel="stylesheet" href="/assets/site.css?v={{ CSS_VERSION }}">
+
+<!-- machine-readable description of the page, for Google -->
+<script type="application/ld+json">{{ SCHEMA }}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<nav class="sitebar">
+  <a class="brand" href="/">{{ HANDLE }}</a>
+  <div class="links">{{ NAV }}</div>
+</nav>
+
+{{ HERO }}
+
+<main id="main">
+{{ CONTENT }}
+</main>
+
+<footer>
+  <span>Spotted a mistake? Email <a href="mailto:{{ EMAIL }}">{{ EMAIL }}</a></span>
+  <span class="footer-links">{{ FOOTER_LINKS }}</span>
+  <span class="handle">{{ HANDLE }}</span>
+</footer>
+
+<!-- loads a YouTube player only when the student taps it. Keeps pages light on mobile data. -->
+<script>
+document.addEventListener('click', function (e) {
+  var f = e.target.closest('.video-facade');
+  if (!f) return;
+  var id = f.getAttribute('data-id');
+  var i = document.createElement('iframe');
+  i.src = 'https://www.youtube-nocookie.com/embed/' + id + '?autoplay=1';
+  i.title = f.getAttribute('data-title') || 'Lecture video';
+  i.allow = 'accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture';
+  i.allowFullscreen = true;
+  f.innerHTML = '';
+  f.appendChild(i);
+  f.classList.add('is-playing');
+});
+</script>
+</body>
+</html>

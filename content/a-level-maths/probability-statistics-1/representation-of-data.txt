@@ -1,0 +1,51 @@
+# =============================================================
+#  TOPIC PAGE — Probability & Statistics 1
+#  URL: /a-level-maths/probability-statistics-1/representation-of-data/
+#
+#  Lecture videos are not on this page yet. When you have them, add a
+#  section like this and they'll appear above the notes:
+#
+#      === videos ===
+#      Part 1 — first idea | YOUTUBE_ID
+#      Part 2 — worked examples | YOUTUBE_ID
+#
+#  The two resource sections below already name the PDFs. Drop the real
+#  files into static/worksheets/ , static/papers/ and static/solutions/
+#  using exactly these filenames and the links switch on by themselves.
+#  Until then they show "Coming soon" — nothing is broken.
+# =============================================================
+
+=== meta ===
+title: Representation of data
+order: 1
+description: Representation of data for CIE Probability & Statistics 1 (9709) — syllabus points, worksheets, topical past papers and fully worked solutions.
+
+
+=== intro ===
+Turning a list of numbers into a picture that shows its shape. Different displays answer different questions, and part of the skill is choosing the right one.
+
+
+=== syllabus ===
+- Select a suitable way of presenting raw statistical data and discuss advantages and disadvantages
+- Draw and interpret stem-and-leaf diagrams, box-and-whisker plots, histograms and cumulative frequency graphs
+- Understand and use frequency density in histograms with unequal class widths
+- Use a cumulative frequency graph to estimate the median and quartiles
+
+
+=== worksheets ===
+Practice worksheet | 9709-s1-representation-of-data-worksheet.pdf
+Worksheet answers | 9709-s1-representation-of-data-answers.pdf
+Step-by-step solutions | 9709-s1-representation-of-data-worksheet-solutions.pdf | solutions
+
+
+=== topical ===
+Topical questions | 9709-s1-representation-of-data-topical.pdf
+Mark scheme | 9709-s1-representation-of-data-topical-ms.pdf
+Step-by-step worked solutions | 9709-s1-representation-of-data-worked-solutions.pdf | solutions
+
+
+=== mistakes ===
+- Plotting frequency rather than frequency density on a histogram with unequal classes.
+- Plotting cumulative frequency at the class midpoint instead of the upper class boundary.
+- Forgetting the key on a stem-and-leaf diagram.
+- Reading the median from a cumulative frequency graph at the halfway point of the axis rather than at n/2.

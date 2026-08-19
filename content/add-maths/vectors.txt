@@ -1,0 +1,51 @@
+# =============================================================
+#  TOPIC PAGE — Additional Mathematics
+#  URL: /add-maths/vectors/
+#
+#  Lecture videos are not on this page yet. When you have them, add a
+#  section like this and they'll appear above the notes:
+#
+#      === videos ===
+#      Part 1 — first idea | YOUTUBE_ID
+#      Part 2 — worked examples | YOUTUBE_ID
+#
+#  The two resource sections below already name the PDFs. Drop the real
+#  files into static/worksheets/ , static/papers/ and static/solutions/
+#  using exactly these filenames and the links switch on by themselves.
+#  Until then they show "Coming soon" — nothing is broken.
+# =============================================================
+
+=== meta ===
+title: Vectors
+order: 12
+description: Vectors for CIE Additional Mathematics (4037) — syllabus points, worksheets, topical past papers and fully worked solutions.
+
+
+=== intro ===
+Vectors carry direction as well as size, which is why they can describe position, displacement and velocity with the same algebra. Most Add Maths questions are really about relative position and closest approach.
+
+
+=== syllabus ===
+- Use vector notation, including magnitude and unit vectors
+- Add and subtract vectors and multiply a vector by a scalar
+- Use position vectors and displacement vectors in geometrical problems
+- Solve problems involving velocity, relative velocity and interception
+
+
+=== worksheets ===
+Practice worksheet | 4037-am-vectors-worksheet.pdf
+Worksheet answers | 4037-am-vectors-answers.pdf
+Step-by-step solutions | 4037-am-vectors-worksheet-solutions.pdf | solutions
+
+
+=== topical ===
+Topical questions | 4037-am-vectors-topical.pdf
+Mark scheme | 4037-am-vectors-topical-ms.pdf
+Step-by-step worked solutions | 4037-am-vectors-worked-solutions.pdf | solutions
+
+
+=== mistakes ===
+- Adding the magnitudes of two vectors instead of adding the vectors and then taking the magnitude.
+- Getting the direction of a displacement backwards: AB is b − a, not a − b.
+- Forgetting to divide by the magnitude when a unit vector is asked for.
+- In relative velocity problems, subtracting the velocities the wrong way round.

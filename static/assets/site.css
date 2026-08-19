@@ -1,0 +1,1286 @@
+/* ==========================================================================
+   @vectorspacepk — MATHS SITE
+   BLUEPRINT visual system, "Daylight" edition.
+
+   The Instagram brand is Ink-black. A teaching site is read for hours, so this
+   version inverts it: Bone paper, Ink type, Acid as the single accent, with
+   full-bleed Ink bands at the top and bottom of every page so it still reads
+   unmistakably as the same brand.
+
+   Layout: the Ink hero band is left-anchored to the page margin, poster-style.
+   The content column below it is CENTRED in the window — text inside it still
+   runs left, only the column is centred. See section 5.
+
+   Everything on the site is styled from this one file. Change a value in
+   :root below and it updates on all 42 pages at once.
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. BRAND TOKENS — the only place colours and fonts are defined
+   -------------------------------------------------------------------------- */
+:root {
+  /* --- core palette (three brand colours, nothing else) --- */
+  --ink:   #0E0F0D;   /* type, hero band, footer. Never pure black */
+  --bone:  #F2F3EE;   /* the page. Never pure white */
+  --acid:  #EFCC1D;   /* the one accent: eyebrows, numbers, rules, hovers */
+
+  /* --- surfaces derived from Bone, not new colours --- */
+  --paper:      #FAFAF7;  /* cards and panels: one step lighter than Bone */
+
+  /* --- Acid, darkened, for small text on light backgrounds only.
+         Pure Acid on Bone is unreadable at small sizes; this keeps the
+         accent legible without introducing a second colour. --- */
+  --acid-deep:  #7A6206;
+  --acid-wash:  rgba(239,204,29,.18);  /* Acid at low strength: hover fills, callouts */
+
+  /* --- hairlines and fills: Ink at low opacity, never grey --- */
+  --line:       rgba(14,15,13,.14);   /* card borders, dividers */
+  --line-soft:  rgba(14,15,13,.08);   /* table rows, inner rules */
+  --grid:       rgba(14,15,13,.045);  /* the 56px technical grid on Bone */
+  --grid-ink:   rgba(242,243,238,.06);/* the same grid inside the Ink band */
+
+  /* --- text tiers: opacity steps, no grey tones --- */
+  --text-body:   rgba(14,15,13,.78);
+  --text-meta:   rgba(14,15,13,.58);
+  --text-muted:  rgba(14,15,13,.45);
+  --on-ink-body: rgba(242,243,238,.74);
+  --on-ink-meta: rgba(242,243,238,.52);
+
+  /* --- typefaces --- */
+  --font-sans: 'Space Grotesk', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, monospace;
+
+  /* --- layout --- */
+  --margin: clamp(20px, 5.5vw, 88px);  /* the margin nothing crosses */
+  --wide: 1240px;                       /* content measure */
+  --shadow: 6px 6px 0 rgba(14,15,13,.07); /* hard offset. No blur, no glow */
+}
+
+/* --------------------------------------------------------------------------
+   2. RESET & BASE
+   -------------------------------------------------------------------------- */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; border-radius: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  background-color: var(--bone);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  font-weight: 400;
+  line-height: 1.55;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  /* the technical grid: two 1px lines crossing every 56px */
+  background-image:
+    linear-gradient(to right, var(--grid) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--grid) 1px, transparent 1px);
+  background-size: 56px 56px;
+  display: flex;
+  flex-direction: column;
+}
+
+a { color: inherit; }
+img { max-width: 100%; display: block; }
+
+/* keyboard users always see where they are */
+a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible {
+  outline: 2px solid var(--acid-deep);
+  outline-offset: 3px;
+}
+
+/* skip link for screen-reader and keyboard users */
+.skip-link {
+  position: absolute; left: -9999px; top: 0; z-index: 100;
+  background: var(--ink); color: var(--bone);
+  font-family: var(--font-mono); font-size: .72rem; letter-spacing: .12em;
+  text-transform: uppercase; padding: .9rem 1.2rem; text-decoration: none;
+}
+.skip-link:focus { left: 0; }
+
+/* --------------------------------------------------------------------------
+   3. TOP NAV — sticky, identical on every page
+   -------------------------------------------------------------------------- */
+nav.sitebar {
+  position: sticky; top: 0; z-index: 40;
+  display: flex; align-items: center; justify-content: space-between;
+  gap: 1rem 2rem; flex-wrap: wrap;
+  padding: .95rem var(--margin);
+  background: rgba(242,243,238,.88);
+  backdrop-filter: saturate(140%) blur(10px);
+  -webkit-backdrop-filter: saturate(140%) blur(10px);
+  border-bottom: 1px solid var(--line);
+}
+
+/* the handle, always set in mono, with a small Acid mark before it */
+nav.sitebar .brand {
+  display: inline-flex; align-items: center; gap: .6rem;
+  font-family: var(--font-mono); font-size: .88rem; font-weight: 500;
+  letter-spacing: .01em; text-decoration: none; color: var(--ink);
+}
+nav.sitebar .brand::before {
+  content: ""; width: 13px; height: 13px;
+  background: var(--acid); border: 1px solid var(--ink);
+  transition: transform .18s ease;
+}
+nav.sitebar .brand:hover::before { transform: rotate(45deg); }
+
+nav.sitebar .links { display: flex; align-items: center; gap: clamp(.9rem, 2.4vw, 2rem); flex-wrap: wrap; }
+nav.sitebar .links a {
+  position: relative;
+  text-decoration: none; color: var(--text-meta);
+  font-family: var(--font-mono); font-weight: 500;
+  text-transform: uppercase; letter-spacing: .14em; font-size: .68rem;
+  padding: .45rem 0;
+  transition: color .14s;
+}
+nav.sitebar .links a::after {
+  content: ""; position: absolute; left: 0; right: 0; bottom: -.1rem;
+  height: 5px; background: var(--acid);
+  transform: scaleX(0); transform-origin: left; transition: transform .18s ease;
+}
+nav.sitebar .links a:hover { color: var(--ink); }
+nav.sitebar .links a:hover::after { transform: scaleX(1); }
+nav.sitebar .links a.active { color: var(--ink); }
+nav.sitebar .links a.active::after { transform: scaleX(1); }
+
+/* --------------------------------------------------------------------------
+   4. HERO — the full-bleed Ink band at the top of every page
+   -------------------------------------------------------------------------- */
+header.hero {
+  position: relative; overflow: hidden;
+  background-color: var(--ink);
+  color: var(--bone);
+  padding: clamp(3rem, 7vw, 5.4rem) var(--margin) clamp(2.6rem, 6vw, 4.4rem);
+  /* the grid again, this time in Bone over Ink — same system, inverted */
+  background-image:
+    linear-gradient(to right, var(--grid-ink) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--grid-ink) 1px, transparent 1px);
+  background-size: 56px 56px;
+  border-bottom: 3px solid var(--acid);  /* the Acid rule that closes the band */
+}
+header.hero > * { position: relative; z-index: 2; }
+
+/* faint maths behind the headline — decorative, mono, never a real statement */
+.hero-formulas {
+  position: absolute; inset: 0; z-index: 1; pointer-events: none;
+  font-family: var(--font-mono); color: var(--bone); opacity: .085;
+  user-select: none;
+}
+.hero-formulas span { position: absolute; font-size: clamp(.95rem, 1.6vw, 1.45rem); white-space: nowrap; }
+
+/* every page opens with an Acid eyebrow */
+.eyebrow {
+  display: inline-flex; align-items: center; gap: .6rem;
+  font-family: var(--font-mono); font-weight: 500;
+  letter-spacing: .24em; text-transform: uppercase; font-size: .68rem;
+  color: var(--acid); margin-bottom: 1.4rem;
+}
+.eyebrow::before { content: ""; width: 22px; height: 1px; background: var(--acid); }
+
+/* DISPLAY type: uppercase, tight leading, negative tracking */
+h1.title {
+  font-family: var(--font-sans); font-weight: 700; text-transform: uppercase;
+  font-size: clamp(2.1rem, 5.6vw, 4.2rem);
+  line-height: .98; letter-spacing: -.035em;
+  max-width: 22ch; text-wrap: balance;
+}
+.hero-sub {
+  margin-top: 1.5rem; max-width: 56ch;
+  color: var(--on-ink-body); font-size: clamp(.98rem, 1.3vw, 1.08rem); line-height: 1.6;
+}
+
+/* a row of small mono facts under the hero copy — quiet reassurance */
+.hero-meta {
+  display: flex; flex-wrap: wrap; gap: .5rem .75rem; margin-top: 2.2rem;
+}
+.hero-meta span {
+  font-family: var(--font-mono); font-size: .66rem; font-weight: 500;
+  letter-spacing: .14em; text-transform: uppercase;
+  color: var(--acid);
+  border: 1px solid rgba(239,204,29,.45); padding: .48rem .7rem;
+}
+/* the first chip is filled — one Acid-background element, per the guide */
+.hero-meta span:first-child { background: var(--acid); color: var(--ink); border-color: var(--acid); font-weight: 700; }
+
+/* --------------------------------------------------------------------------
+   5. MAIN CONTENT — always aligned left to the margin, never centred
+   -------------------------------------------------------------------------- */
+main {
+  flex: 1 0 auto;
+  width: 100%; max-width: var(--wide);
+  /* the content column is CENTRED in the window. Text inside it still runs
+     left — only the column itself is centred. The Ink hero band above is
+     deliberately left-anchored to the margin, poster-style. */
+  margin: 0 auto;
+  padding: clamp(2.4rem, 5vw, 4rem) var(--margin) clamp(4rem, 8vw, 6.5rem);
+}
+
+/* a small mono label used to head a block of content */
+.block-label {
+  display: flex; align-items: center; gap: .8rem;
+  font-family: var(--font-mono); font-size: .66rem; font-weight: 600;
+  letter-spacing: .22em; text-transform: uppercase; color: var(--ink);
+  margin-bottom: 1.4rem;
+}
+.block-label::before { content: ""; width: 12px; height: 12px; background: var(--acid); border: 1px solid var(--ink); flex: none; }
+.block-label::after { content: ""; flex: 1; height: 3px; background: var(--acid); }
+
+/* an Acid highlight behind a word or two — the brand's "put the answer in Acid" */
+.hl { background: var(--acid); color: var(--ink); padding: 0 .18em; box-decoration-break: clone; -webkit-box-decoration-break: clone; }
+
+/* --------------------------------------------------------------------------
+   6. WELCOME PAGE — the two big course cards
+   -------------------------------------------------------------------------- */
+.subject-grid {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+  gap: clamp(1rem, 2vw, 1.6rem);
+}
+.subject-card {
+  position: relative; display: flex; flex-direction: column; overflow: hidden;
+  background: var(--paper); border: 1px solid var(--line);
+  padding: clamp(1.8rem, 3vw, 2.6rem);
+  text-decoration: none; color: var(--ink);
+  transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+}
+/* the Acid bar that fills in from the left on hover */
+.subject-card::before {
+  content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 5px;
+  background: var(--acid); transform: scaleY(0); transform-origin: top;
+  transition: transform .22s ease;
+}
+/* a large decorative glyph, taken from data-glyph="" in the HTML */
+.subject-card::after {
+  content: attr(data-glyph);
+  position: absolute; right: -.1em; bottom: -.45em;
+  font-family: var(--font-mono); font-size: 11rem; line-height: 1;
+  color: var(--ink); opacity: .045; pointer-events: none;
+}
+/* on hover the whole card fills with Acid — the loudest moment on the page */
+.subject-card:hover {
+  transform: translateY(-3px); box-shadow: var(--shadow);
+  background: var(--acid); border-color: var(--ink);
+}
+.subject-card:hover::before { transform: scaleY(1); background: var(--ink); }
+.subject-card:hover::after { opacity: .11; }
+.subject-card:hover .subject-desc { color: rgba(14,15,13,.8); }
+.subject-card:hover .subject-tag { background: var(--ink); color: var(--acid); border-color: var(--ink); }
+
+.subject-tag {
+  font-family: var(--font-mono); font-size: .64rem; font-weight: 600;
+  color: var(--ink); text-transform: uppercase; letter-spacing: .2em;
+  background: var(--acid); border: 1px solid var(--ink);
+  padding: .35rem .6rem; align-self: flex-start;
+  transition: background-color .18s, color .18s;
+}
+.subject-title {
+  font-family: var(--font-sans); font-size: clamp(1.45rem, 2.6vw, 1.95rem);
+  font-weight: 700; line-height: 1.02; letter-spacing: -.03em;
+  text-transform: uppercase; margin: 1.3rem 0 .8rem; max-width: 18ch;
+}
+.subject-desc { color: var(--text-body); font-size: .95rem; max-width: 44ch; }
+/* the "Open the course →" line at the foot of each card */
+.subject-go {
+  margin-top: 1.8rem; font-family: var(--font-mono); font-size: .7rem;
+  font-weight: 500; letter-spacing: .14em; text-transform: uppercase; color: var(--ink);
+  display: inline-flex; align-items: center; gap: .5rem;
+}
+.subject-go::after { content: "→"; transition: transform .18s ease; }
+.subject-card:hover .subject-go::after { transform: translateX(5px); }
+
+/* --- "how it works" — three numbered steps, plain and reassuring --- */
+.steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: clamp(1rem, 2.6vw, 2.2rem); }
+.step { background: transparent; border-top: 4px solid var(--acid); padding: 1.1rem 0 0; }
+.step-num {
+  font-family: var(--font-mono); font-size: .7rem; font-weight: 700;
+  letter-spacing: .16em; color: var(--ink); background: var(--acid);
+  border: 1px solid var(--ink); padding: .28rem .5rem;
+  display: inline-block; margin-bottom: .8rem;
+}
+.step-title { font-family: var(--font-sans); font-weight: 600; font-size: 1.02rem; margin-bottom: .35rem; }
+.step-text { color: var(--text-meta); font-size: .88rem; max-width: 34ch; }
+
+/* --------------------------------------------------------------------------
+   7. SUBJECT PAGES — the chapter grid
+   -------------------------------------------------------------------------- */
+.chapter-grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(258px, 1fr));
+  gap: clamp(.7rem, 1.4vw, 1rem);
+}
+.chapter-card {
+  position: relative; display: flex; flex-direction: column; gap: .9rem;
+  background: var(--paper); border: 1px solid var(--line);
+  padding: 1.35rem 1.4rem 1.5rem;
+  text-decoration: none; color: var(--ink);
+  transition: transform .16s ease, box-shadow .16s ease, border-color .16s ease;
+}
+.chapter-card:hover {
+  transform: translateY(-2px); box-shadow: var(--shadow);
+  border-color: var(--ink); background: var(--acid-wash);
+}
+/* the two-digit counter, always mono, in a solid Acid chip */
+.chapter-num {
+  align-self: flex-start;
+  font-family: var(--font-mono); font-size: .68rem; font-weight: 700; letter-spacing: .1em;
+  color: var(--ink); background: var(--acid);
+  border: 1px solid var(--ink); padding: .3rem .5rem;
+  transition: background-color .16s ease, color .16s ease;
+}
+.chapter-card:hover .chapter-num { background: var(--ink); color: var(--acid); }
+.chapter-name {
+  font-family: var(--font-sans); font-size: 1.02rem; font-weight: 600;
+  line-height: 1.25; letter-spacing: -.012em;
+  padding-right: 1.8rem;  /* leaves room for the hover arrow */
+}
+/* the arrow that slides in on hover */
+.chapter-card::after {
+  content: "→"; position: absolute; right: 1.4rem; bottom: 1.35rem;
+  font-family: var(--font-mono); color: var(--ink); font-weight: 700;
+  opacity: 0; transform: translateX(-6px); transition: opacity .16s ease, transform .16s ease;
+}
+.chapter-card:hover::after { opacity: 1; transform: translateX(0); }
+
+/* --------------------------------------------------------------------------
+   8. FURTHER MATH — chapters grouped under each of the four papers
+   -------------------------------------------------------------------------- */
+.paper-section { margin-top: clamp(3rem, 5vw, 4.2rem); }
+.paper-section:first-of-type { margin-top: 0; }
+.paper-head {
+  display: flex; align-items: baseline; gap: 1.2rem; flex-wrap: wrap;
+  margin-bottom: .5rem; padding-top: clamp(1.8rem, 3vw, 2.4rem);
+  border-top: 5px solid var(--acid);
+}
+.paper-num {
+  font-family: var(--font-mono); font-size: .66rem; font-weight: 700;
+  letter-spacing: .2em; text-transform: uppercase;
+  color: var(--ink); background: var(--acid);
+  padding: .34rem .6rem; border: 1px solid var(--ink);
+}
+h2.paper-title {
+  font-family: var(--font-sans); font-size: clamp(1.3rem, 2.4vw, 1.8rem);
+  font-weight: 700; line-height: 1.08; letter-spacing: -.025em;
+}
+.paper-desc {
+  color: var(--text-meta); font-size: .92rem;
+  margin-bottom: 1.5rem; max-width: 62ch;
+}
+
+/* --------------------------------------------------------------------------
+   9. CHAPTER PAGES — breadcrumb, section headings, resources
+   -------------------------------------------------------------------------- */
+/* the breadcrumb sits inside the Ink hero band, above the chapter title */
+.crumb {
+  font-family: var(--font-mono); font-size: .68rem; letter-spacing: .12em;
+  text-transform: uppercase; color: var(--on-ink-meta); margin-bottom: 1.2rem;
+}
+.crumb a { color: var(--acid); text-decoration: none; border-bottom: 1px solid transparent; }
+.crumb a:hover { border-color: var(--acid); }
+.crumb .sep { color: rgba(242,243,238,.3); margin: 0 .5rem; }
+
+h2.section-title {
+  font-family: var(--font-sans); font-size: clamp(1.15rem, 2vw, 1.4rem);
+  font-weight: 700; line-height: 1.15; letter-spacing: -.02em;
+  margin: clamp(2.6rem, 4.5vw, 3.6rem) 0 1.4rem;
+  padding-top: clamp(1.6rem, 3vw, 2.2rem);
+  border-top: 5px solid var(--acid);
+  display: flex; align-items: baseline; gap: .8rem;
+}
+/* the very first heading on a page needs no divider — the Acid hero rule is above it */
+main > h2.section-title:first-child { margin-top: 0; padding-top: 0; border-top: none; }
+main > h2.section-title:first-of-type { margin-top: 0; }
+/* the small mono counter that can be placed inside a section title */
+h2.section-title .count {
+  font-family: var(--font-mono); font-size: .64rem; font-weight: 500;
+  letter-spacing: .16em; color: var(--text-muted); text-transform: uppercase;
+}
+
+/* --- embedded YouTube players --- */
+.video-block { margin-bottom: clamp(1.8rem, 3vw, 2.4rem); max-width: 760px; }
+.video-label {
+  display: flex; align-items: center; gap: .6rem;
+  font-family: var(--font-mono); font-size: .68rem; font-weight: 500;
+  letter-spacing: .14em; text-transform: uppercase;
+  color: var(--text-meta); margin-bottom: .75rem;
+}
+.video-label::before { content: ""; width: 8px; height: 8px; background: var(--acid); border: 1px solid var(--ink); flex: none; }
+.video-wrap {
+  position: relative; width: 100%; aspect-ratio: 16/9;
+  background: var(--ink); border: 1px solid var(--line);
+  box-shadow: var(--shadow); overflow: hidden;
+}
+.video-wrap iframe { width: 100%; height: 100%; border: 0; display: block; }
+
+/* --- notes: each downloadable file is a full-width row --- */
+.notes-list { list-style: none; display: grid; gap: .6rem; max-width: 760px; }
+.notes-list li { margin: 0; }
+.resource-link {
+  color: var(--ink); text-decoration: none;
+  font-size: .95rem; font-weight: 500;
+  display: inline-flex; align-items: center; gap: .55rem;
+  border-bottom: 1px solid var(--line); padding-bottom: 2px;
+  transition: color .14s, border-color .14s;
+}
+.resource-link:hover { color: var(--acid-deep); border-color: var(--acid); }
+/* inside a notes list the link becomes a bordered row with a PDF chip */
+.notes-list .resource-link {
+  display: flex; justify-content: space-between; align-items: center; gap: 1rem;
+  background: var(--paper); border: 1px solid var(--line);
+  border-left: 5px solid var(--acid);   /* every downloadable file carries an Acid spine */
+  padding: 1rem 1.2rem; transition: transform .16s ease, box-shadow .16s ease, border-color .16s ease, background-color .16s ease;
+}
+.notes-list .resource-link::after {
+  content: "View PDF"; font-family: var(--font-mono); font-size: .64rem; font-weight: 600;
+  letter-spacing: .14em; color: var(--ink);
+  background: var(--acid); border: 1px solid var(--ink);
+  padding: .3rem .5rem; flex: none;
+}
+.notes-list .resource-link:hover {
+  transform: translateY(-2px); box-shadow: var(--shadow);
+  border-color: var(--ink); border-left-color: var(--acid);
+  background: var(--acid-wash); color: var(--ink);
+}
+.notes-list .resource-link:hover::after { background: var(--ink); color: var(--acid); }
+
+/* --- past papers table --- */
+.table-wrap { max-width: 980px; border: 1px solid var(--ink); background: var(--paper); }
+table.papers { width: 100%; border-collapse: collapse; font-size: .92rem; }
+/* the header row is a solid Acid band with Ink type */
+table.papers th {
+  text-align: left; font-family: var(--font-mono); text-transform: uppercase;
+  letter-spacing: .16em; font-size: .62rem; font-weight: 700; color: var(--ink);
+  padding: .85rem 1rem; border-bottom: 1px solid var(--ink);
+  background: var(--acid);
+  white-space: nowrap;
+}
+table.papers td {
+  padding: .95rem 1rem; border-bottom: 1px solid var(--line-soft); vertical-align: middle;
+}
+table.papers tbody tr:last-child td { border-bottom: none; }
+table.papers tbody tr { transition: background-color .14s; }
+table.papers tbody tr:hover { background: var(--acid-wash); }
+/* years are numbers, so they are set in mono */
+table.papers td:first-child { font-family: var(--font-mono); font-weight: 700; white-space: nowrap; }
+.tag {
+  display: inline-block; font-family: var(--font-mono); font-size: .6rem;
+  font-weight: 600; letter-spacing: .12em; text-transform: uppercase;
+  padding: .24rem .45rem; margin-left: .4rem;
+  background: var(--acid); color: var(--ink);
+  border: 1px solid var(--ink);
+}
+
+/* --------------------------------------------------------------------------
+   10. ABOUT BLOCK on the welcome page
+   -------------------------------------------------------------------------- */
+/* the "how to use this site" strip — its Acid rule comes from .block-label */
+.howto { margin-top: clamp(3rem, 6vw, 4.8rem); }
+
+.about-section {
+  margin-top: clamp(3rem, 6vw, 4.8rem); padding-top: clamp(2rem, 4vw, 3rem);
+  border-top: 5px solid var(--acid);
+  display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr);
+  gap: clamp(1.6rem, 4vw, 3.4rem); align-items: start;
+}
+.about-section h2 {
+  font-family: var(--font-sans); font-size: clamp(1.5rem, 2.8vw, 2rem); font-weight: 700;
+  text-transform: uppercase; letter-spacing: -.03em; line-height: 1.02; margin-bottom: 1.3rem;
+}
+.about-section p {
+  color: var(--text-body); margin-bottom: 1.05rem; font-size: 1rem; line-height: 1.65; max-width: 62ch;
+}
+.about-section p:last-child { margin-bottom: 0; }
+/* the side panel: what a student gets in every chapter */
+.about-aside { background: var(--ink); color: var(--bone); padding: 1.8rem; border-top: 5px solid var(--acid); }
+.about-aside h3 {
+  font-family: var(--font-mono); font-size: .66rem; font-weight: 500;
+  letter-spacing: .22em; text-transform: uppercase; color: var(--acid); margin-bottom: 1.2rem;
+}
+.about-aside ul { list-style: none; }
+.about-aside li {
+  display: flex; gap: .8rem; padding: .7rem 0;
+  border-top: 1px solid rgba(242,243,238,.16);
+  font-size: .92rem; color: var(--on-ink-body);
+}
+.about-aside li:first-of-type { border-top: none; padding-top: 0; }
+.about-aside li strong { color: var(--bone); font-weight: 600; }
+.about-aside li::before {
+  content: "→"; font-family: var(--font-mono); color: var(--acid); flex: none;
+}
+
+/* --------------------------------------------------------------------------
+   11. CONTACT PAGE
+   -------------------------------------------------------------------------- */
+.contact-grid {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: clamp(.8rem, 1.6vw, 1.2rem); margin-bottom: clamp(2.6rem, 5vw, 4rem);
+}
+.contact-card {
+  position: relative; overflow: hidden;
+  background: var(--paper); border: 1px solid var(--line); padding: 1.8rem;
+  text-decoration: none; display: block; color: var(--ink);
+  transition: transform .16s ease, box-shadow .16s ease, border-color .16s ease;
+}
+.contact-card::before {
+  content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 5px;
+  background: var(--acid); transform: scaleY(0); transform-origin: top; transition: transform .22s ease;
+}
+.contact-card:hover { transform: translateY(-3px); box-shadow: var(--shadow); border-color: var(--ink); background: var(--acid); }
+.contact-card:hover::before { transform: scaleY(1); background: var(--ink); }
+.contact-card:hover .contact-icon { background: var(--ink); color: var(--acid); }
+.contact-card:hover .contact-detail { color: rgba(14,15,13,.72); }
+.contact-card .contact-icon {
+  display: inline-block;
+  font-family: var(--font-mono); font-size: .64rem; font-weight: 600;
+  text-transform: uppercase; letter-spacing: .2em; color: var(--ink);
+  background: var(--acid); border: 1px solid var(--ink); padding: .32rem .55rem;
+  transition: background-color .18s, color .18s;
+}
+.contact-card .contact-title {
+  font-family: var(--font-sans); font-size: 1.2rem; font-weight: 700;
+  letter-spacing: -.02em; margin: 1.1rem 0 .45rem;
+}
+.contact-card .contact-detail {
+  color: var(--text-meta); font-size: .84rem; font-family: var(--font-mono); word-break: break-word;
+}
+
+form.contact-form { max-width: 620px; background: var(--paper); border: 1px solid var(--line); padding: clamp(1.4rem, 3vw, 2.2rem); }
+form.contact-form label {
+  display: block; font-family: var(--font-mono); font-size: .66rem; font-weight: 500;
+  text-transform: uppercase; letter-spacing: .16em; color: var(--text-muted);
+  margin: 1.6rem 0 .55rem;
+}
+form.contact-form label:first-child { margin-top: 0; }
+form.contact-form input, form.contact-form textarea {
+  width: 100%; background: var(--bone); border: 1px solid var(--line);
+  padding: .85rem 1rem; color: var(--ink); font-family: var(--font-sans); font-size: .96rem;
+  transition: border-color .14s, box-shadow .14s;
+}
+form.contact-form input:focus, form.contact-form textarea:focus {
+  outline: none; border-color: var(--ink); box-shadow: inset 0 -3px 0 var(--acid);
+}
+form.contact-form textarea { resize: vertical; min-height: 140px; }
+/* the one Acid-filled element on the page: Ink text on Acid */
+form.contact-form button {
+  margin-top: 2rem; background: var(--acid); color: var(--ink);
+  border: 1px solid var(--ink);
+  font-family: var(--font-mono); font-weight: 700; text-transform: uppercase;
+  letter-spacing: .16em; font-size: .7rem; padding: 1rem 2.1rem; cursor: pointer;
+  display: inline-flex; align-items: center; gap: .6rem;
+  transition: background-color .16s, color .16s, transform .16s, box-shadow .16s;
+}
+form.contact-form button::after { content: "→"; }
+form.contact-form button:hover {
+  background: var(--ink); color: var(--acid);
+  transform: translateY(-2px); box-shadow: var(--shadow);
+}
+.form-note {
+  color: var(--text-body); font-size: .84rem; margin-top: 1.3rem; max-width: 58ch;
+  background: var(--acid-wash); border-left: 5px solid var(--acid);
+  padding: .9rem 1rem;
+}
+
+/* --------------------------------------------------------------------------
+   12. FOOTER — the Ink band that closes every page
+   -------------------------------------------------------------------------- */
+footer {
+  background: var(--ink); color: var(--on-ink-meta);
+  border-top: 3px solid var(--acid);
+  padding: clamp(2rem, 4vw, 2.8rem) var(--margin);
+  font-family: var(--font-mono); font-size: .72rem; letter-spacing: .05em;
+  display: flex; justify-content: space-between; align-items: center;
+  flex-wrap: wrap; gap: 1rem 2rem;
+}
+footer a { color: var(--acid); text-decoration: none; border-bottom: 1px solid transparent; }
+footer a:hover { border-color: var(--acid); }
+footer .handle { color: var(--on-ink-body); }
+
+/* --------------------------------------------------------------------------
+   13. RESPONSIVE
+   -------------------------------------------------------------------------- */
+@media (max-width: 860px) {
+  .about-section { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 640px) {
+  body { background-size: 40px 40px; }
+  header.hero { background-size: 40px 40px; }
+  .hero-formulas { display: none; }   /* keep small screens clean */
+  .subject-card::after { font-size: 7rem; }
+  nav.sitebar { padding: .8rem var(--margin); }
+  nav.sitebar .links { gap: .9rem; }
+
+  /* the past-papers table becomes a stacked list */
+  .table-wrap { border: none; background: transparent; }
+  table.papers, table.papers thead, table.papers tbody,
+  table.papers th, table.papers td, table.papers tr { display: block; }
+  table.papers thead { display: none; }
+  table.papers tbody tr {
+    background: var(--paper); border: 1px solid var(--line);
+    padding: 1rem 1.1rem; margin-bottom: .7rem;
+  }
+  table.papers tbody tr:hover { background: var(--paper); }
+  table.papers td { border: none; padding: .3rem 0; }
+  table.papers td:first-child { font-size: 1rem; margin-bottom: .5rem; }
+  /* label each stacked cell so it still makes sense without column headers */
+  table.papers td[data-label]::before {
+    content: attr(data-label);
+    display: block; font-family: var(--font-mono); font-size: .58rem;
+    letter-spacing: .16em; text-transform: uppercase; color: var(--text-muted);
+    margin-bottom: .2rem;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   14. MOTION & PRINT
+   -------------------------------------------------------------------------- */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  * { transition: none !important; animation: none !important; }
+}
+
+@media print {
+  body { background: #fff; }
+  nav.sitebar, .hero-formulas, footer { display: none; }
+  header.hero { background: #fff; color: #000; border-bottom: 2px solid #000; }
+  h1.title, .hero-sub, .crumb, .crumb a { color: #000; }
+  .video-wrap { display: none; }
+}
+
+/* ==========================================================================
+   15. COMPONENTS ADDED FOR VECTORSPACE.PK
+   Everything below uses the same three brand colours and the same rules:
+   square corners, flat colour, left aligned, hard offset shadows only.
+   ========================================================================== */
+
+/* --- inline links inside body copy --- */
+.inline-link { color: var(--ink); text-decoration: none; box-shadow: inset 0 -6px 0 var(--acid-wash); transition: box-shadow .15s; }
+.inline-link:hover { box-shadow: inset 0 -1.1em 0 var(--acid); }
+
+/* --- the opening paragraphs of a topic or page --- */
+.topic-intro { max-width: 66ch; margin-bottom: 2.4rem; }
+.topic-intro p { color: var(--text-body); font-size: 1.05rem; line-height: 1.65; margin-bottom: 1rem; }
+.topic-intro p:last-child { margin-bottom: 0; }
+
+.about-prose { max-width: 68ch; }
+.about-prose p { color: var(--text-body); font-size: 1.02rem; line-height: 1.68; margin-bottom: 1.1rem; }
+.about-prose h3 { font-family: var(--font-sans); font-size: 1.1rem; font-weight: 700; margin: 2rem 0 .8rem; }
+.prose-list { list-style: none; margin: 0 0 1.2rem; }
+.prose-list li { position: relative; padding-left: 1.4rem; margin-bottom: .55rem; color: var(--text-body); }
+.prose-list li::before { content: "—"; position: absolute; left: 0; color: var(--acid-deep); }
+
+/* --- syllabus points --- */
+.syllabus-list { list-style: none; max-width: 74ch; margin-bottom: 1rem; border-left: 5px solid var(--acid); padding-left: 1.2rem; }
+.syllabus-list li { position: relative; padding: .5rem 0; color: var(--text-body); font-size: .96rem; border-bottom: 1px solid var(--line-soft); }
+.syllabus-list li:last-child { border-bottom: none; }
+
+/* --- click-to-load video: a thumbnail until the student taps it --- */
+.video-facade {
+  width: 100%; height: 100%; border: 0; padding: 0; cursor: pointer; display: block;
+  background-size: cover; background-position: center; position: relative;
+}
+.video-facade::after { content: ""; position: absolute; inset: 0; background: rgba(14,15,13,.34); transition: background-color .16s; }
+.video-facade:hover::after { background: rgba(14,15,13,.16); }
+.video-play {
+  position: absolute; z-index: 2; left: 50%; top: 50%; transform: translate(-50%,-50%);
+  width: 66px; height: 46px; background: var(--acid); color: var(--ink);
+  border: 2px solid var(--ink); display: flex; align-items: center; justify-content: center;
+  font-size: 1.1rem; transition: transform .16s;
+}
+.video-facade:hover .video-play { transform: translate(-50%,-50%) scale(1.08); }
+.video-wrap.is-playing { box-shadow: none; }
+.video-pending {
+  display: flex; align-items: center; justify-content: center;
+  font-family: var(--font-mono); font-size: .72rem; letter-spacing: .16em;
+  text-transform: uppercase; color: var(--on-ink-meta); box-shadow: none;
+}
+
+/* --- common mistakes: numbered, in mono, because they're a checklist --- */
+.mistakes-list { list-style: none; counter-reset: m; max-width: 74ch; }
+.mistakes-list li {
+  counter-increment: m; position: relative; padding: 1rem 1.2rem 1rem 3.4rem;
+  background: var(--paper); border: 1px solid var(--line); border-left: 5px solid var(--acid);
+  margin-bottom: .6rem; color: var(--text-body); font-size: .96rem;
+}
+.mistakes-list li::before {
+  content: counter(m, decimal-leading-zero); position: absolute; left: 1.1rem; top: 1rem;
+  font-family: var(--font-mono); font-size: .72rem; font-weight: 700; color: var(--acid-deep);
+}
+.tips-list { list-style: none; max-width: 74ch; }
+.tips-list li { position: relative; padding: .6rem 0 .6rem 1.8rem; color: var(--text-body); font-size: .96rem; border-bottom: 1px solid var(--line-soft); }
+.tips-list li::before { content: "→"; position: absolute; left: 0; color: var(--acid-deep); font-family: var(--font-mono); }
+.tips-list li:last-child { border-bottom: none; }
+
+/* --- FAQs: native accordions, no JavaScript needed --- */
+.faq { border: 1px solid var(--line); background: var(--paper); margin-bottom: .6rem; max-width: 74ch; }
+.faq summary {
+  cursor: pointer; padding: 1rem 1.2rem; font-weight: 600; font-size: .98rem;
+  list-style: none; display: flex; justify-content: space-between; gap: 1rem; align-items: center;
+}
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::after { content: "+"; font-family: var(--font-mono); color: var(--acid-deep); font-size: 1.2rem; flex: none; }
+.faq[open] summary::after { content: "−"; }
+.faq[open] summary { border-bottom: 1px solid var(--line); background: var(--acid-wash); }
+.faq-a { padding: 1rem 1.2rem; color: var(--text-body); font-size: .95rem; line-height: 1.6; }
+
+/* --- byline at the foot of a topic page --- */
+.byline {
+  margin-top: 3rem; padding-top: 1.2rem; border-top: 1px solid var(--line);
+  font-family: var(--font-mono); font-size: .72rem; letter-spacing: .04em; color: var(--text-meta);
+}
+.byline a { color: var(--ink); }
+
+/* --- courses --- */
+.course-card { background: var(--paper); border: 1px solid var(--line); border-top: 5px solid var(--acid); padding: 1.6rem; margin-bottom: 1rem; max-width: 780px; }
+.course-past { border-top-color: var(--line); opacity: .72; }
+.course-badge {
+  display: inline-block; font-family: var(--font-mono); font-size: .62rem; font-weight: 700;
+  letter-spacing: .16em; text-transform: uppercase; background: var(--acid); color: var(--ink);
+  border: 1px solid var(--ink); padding: .3rem .55rem;
+}
+.course-name { font-family: var(--font-sans); font-size: 1.3rem; font-weight: 700; letter-spacing: -.02em; margin: 1rem 0 .5rem; }
+.course-summary { color: var(--text-body); font-size: .96rem; max-width: 62ch; margin-bottom: 1.2rem; }
+.course-fields { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: .9rem 1.4rem; margin-bottom: 1.4rem; }
+.course-field dt { font-family: var(--font-mono); font-size: .6rem; letter-spacing: .16em; text-transform: uppercase; color: var(--text-muted); margin-bottom: .25rem; }
+.course-field dd { font-size: .92rem; font-weight: 500; }
+.course-cta {
+  display: inline-flex; align-items: center; gap: .5rem; background: var(--acid); color: var(--ink);
+  border: 1px solid var(--ink); font-family: var(--font-mono); font-weight: 700;
+  text-transform: uppercase; letter-spacing: .14em; font-size: .68rem;
+  padding: .85rem 1.5rem; text-decoration: none; transition: background-color .16s, color .16s, transform .16s, box-shadow .16s;
+}
+.course-cta::after { content: "→"; }
+.course-cta:hover { background: var(--ink); color: var(--acid); transform: translateY(-2px); box-shadow: var(--shadow); }
+
+/* the "next course" band on the home page */
+.course-strip {
+  display: flex; align-items: center; justify-content: space-between; gap: 1.6rem; flex-wrap: wrap;
+  background: var(--ink); color: var(--bone); border-top: 5px solid var(--acid);
+  padding: 1.8rem; margin-top: clamp(3rem, 6vw, 4.8rem);
+}
+.course-strip p { color: var(--on-ink-body); font-size: .92rem; max-width: 52ch; margin-top: .5rem; }
+.course-strip-name { font-family: var(--font-sans); font-size: 1.4rem; font-weight: 700; letter-spacing: -.02em; margin-top: .9rem; }
+
+form.contact-form select {
+  width: 100%; background: var(--bone); border: 1px solid var(--line);
+  padding: .85rem 1rem; color: var(--ink); font-family: var(--font-sans); font-size: .96rem;
+}
+form.contact-form select:focus { outline: none; border-color: var(--ink); box-shadow: inset 0 -3px 0 var(--acid); }
+
+/* --- resources filter --- */
+.filters { display: flex; flex-wrap: wrap; gap: .5rem; margin-bottom: 1.6rem; align-items: center; }
+.filters input[type="search"] {
+  flex: 1 1 240px; background: var(--paper); border: 1px solid var(--line);
+  padding: .75rem 1rem; font-family: var(--font-sans); font-size: .94rem; color: var(--ink);
+}
+.filters input[type="search"]:focus { outline: none; border-color: var(--ink); box-shadow: inset 0 -3px 0 var(--acid); }
+.chip {
+  font-family: var(--font-mono); font-size: .64rem; font-weight: 500; letter-spacing: .12em;
+  text-transform: uppercase; padding: .55rem .7rem; cursor: pointer;
+  background: var(--paper); color: var(--text-meta); border: 1px solid var(--line);
+  transition: background-color .14s, color .14s, border-color .14s;
+}
+.chip:hover { border-color: var(--ink); color: var(--ink); }
+.chip.is-on { background: var(--acid); color: var(--ink); border-color: var(--ink); font-weight: 700; }
+
+/* --- small bits --- */
+.soon-row { margin-top: 1.6rem; font-size: .9rem; color: var(--text-meta); display: flex; align-items: center; gap: .5rem; flex-wrap: wrap; }
+.soon-chip { font-family: var(--font-mono); font-size: .62rem; letter-spacing: .12em; text-transform: uppercase; border: 1px dashed var(--line); padding: .3rem .5rem; color: var(--text-muted); }
+.soon { font-family: var(--font-mono); font-size: .7rem; color: var(--text-muted); }
+.empty-note { color: var(--text-meta); font-size: .94rem; background: var(--paper); border: 1px dashed var(--line); padding: 1.2rem; max-width: 60ch; }
+footer .footer-links a { margin: 0; }
+@media (max-width: 640px) {
+  .course-strip { flex-direction: column; align-items: flex-start; }
+  .filters input[type="search"] { flex: 1 1 100%; }
+}
+
+/* ==========================================================================
+   16. PORTRAIT CARD, PAPER GRID, TOPICAL PAPERS
+   ========================================================================== */
+
+/* --- the About portrait card, laid out like the Instagram post --- */
+.portrait-card {
+  background: var(--ink); color: var(--bone);
+  border-top: 5px solid var(--acid);
+  padding: clamp(1.4rem, 3vw, 2.2rem);
+  max-width: 620px; margin-bottom: clamp(2.4rem, 5vw, 3.4rem);
+}
+.portrait-card img { width: 100%; height: auto; display: block; filter: grayscale(1) contrast(1.05); }
+.pcard-eyebrow {
+  display: block; font-family: var(--font-mono); font-size: .68rem; font-weight: 500;
+  letter-spacing: .24em; text-transform: uppercase; color: var(--acid);
+  margin: 1.5rem 0 1.1rem;
+}
+.pcard-headline {
+  font-family: var(--font-sans); font-weight: 700; text-transform: uppercase;
+  font-size: clamp(1.9rem, 5.4vw, 2.9rem); line-height: .96; letter-spacing: -.035em;
+  margin-bottom: 1.2rem;
+}
+.pcard-lede { color: var(--on-ink-body); font-size: 1.02rem; line-height: 1.5; max-width: 40ch; }
+.pcard-stat {
+  margin-top: 1.2rem; font-size: 1.02rem; color: var(--bone);
+  padding-top: 1.2rem; border-top: 1px solid rgba(242,243,238,.18);
+}
+.pcard-stat strong { color: var(--acid); font-weight: 700; }
+.pcard-handle {
+  display: block; margin-top: 1.4rem; font-family: var(--font-mono);
+  font-size: .8rem; color: var(--acid);
+}
+
+/* --- the four papers, as equal cards. Every paper reads the same. --- */
+.paper-grid {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: clamp(.8rem, 1.6vw, 1.2rem);
+}
+.paper-card {
+  position: relative; display: flex; flex-direction: column;
+  background: var(--paper); border: 1px solid var(--line); border-top: 5px solid var(--acid);
+  padding: 1.6rem; text-decoration: none; color: var(--ink);
+  transition: transform .16s ease, box-shadow .16s ease, border-color .16s ease, background-color .16s ease;
+}
+.paper-card:hover {
+  transform: translateY(-3px); box-shadow: var(--shadow);
+  border-color: var(--ink); border-top-color: var(--acid); background: var(--acid-wash);
+}
+.paper-card .paper-num {
+  align-self: flex-start; font-family: var(--font-mono); font-size: .64rem; font-weight: 700;
+  letter-spacing: .2em; text-transform: uppercase; color: var(--ink);
+  background: var(--acid); border: 1px solid var(--ink); padding: .32rem .6rem;
+}
+.paper-card .paper-title {
+  font-family: var(--font-sans); font-size: 1.22rem; font-weight: 700;
+  line-height: 1.1; letter-spacing: -.025em; margin: 1rem 0 .6rem;
+}
+.paper-card .paper-desc { color: var(--text-meta); font-size: .9rem; margin-bottom: 1.4rem; }
+.paper-go {
+  margin-top: auto; font-family: var(--font-mono); font-size: .68rem; font-weight: 500;
+  letter-spacing: .14em; text-transform: uppercase; color: var(--ink);
+  display: inline-flex; align-items: center; gap: .5rem;
+}
+.paper-go::after { content: "→"; transition: transform .16s ease; }
+.paper-card:hover .paper-go::after { transform: translateX(5px); }
+
+/* --- the past papers band under the four paper cards --- */
+.papers-band {
+  display: flex; align-items: center; justify-content: space-between; gap: 1.6rem; flex-wrap: wrap;
+  background: var(--ink); color: var(--bone); border-top: 5px solid var(--acid);
+  padding: 1.8rem; margin-top: clamp(1.4rem, 3vw, 2rem);
+  text-decoration: none; transition: transform .16s ease, box-shadow .16s ease;
+}
+.papers-band:hover { transform: translateY(-3px); box-shadow: var(--shadow); }
+.papers-band p { color: var(--on-ink-body); font-size: .92rem; max-width: 54ch; margin-top: .6rem; }
+.papers-band .course-strip-name { margin-top: .9rem; }
+
+/* --- topical past papers list --- */
+.topical-list { list-style: none; max-width: 860px; border-top: 1px solid var(--line); }
+.topical-row {
+  display: flex; align-items: center; justify-content: space-between; gap: 1rem 1.6rem;
+  flex-wrap: wrap; padding: 1rem 0; border-bottom: 1px solid var(--line);
+}
+.topical-name { font-weight: 600; font-size: 1rem; }
+.topical-links { display: flex; gap: 1.4rem; flex-wrap: wrap; }
+
+.see-also {
+  margin-top: 1.6rem; padding: 1rem 1.2rem; background: var(--acid-wash);
+  border-left: 5px solid var(--acid); font-size: .94rem; max-width: 66ch;
+}
+
+@media (max-width: 640px) {
+  .papers-band { flex-direction: column; align-items: flex-start; }
+  .topical-row { flex-direction: column; align-items: flex-start; gap: .5rem; }
+}
+
+/* ==========================================================================
+   17. COMING SOON STATES
+   Nothing on this site is ever a dead link. Anything not ready yet says so.
+   ========================================================================== */
+
+.soon-panel {
+  background: var(--ink); color: var(--bone); border-top: 5px solid var(--acid);
+  padding: clamp(1.6rem, 3.5vw, 2.4rem); max-width: 720px;
+  margin-bottom: clamp(2rem, 4vw, 3rem);
+}
+.soon-panel p { color: var(--on-ink-body); font-size: .98rem; line-height: 1.6; max-width: 54ch; margin: .9rem 0 1.6rem; }
+.soon-panel .course-strip-name { margin-top: .9rem; }
+
+/* a topic card for something not written yet */
+.chapter-card.is-soon { background: transparent; border-style: dashed; }
+.chapter-card.is-soon .chapter-num { background: transparent; color: var(--text-muted); border-color: var(--line); }
+.chapter-card.is-soon .chapter-name { color: var(--text-meta); }
+.chapter-card.is-soon:hover { background: var(--acid-wash); border-style: solid; border-color: var(--ink); }
+.chapter-card.is-soon:hover .chapter-num { background: var(--acid); color: var(--ink); border-color: var(--ink); }
+.card-soon {
+  position: absolute; right: 1.2rem; top: 1.3rem;
+  font-family: var(--font-mono); font-size: .58rem; font-weight: 600;
+  letter-spacing: .14em; text-transform: uppercase; color: var(--text-muted);
+  border: 1px dashed var(--line); padding: .22rem .4rem;
+}
+.chapter-card.is-soon::after { content: none; }
+
+/* a download row where the file isn't uploaded yet */
+.pending-row {
+  display: flex; justify-content: space-between; align-items: center; gap: 1rem;
+  background: transparent; border: 1px dashed var(--line);
+  padding: 1rem 1.2rem; color: var(--text-meta); font-size: .95rem;
+}
+
+/* --- the per-paper dropdowns on the past papers page --- */
+.paper-drop { border: 1px solid var(--line); background: var(--paper); margin-bottom: .7rem; max-width: 900px; }
+.paper-drop summary {
+  cursor: pointer; padding: 1.1rem 1.3rem; list-style: none;
+  display: flex; justify-content: space-between; align-items: center; gap: 1rem;
+  font-family: var(--font-sans); font-weight: 700; font-size: 1.02rem;
+  border-left: 5px solid var(--acid);
+}
+.paper-drop summary::-webkit-details-marker { display: none; }
+.paper-drop summary::after { content: "+"; font-family: var(--font-mono); color: var(--acid-deep); font-size: 1.3rem; flex: none; }
+.paper-drop[open] summary::after { content: "−"; }
+.paper-drop[open] summary { background: var(--acid-wash); border-bottom: 1px solid var(--line); }
+.drop-count {
+  margin-left: auto; margin-right: .6rem;
+  font-family: var(--font-mono); font-size: .62rem; font-weight: 500;
+  letter-spacing: .12em; text-transform: uppercase; color: var(--text-muted);
+}
+.paper-drop .topical-list { border-top: none; padding: 0 1.3rem 1rem; }
+.paper-drop .topical-row:last-child { border-bottom: none; }
+
+/* ==========================================================================
+   18. GREYED SUBJECT CARDS + PAPER DROPDOWNS
+   ========================================================================== */
+
+/* a subject that hasn't been started — visible, but clearly not ready */
+.subject-card.is-soon {
+  background: transparent; border-style: dashed; cursor: default;
+  color: var(--text-meta);
+}
+.subject-card.is-soon:hover { transform: none; box-shadow: none; background: transparent; border-color: var(--line); }
+.subject-card.is-soon::before { display: none; }
+.subject-card.is-soon::after { opacity: .028; }
+.subject-card.is-soon .subject-tag {
+  background: transparent; color: var(--text-muted); border: 1px dashed var(--line);
+}
+.subject-card.is-soon .subject-title { color: var(--text-meta); }
+.subject-card.is-soon .subject-desc { color: var(--text-muted); }
+.subject-card.is-soon .subject-go { color: var(--text-muted); }
+.subject-card.is-soon .subject-go::after { content: none; }
+
+/* the paper dropdowns used on the A Level Mathematics page */
+.paper-drop summary .paper-num { flex: none; }
+.drop-name { font-family: var(--font-sans); font-weight: 700; font-size: 1.05rem; letter-spacing: -.02em; }
+.drop-desc {
+  padding: 1rem 1.3rem 0; color: var(--text-meta); font-size: .9rem; max-width: 62ch;
+}
+.drop-more { padding: .4rem 1.3rem 1.2rem; font-size: .9rem; }
+.paper-drop .topical-name a { font-weight: 600; }
+.paper-drop .topical-row { padding: .75rem 0; }
+
+/* ==========================================================================
+   19. WHATSAPP REGISTRATION + HOME PAGE ORDER
+   There are no forms anywhere on this site. Registration happens on WhatsApp.
+   ========================================================================== */
+
+.wa-block {
+  display: block; text-decoration: none; color: var(--ink);
+  background: var(--paper); border: 1px solid var(--line); border-left: 5px solid var(--acid);
+  padding: clamp(1.4rem, 3vw, 2rem); max-width: 620px;
+  transition: transform .16s ease, box-shadow .16s ease, border-color .16s ease, background-color .16s ease;
+}
+.wa-block:hover { transform: translateY(-3px); box-shadow: var(--shadow); border-color: var(--ink); background: var(--acid-wash); }
+.wa-block p { color: var(--text-body); font-size: .95rem; max-width: 46ch; margin-top: .6rem; }
+.wa-block .course-strip-name { margin-top: .9rem; }
+.wa-number {
+  display: inline-block; margin-top: 1.2rem;
+  font-family: var(--font-mono); font-size: 1.05rem; font-weight: 700;
+  background: var(--acid); color: var(--ink); border: 1px solid var(--ink);
+  padding: .6rem .9rem;
+}
+
+/* the course band is now a link, and sits above the free resources */
+a.course-strip { text-decoration: none; transition: transform .16s ease, box-shadow .16s ease; }
+a.course-strip:hover { transform: translateY(-3px); box-shadow: var(--shadow); }
+a.course-strip .course-cta { pointer-events: none; }
+.resources-block { margin-top: clamp(2.6rem, 5vw, 4rem); }
+
+/* ==========================================================================
+   20. HOME PAGE "WHO'S BEHIND THIS" STRIP
+   Short, and sends people to /about/ rather than repeating the story here.
+   ========================================================================== */
+
+.about-strip { margin-top: clamp(2.6rem, 5vw, 4rem); }
+.about-strip-inner {
+  display: grid; grid-template-columns: minmax(0, 320px) minmax(0, 1fr);
+  gap: clamp(1.4rem, 3vw, 2.4rem); align-items: start;
+  background: var(--paper); border: 1px solid var(--line);
+  border-top: 5px solid var(--acid); padding: clamp(1.4rem, 3vw, 2rem);
+}
+.about-strip-inner img { width: 100%; height: auto; display: block; filter: grayscale(1) contrast(1.05); }
+.about-strip-inner p { color: var(--text-body); font-size: 1rem; line-height: 1.6; margin-bottom: 1rem; max-width: 56ch; }
+.about-strip-inner p:last-child { margin-bottom: 0; }
+
+@media (max-width: 720px) {
+  .about-strip-inner { grid-template-columns: 1fr; }
+  .about-strip-inner img { max-width: 260px; }
+}
+
+/* the "when to use these" line under a resource heading */
+.use-when {
+  color: var(--text-body); font-size: .95rem; line-height: 1.55;
+  max-width: 68ch; margin: -0.6rem 0 1.2rem;
+  border-left: 5px solid var(--acid); padding: .2rem 0 .2rem 1rem;
+}
+
+/* ==========================================================================
+   21. BIG SECTION HEADING ON THE HOME PAGE
+   ========================================================================== */
+
+.home-head {
+  padding-top: clamp(1.6rem, 3vw, 2.4rem);
+  border-top: 5px solid var(--acid);
+  margin-bottom: clamp(1.4rem, 3vw, 2rem);
+}
+.home-head-title {
+  font-family: var(--font-sans); font-weight: 700; text-transform: uppercase;
+  font-size: clamp(1.9rem, 5vw, 3.1rem); line-height: .98; letter-spacing: -.035em;
+  margin-bottom: .9rem;
+}
+.home-head-sub { color: var(--text-body); font-size: clamp(.98rem, 1.4vw, 1.08rem); max-width: 52ch; }
+
+/* --- two actions per course: register (form) and ask (WhatsApp) --- */
+.course-actions { display: flex; flex-wrap: wrap; gap: .7rem; }
+.course-cta-alt { background: transparent; color: var(--ink); }
+.course-cta-alt:hover { background: var(--ink); color: var(--acid); }
+
+/* the two registration blocks at the foot of the courses page */
+.wa-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1rem; max-width: 980px; }
+.wa-block-alt { border-left-color: var(--ink); }
+.wa-block-alt .wa-number { background: var(--ink); color: var(--acid); }
+
+/* the fee footnote on the courses page */
+.fee-note {
+  max-width: 720px; margin: 2rem 0 0;
+  background: var(--acid-wash); border-left: 5px solid var(--acid);
+  padding: 1.1rem 1.2rem;
+}
+.fee-note p { color: var(--text-body); font-size: .94rem; line-height: 1.6; margin: 0; }
+
+/* ==========================================================================
+   22. "COMING SOON" — MADE PROMINENT
+   These override the smaller versions defined earlier. A student should be
+   able to tell at a glance what's ready and what isn't, without squinting.
+   ========================================================================== */
+
+/* the tag used in tables, topical rows and paper lists */
+.soon {
+  display: inline-block;
+  font-family: var(--font-mono); font-size: .74rem; font-weight: 700;
+  letter-spacing: .1em; text-transform: uppercase;
+  color: var(--acid-deep); background: var(--acid-wash);
+  border: 2px dashed rgba(122,98,6,.45);
+  padding: .38rem .7rem; white-space: nowrap;
+}
+
+/* a download row whose file isn't uploaded yet */
+.pending-row {
+  display: flex; justify-content: space-between; align-items: center; gap: 1rem;
+  background: var(--acid-wash); border: 2px dashed rgba(122,98,6,.35);
+  padding: 1rem 1.2rem; color: var(--text-body); font-size: 1rem; font-weight: 500;
+}
+
+/* the "Soon" flag on a topic card */
+.card-soon {
+  position: absolute; right: 1.1rem; top: 1.2rem;
+  font-family: var(--font-mono); font-size: .68rem; font-weight: 700;
+  letter-spacing: .12em; text-transform: uppercase;
+  color: var(--acid-deep); background: var(--acid-wash);
+  border: 2px dashed rgba(122,98,6,.45); padding: .3rem .55rem;
+}
+
+/* the counter in a dropdown header, when nothing in it is ready */
+.drop-count {
+  margin-left: auto; margin-right: .6rem;
+  font-family: var(--font-mono); font-size: .72rem; font-weight: 600;
+  letter-spacing: .1em; text-transform: uppercase; color: var(--text-meta);
+}
+
+/* a whole subject that hasn't started — this is the loudest of them */
+.subject-card.is-soon .subject-go {
+  display: inline-block; margin-top: 1.6rem;
+  font-family: var(--font-mono); font-size: .82rem; font-weight: 700;
+  letter-spacing: .14em; text-transform: uppercase;
+  color: var(--ink); background: var(--acid-wash);
+  border: 2px dashed rgba(122,98,6,.5); padding: .6rem .9rem;
+}
+
+/* "Coming soon" sitting on the Ink band (course badges, panels) */
+.soon-panel .course-badge, .course-soon .course-badge {
+  font-size: .74rem; padding: .45rem .8rem;
+}
+
+@media (max-width: 640px) {
+  .pending-row { flex-direction: column; align-items: flex-start; gap: .6rem; }
+}
+
+/* ==========================================================================
+   23. "COMING SOON" — LOUD VERSION
+   Solid Ink block with Bone text. Acid is reserved for things that ARE
+   available, so an unavailable item must not compete with it — Ink is the
+   heaviest thing on a Bone page and reads instantly at any size.
+   ========================================================================== */
+
+.soon {
+  display: inline-block;
+  font-family: var(--font-mono); font-size: .82rem; font-weight: 700;
+  letter-spacing: .14em; text-transform: uppercase;
+  color: var(--bone) !important; background: var(--ink) !important;
+  border: none !important;
+  padding: .5rem .9rem; white-space: nowrap;
+}
+
+/* a named download whose file isn't uploaded yet */
+.pending-row {
+  display: flex; justify-content: space-between; align-items: center; gap: 1rem;
+  background: transparent; border: 2px dashed var(--ink);
+  padding: 1.1rem 1.2rem; color: var(--ink); font-size: 1.05rem; font-weight: 600;
+}
+
+/* the flag on a topic card that hasn't been written */
+.card-soon {
+  position: absolute; right: 1.1rem; top: 1.15rem;
+  font-family: var(--font-mono); font-size: .74rem; font-weight: 700;
+  letter-spacing: .14em; text-transform: uppercase;
+  color: var(--bone); background: var(--ink); border: none;
+  padding: .38rem .6rem;
+}
+
+/* a whole subject that hasn't opened — the loudest instance on the site */
+.subject-card.is-soon .subject-go {
+  display: inline-block; margin-top: 1.8rem;
+  font-family: var(--font-mono); font-size: 1rem; font-weight: 700;
+  letter-spacing: .16em; text-transform: uppercase;
+  color: var(--bone); background: var(--ink); border: none;
+  padding: .85rem 1.3rem;
+}
+
+/* the counter in a dropdown header */
+.drop-count {
+  margin-left: auto; margin-right: .6rem;
+  font-family: var(--font-mono); font-size: .78rem; font-weight: 700;
+  letter-spacing: .12em; text-transform: uppercase; color: var(--text-meta);
+}
+
+/* table rows waiting on a file get a faint tint so the row itself reads as pending */
+table.papers td:has(.soon) { background: rgba(14,15,13,.035); }
+
+@media (max-width: 640px) {
+  .pending-row { flex-direction: column; align-items: flex-start; gap: .7rem; }
+  .soon { font-size: .76rem; padding: .45rem .75rem; }
+}
+
+/* ==========================================================================
+   24. WHATSAPP LINKS — always obviously WhatsApp
+   ========================================================================== */
+
+.wa-icon { flex: none; vertical-align: -3px; margin-right: .5rem; }
+
+/* the "ask a question" button on a course card */
+.course-cta-wa {
+  background: transparent; color: var(--ink);
+  display: inline-flex; align-items: center;
+}
+.course-cta-wa::after { content: none; }
+.course-cta-wa:hover { background: var(--ink); color: var(--acid); }
+
+.course-badge-wa { display: inline-flex; align-items: center; }
+.contact-icon-wa { display: inline-flex; align-items: center; }
+.wa-number { display: inline-flex; align-items: center; }
+
+@media (max-width: 640px) {
+  .course-actions { flex-direction: column; align-items: stretch; }
+  .course-actions .course-cta { justify-content: center; }
+}
+
+/* a note sitting UNDER a table — unlike .use-when it has no negative top
+   margin, so it can't ride up into the table's bottom border */
+.table-note {
+  color: var(--text-meta); font-size: .92rem; line-height: 1.6;
+  max-width: 68ch; margin: 1.1rem 0 0;
+  border-left: 5px solid var(--acid); padding: .35rem 0 .35rem 1rem;
+}
+
+/* a topical slot that isn't ready — label plus the Coming soon block,
+   so all three columns line up whether or not the file exists */
+.topical-pending {
+  display: inline-flex; align-items: center; gap: .5rem;
+  color: var(--text-muted); font-size: .95rem;
+}
+.topical-pending .soon { font-size: .68rem; padding: .3rem .55rem; letter-spacing: .1em; }
+.topical-links { display: flex; gap: 1.4rem; flex-wrap: wrap; align-items: center; }
+@media (max-width: 640px) {
+  .topical-links { gap: .6rem; flex-direction: column; align-items: flex-start; }
+}
+
+/* ==========================================================================
+   25. TOPICAL PAST PAPERS — as a table, so the columns line up
+   ========================================================================== */
+
+.topical-table { font-size: .95rem; }
+.topical-table td.topical-name { font-weight: 600; font-family: var(--font-sans); white-space: normal; }
+.topical-table th:not(:first-child), .topical-table td:not(:first-child) {
+  width: 1%; white-space: nowrap;
+}
+.paper-drop .table-wrap { border: none; margin: 0; }
+.paper-drop .topical-table th { background: transparent; border-bottom: 2px solid var(--ink); }
+
+/* a quiet "Soon" inside a dense list. The dropdown header already carries the
+   loud status, so repeating a black block on every row is just noise. */
+.soon-lite {
+  display: inline-block;
+  font-family: var(--font-mono); font-size: .68rem; font-weight: 700;
+  letter-spacing: .12em; text-transform: uppercase;
+  color: var(--text-muted); border: 1px dashed var(--line);
+  padding: .3rem .55rem;
+}
+
+@media (max-width: 640px) {
+  .topical-table th:not(:first-child), .topical-table td:not(:first-child) {
+    width: auto; white-space: normal;
+  }
+  .paper-drop .table-wrap { border: none; }
+}
+
+/* ==========================================================================
+   26. "FOUND A MISTAKE?" — on every page that carries documents
+   ========================================================================== */
+
+.mistake-band {
+  background: var(--ink); color: var(--bone);
+  border-top: 5px solid var(--acid);
+  padding: clamp(1.5rem, 3.5vw, 2.2rem);
+  margin: clamp(2.4rem, 5vw, 3.4rem) 0 0;
+  max-width: 780px;
+}
+.mistake-band p {
+  color: var(--on-ink-body); font-size: 1rem; line-height: 1.6;
+  max-width: 58ch; margin: 1.1rem 0 1.5rem;
+}
+.mistake-mail {
+  display: inline-block;
+  font-family: var(--font-mono); font-size: clamp(1rem, 2.4vw, 1.25rem);
+  font-weight: 700; letter-spacing: .02em;
+  color: var(--ink); background: var(--acid);
+  border: 1px solid var(--acid); padding: .85rem 1.2rem;
+  text-decoration: none; word-break: break-word;
+  transition: background-color .16s, color .16s, transform .16s, box-shadow .16s;
+}
+.mistake-mail:hover {
+  background: transparent; color: var(--acid);
+  transform: translateY(-2px);
+}
+
+/* the headline inside the "found a mistake" band */
+.mistake-title {
+  font-family: var(--font-sans); font-weight: 700; text-transform: uppercase;
+  font-size: clamp(1.5rem, 3.4vw, 2.1rem); line-height: 1; letter-spacing: -.03em;
+  margin-top: 1.1rem;
+}
+.mistake-band p:first-of-type { margin-top: 1.1rem; }
+.mistake-band p + p { margin-top: -0.4rem; }

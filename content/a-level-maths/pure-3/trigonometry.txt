@@ -1,0 +1,51 @@
+# =============================================================
+#  TOPIC PAGE — Pure Mathematics 3
+#  URL: /a-level-maths/pure-3/trigonometry/
+#
+#  Lecture videos are not on this page yet. When you have them, add a
+#  section like this and they'll appear above the notes:
+#
+#      === videos ===
+#      Part 1 — first idea | YOUTUBE_ID
+#      Part 2 — worked examples | YOUTUBE_ID
+#
+#  The two resource sections below already name the PDFs. Drop the real
+#  files into static/worksheets/ , static/papers/ and static/solutions/
+#  using exactly these filenames and the links switch on by themselves.
+#  Until then they show "Coming soon" — nothing is broken.
+# =============================================================
+
+=== meta ===
+title: Trigonometry
+order: 3
+description: Trigonometry for CIE Pure Mathematics 3 (9709) — syllabus points, worksheets, topical past papers and fully worked solutions.
+
+
+=== intro ===
+The compound and double angle formulas, and the R-formula for combining a sine and a cosine into one wave. This is where trigonometry stops being about triangles and becomes an algebraic tool.
+
+
+=== syllabus ===
+- Use the expansions of sin(A ± B), cos(A ± B) and tan(A ± B)
+- Use the double angle formulas and the identities for sec²θ and cosec²θ
+- Express a sin θ + b cos θ in the forms R sin(θ ± α) and R cos(θ ± α)
+- Use these to solve equations and find maximum and minimum values
+
+
+=== worksheets ===
+Practice worksheet | 9709-p3-trigonometry-worksheet.pdf
+Worksheet answers | 9709-p3-trigonometry-answers.pdf
+Step-by-step solutions | 9709-p3-trigonometry-worksheet-solutions.pdf | solutions
+
+
+=== topical ===
+Topical questions | 9709-p3-trigonometry-topical.pdf
+Mark scheme | 9709-p3-trigonometry-topical-ms.pdf
+Step-by-step worked solutions | 9709-p3-trigonometry-worked-solutions.pdf | solutions
+
+
+=== mistakes ===
+- Sign errors in the compound angle formulas, especially cos(A + B) where the sign flips.
+- Choosing the wrong double angle form for cos 2θ — pick the one that matches what else is in the equation.
+- Getting α in the wrong quadrant when finding R sin(θ + α).
+- Forgetting that the maximum of R sin(θ + α) is R, not R + α.

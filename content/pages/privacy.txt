@@ -1,0 +1,37 @@
+# =============================================================
+#  PRIVACY PAGE  —  /privacy/
+#  Keep this accurate. If you add analytics or a form service later,
+#  update the relevant paragraph.
+# =============================================================
+
+=== meta ===
+title: Privacy
+eyebrow: The boring bit
+headline: Privacy
+description: What this website does and doesn't collect.
+
+
+=== body ===
+This is a static website. It has no accounts, no logins and no tracking of individual visitors.
+
+## What is collected
+
+Nothing, unless you choose to send it. There is one form on this site, on the courses page. If you fill it in, the name, contact details and message you type are sent to me by email so that I can reply to you. They are not added to a mailing list, not sold, and not shared with anyone.
+
+## Analytics
+
+There are none. This site runs no analytics, no tracking scripts and no cookies of any kind.
+
+If I add a privacy-respecting analytics tool later — one that uses no cookies, does not track you across other sites and does not build a profile of you — I will say so here first.
+
+## Files you open
+
+Notes, worksheets and past papers are ordinary files served from this website. Opening or saving one tells me nothing about you.
+
+## Embedded videos
+
+Lecture videos are hosted on YouTube. They do not load until you tap them — so if you never tap a video, YouTube receives nothing from your visit. Once you do, YouTube's own privacy policy applies.
+
+## Getting in touch
+
+If you want anything you've sent me deleted, email me and I'll delete it.

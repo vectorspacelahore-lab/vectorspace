@@ -1,0 +1,51 @@
+# =============================================================
+#  TOPIC PAGE — Mechanics
+#  URL: /a-level-maths/mechanics/constant-acceleration-formulae/
+#
+#  Lecture videos are not on this page yet. When you have them, add a
+#  section like this and they'll appear above the notes:
+#
+#      === videos ===
+#      Part 1 — first idea | YOUTUBE_ID
+#      Part 2 — worked examples | YOUTUBE_ID
+#
+#  The two resource sections below already name the PDFs. Drop the real
+#  files into static/worksheets/ , static/papers/ and static/solutions/
+#  using exactly these filenames and the links switch on by themselves.
+#  Until then they show "Coming soon" — nothing is broken.
+# =============================================================
+
+=== meta ===
+title: Constant acceleration formulae
+order: 2
+description: Constant acceleration formulae for CIE Mechanics (9709) — syllabus points, worksheets, topical past papers and fully worked solutions.
+
+
+=== intro ===
+The five suvat equations. Each omits one of the five quantities, and choosing the right one is simply a matter of listing what you have and what you want.
+
+
+=== syllabus ===
+- Use the equations of motion for constant acceleration in a straight line
+- Solve problems involving motion under gravity
+- Solve problems involving multiple stages of motion
+- Use the constant acceleration formulas together with velocity-time graphs
+
+
+=== worksheets ===
+Practice worksheet | 9709-mech-constant-acceleration-formulae-worksheet.pdf
+Worksheet answers | 9709-mech-constant-acceleration-formulae-answers.pdf
+Step-by-step solutions | 9709-mech-constant-acceleration-formulae-worksheet-solutions.pdf | solutions
+
+
+=== topical ===
+Topical questions | 9709-mech-constant-acceleration-formulae-topical.pdf
+Mark scheme | 9709-mech-constant-acceleration-formulae-topical-ms.pdf
+Step-by-step worked solutions | 9709-mech-constant-acceleration-formulae-worked-solutions.pdf | solutions
+
+
+=== mistakes ===
+- Using a suvat equation when the acceleration is not constant.
+- Taking g as positive when upward has been chosen as the positive direction.
+- Applying one equation across two stages of motion with different accelerations.
+- Forgetting that at maximum height the velocity is zero but the acceleration is still g.

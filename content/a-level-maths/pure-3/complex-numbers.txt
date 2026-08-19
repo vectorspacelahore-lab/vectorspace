@@ -1,0 +1,52 @@
+# =============================================================
+#  TOPIC PAGE — Pure Mathematics 3
+#  URL: /a-level-maths/pure-3/complex-numbers/
+#
+#  Lecture videos are not on this page yet. When you have them, add a
+#  section like this and they'll appear above the notes:
+#
+#      === videos ===
+#      Part 1 — first idea | YOUTUBE_ID
+#      Part 2 — worked examples | YOUTUBE_ID
+#
+#  The two resource sections below already name the PDFs. Drop the real
+#  files into static/worksheets/ , static/papers/ and static/solutions/
+#  using exactly these filenames and the links switch on by themselves.
+#  Until then they show "Coming soon" — nothing is broken.
+# =============================================================
+
+=== meta ===
+title: Complex numbers
+order: 9
+description: Complex numbers for CIE Pure Mathematics 3 (9709) — syllabus points, worksheets, topical past papers and fully worked solutions.
+
+
+=== intro ===
+Extending the number system so every polynomial has roots. The Argand diagram turns algebra into geometry, and multiplication becomes rotation.
+
+
+=== syllabus ===
+- Understand the idea of a complex number and the terms real part, imaginary part, modulus, argument and conjugate
+- Carry out operations of addition, subtraction, multiplication and division of complex numbers
+- Use the result that complex roots of real polynomials occur in conjugate pairs
+- Represent complex numbers on an Argand diagram and use modulus-argument form
+- Illustrate simple equations and inequalities involving complex numbers as loci
+
+
+=== worksheets ===
+Practice worksheet | 9709-p3-complex-numbers-worksheet.pdf
+Worksheet answers | 9709-p3-complex-numbers-answers.pdf
+Step-by-step solutions | 9709-p3-complex-numbers-worksheet-solutions.pdf | solutions
+
+
+=== topical ===
+Topical questions | 9709-p3-complex-numbers-topical.pdf
+Mark scheme | 9709-p3-complex-numbers-topical-ms.pdf
+Step-by-step worked solutions | 9709-p3-complex-numbers-worked-solutions.pdf | solutions
+
+
+=== mistakes ===
+- Getting the argument in the wrong quadrant. Always sketch the point first.
+- Forgetting to multiply by the conjugate when dividing complex numbers.
+- Working in degrees when the argument should be in radians.
+- Drawing the locus |z − a| = r centred at −a rather than a.

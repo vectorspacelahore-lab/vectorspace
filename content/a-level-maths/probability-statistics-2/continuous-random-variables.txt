@@ -1,0 +1,51 @@
+# =============================================================
+#  TOPIC PAGE — Probability & Statistics 2
+#  URL: /a-level-maths/probability-statistics-2/continuous-random-variables/
+#
+#  Lecture videos are not on this page yet. When you have them, add a
+#  section like this and they'll appear above the notes:
+#
+#      === videos ===
+#      Part 1 — first idea | YOUTUBE_ID
+#      Part 2 — worked examples | YOUTUBE_ID
+#
+#  The two resource sections below already name the PDFs. Drop the real
+#  files into static/worksheets/ , static/papers/ and static/solutions/
+#  using exactly these filenames and the links switch on by themselves.
+#  Until then they show "Coming soon" — nothing is broken.
+# =============================================================
+
+=== meta ===
+title: Continuous random variables
+order: 3
+description: Continuous random variables for CIE Probability & Statistics 2 (9709) — syllabus points, worksheets, topical past papers and fully worked solutions.
+
+
+=== intro ===
+When a variable can take any value in a range, the table becomes a function and the sum becomes an integral. Everything else is the same idea.
+
+
+=== syllabus ===
+- Understand the concept of a probability density function and use it to find probabilities
+- Use the fact that the total area under a probability density function is 1
+- Calculate the mean and variance of a continuous random variable
+- Find and use the cumulative distribution function, and use it to find the median and other percentiles
+
+
+=== worksheets ===
+Practice worksheet | 9709-s2-continuous-random-variables-worksheet.pdf
+Worksheet answers | 9709-s2-continuous-random-variables-answers.pdf
+Step-by-step solutions | 9709-s2-continuous-random-variables-worksheet-solutions.pdf | solutions
+
+
+=== topical ===
+Topical questions | 9709-s2-continuous-random-variables-topical.pdf
+Mark scheme | 9709-s2-continuous-random-variables-topical-ms.pdf
+Step-by-step worked solutions | 9709-s2-continuous-random-variables-worked-solutions.pdf | solutions
+
+
+=== mistakes ===
+- Integrating over the wrong limits, or over the whole real line rather than where the function is defined.
+- Forgetting that the total area must equal 1, which is usually how an unknown constant is found.
+- Using E(X²) as the variance without subtracting [E(X)]².
+- Differentiating and integrating the wrong way between the density function and the cumulative function.

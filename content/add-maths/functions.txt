@@ -1,0 +1,58 @@
+# =============================================================
+#  TOPIC PAGE — Additional Mathematics
+#  URL: /add-maths/functions/
+#
+#  Lecture videos are not on this page yet. When you have them, add a
+#  section like this and they'll appear above the notes:
+#
+#      === videos ===
+#      Part 1 — first idea | YOUTUBE_ID
+#      Part 2 — worked examples | YOUTUBE_ID
+#
+#  The two resource sections below already name the PDFs. Drop the real
+#  files into static/worksheets/ , static/papers/ and static/solutions/
+#  using exactly these filenames and the links switch on by themselves.
+#  Until then they show "Coming soon" — nothing is broken.
+# =============================================================
+
+=== meta ===
+title: Functions
+order: 3
+description: Functions for CIE Additional Mathematics (4037) — syllabus points, worksheets, topical past papers and fully worked solutions.
+
+
+=== intro ===
+A function is a rule with a domain attached, and most marks in this topic are lost by ignoring the domain rather than the rule. Composition, inverses and transformations all hinge on knowing exactly what goes in and what can come out.
+
+
+=== syllabus ===
+- Understand and use the terms function, domain, range, one-one function, inverse and composition
+- Find the composition of two functions and state its domain
+- Determine whether a function is one-one and find the inverse of a one-one function
+- Sketch the graph of a function and its inverse, and use the reflection in y = x
+- Apply and interpret transformations of graphs: translations, stretches and reflections
+
+
+=== worksheets ===
+Basic functions | 4037-am-functions-basic-functions-worksheet.pdf
+Basic functions — answers | 4037-am-functions-basic-functions-answers.pdf
+Composite functions | 4037-am-functions-composite-functions-worksheet.pdf
+Composite functions — answers | 4037-am-functions-composite-functions-answers.pdf
+Inverse functions | 4037-am-functions-inverse-functions-worksheet.pdf
+Inverse functions — answers | 4037-am-functions-inverse-functions-answers.pdf
+Absolute value functions | 4037-am-functions-absolute-value-functions-worksheet.pdf
+Absolute value functions — answers | 4037-am-functions-absolute-value-functions-answers.pdf
+Step-by-step solutions | 4037-am-functions-worksheet-solutions.pdf | solutions
+
+
+=== topical ===
+Topical questions | 4037-am-functions-topical.pdf
+Mark scheme | 4037-am-functions-topical-ms.pdf
+Step-by-step worked solutions | 4037-am-functions-worked-solutions.pdf | solutions
+
+
+=== mistakes ===
+- Writing fg(x) when the question asks for gf(x). The one written closest to x acts first.
+- Finding an inverse without restricting the domain first, when the original function isn't one-one.
+- Giving the domain of a composite function as the domain of the outer function, rather than checking that the inner output is allowed in.
+- Assuming the range of the inverse is the range of the original — it's actually the domain.

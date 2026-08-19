@@ -1,0 +1,51 @@
+# =============================================================
+#  TOPIC PAGE — Mechanics
+#  URL: /a-level-maths/mechanics/variable-acceleration/
+#
+#  Lecture videos are not on this page yet. When you have them, add a
+#  section like this and they'll appear above the notes:
+#
+#      === videos ===
+#      Part 1 — first idea | YOUTUBE_ID
+#      Part 2 — worked examples | YOUTUBE_ID
+#
+#  The two resource sections below already name the PDFs. Drop the real
+#  files into static/worksheets/ , static/papers/ and static/solutions/
+#  using exactly these filenames and the links switch on by themselves.
+#  Until then they show "Coming soon" — nothing is broken.
+# =============================================================
+
+=== meta ===
+title: Variable acceleration
+order: 3
+description: Variable acceleration for CIE Mechanics (9709) — syllabus points, worksheets, topical past papers and fully worked solutions.
+
+
+=== intro ===
+When acceleration changes, suvat fails and calculus takes over. Differentiate to go from displacement to velocity to acceleration, integrate to come back.
+
+
+=== syllabus ===
+- Use differentiation and integration with respect to time to solve problems with variable acceleration
+- Relate displacement, velocity and acceleration by calculus
+- Find the constant of integration using given initial conditions
+- Find maximum and minimum values of velocity and displacement
+
+
+=== worksheets ===
+Practice worksheet | 9709-mech-variable-acceleration-worksheet.pdf
+Worksheet answers | 9709-mech-variable-acceleration-answers.pdf
+Step-by-step solutions | 9709-mech-variable-acceleration-worksheet-solutions.pdf | solutions
+
+
+=== topical ===
+Topical questions | 9709-mech-variable-acceleration-topical.pdf
+Mark scheme | 9709-mech-variable-acceleration-topical-ms.pdf
+Step-by-step worked solutions | 9709-mech-variable-acceleration-worked-solutions.pdf | solutions
+
+
+=== mistakes ===
+- Reaching for a suvat equation when acceleration is a function of time.
+- Losing the constant of integration and with it the initial condition.
+- Confusing the point where velocity is maximum with the point where displacement is maximum.
+- Finding distance travelled by integrating without splitting at the instants when velocity is zero.

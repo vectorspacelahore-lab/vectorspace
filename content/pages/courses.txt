@@ -1,0 +1,98 @@
+# =============================================================
+#  COURSES PAGE  —  /courses/
+#
+#  There is no form anywhere on this site. Every "Register" button
+#  opens WhatsApp with a message already typed, using the number in
+#  content/site.txt.
+#
+#  Each course is one block. Separate them with a line of three dashes.
+#  Move a course between sections by changing its "status" line:
+#     status: open     accepting enrolments now
+#     status: soon     announced, not open yet
+#     status: past     finished
+# =============================================================
+
+=== meta ===
+title: Courses
+eyebrow: Enrolling now
+headline: {highlight}Courses{/highlight}
+description: Live online CIE courses with Ali Hashir — A Level Further Mathematics, A Level Mathematics, AS Level Mathematics and O Level Additional Mathematics, starting 14 September for May/June 2027.
+
+
+=== intro ===
+Four courses, all starting **14 September**, all preparing for the **May/June 2027** examinations.
+
+Classes are live on Zoom, running for seven months and finishing with a full past-paper session before the examinations. Every session is recorded, and recordings are provided for any class a student misses — illness, emergencies, other commitments — so that nobody falls behind.
+
+## How the courses are taught
+
+**Curiosity, then exploration, then understanding.**
+
+We don't start with a method. We start with a problem worth being curious about, and we go looking. We try the obvious things, watch them get ugly, and only then meet the technique that rescues us — so it arrives as an answer to a question you were already asking, rather than a rule to memorise.
+
+That order matters more than anything else I do. A method you were handed is something you revise. A method you saw the need for is something you understand, and understanding is what survives an exam question phrased in a way you've never seen. Once you know *why* something works, you don't forget it.
+
+Groups stay small enough that questions actually get answered.
+
+
+# --- The timetable shown as a table.  Course | Days | Time ---
+=== timetable ===
+AS Level Mathematics | Mon, Tue, Wed | 4–5pm
+A Level Mathematics | Mon, Tue, Wed | 5–6pm
+O Level Additional Mathematics | Thu, Fri, Sat, Sun | 4–5pm
+A Level Further Mathematics | Thu, Fri, Sat, Sun | 7–8pm
+
+
+=== courses ===
+name: A Level Further Mathematics — Composite
+syllabus: CIE 9231
+status: open
+starts: 14 September
+exam: May/June 2027
+format: Online, live on Zoom
+duration: 7 months, past-paper session included
+schedule: Thu, Fri, Sat, Sun · 7–8pm
+fee: Rs 15,000 per month
+summary: Complete coverage of all four 9231 papers — Further Pure Mathematics 1 and 2, Further Mechanics, and Further Probability & Statistics. Few teachers offer Further Mathematics, and students who take it are often left to work through the syllabus unsupported. This course is intended to close that gap.
+---
+name: A Level Mathematics
+syllabus: CIE 9709
+status: open
+starts: 14 September
+exam: May/June 2027
+format: Online, live on Zoom
+duration: 7 months, past-paper session included
+schedule: Mon, Tue, Wed · 5–6pm
+fee: Rs 10,000 per month
+summary: Pure Mathematics 3, together with either Mechanics or Probability & Statistics 1, selected by the student. Three classes per week.
+---
+name: AS Level Mathematics
+syllabus: CIE 9709
+status: open
+starts: 14 September
+exam: May/June 2027
+format: Online, live on Zoom
+duration: 7 months, past-paper session included
+schedule: Mon, Tue, Wed · 4–5pm
+fee: Rs 10,000 per month
+summary: Pure Mathematics 1, together with either Mechanics or Probability & Statistics 1, selected by the student. Three classes per week. Intended for students sitting AS this session.
+---
+name: O Level Additional Mathematics
+syllabus: CIE 4037 & 0606
+status: open
+starts: 14 September
+exam: May/June 2027
+format: Online, live on Zoom
+duration: 7 months, past-paper session included
+schedule: Thu, Fri, Sat, Sun · 4–5pm
+fee: Rs 10,000 per month
+summary: Complete syllabus coverage with a dedicated past-paper session, delivered as 3 lecture classes and 1 practice class each week. Covers every chapter from simultaneous equations through to kinematics, including the calculus foundation that makes A Level substantially easier later.
+
+
+# --- Text shown above the registration blocks ---
+=== fee_note ===
+**A one-time registration fee applies in addition to the monthly fee.** It is waived for early registrations, and for students in financial difficulty. If cost is the only thing standing between you and a place on a course, please get in touch — it will be worked out.
+
+
+=== form_intro ===
+Registration is a short form. If you have questions first — which course fits, how the schedule works, anything at all — message me on WhatsApp and I'll answer before you commit to anything.

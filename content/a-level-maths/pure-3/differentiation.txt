@@ -1,0 +1,51 @@
+# =============================================================
+#  TOPIC PAGE — Pure Mathematics 3
+#  URL: /a-level-maths/pure-3/differentiation/
+#
+#  Lecture videos are not on this page yet. When you have them, add a
+#  section like this and they'll appear above the notes:
+#
+#      === videos ===
+#      Part 1 — first idea | YOUTUBE_ID
+#      Part 2 — worked examples | YOUTUBE_ID
+#
+#  The two resource sections below already name the PDFs. Drop the real
+#  files into static/worksheets/ , static/papers/ and static/solutions/
+#  using exactly these filenames and the links switch on by themselves.
+#  Until then they show "Coming soon" — nothing is broken.
+# =============================================================
+
+=== meta ===
+title: Differentiation
+order: 4
+description: Differentiation for CIE Pure Mathematics 3 (9709) — syllabus points, worksheets, topical past papers and fully worked solutions.
+
+
+=== intro ===
+The full toolkit: products, quotients, chains, implicit and parametric differentiation. Most Paper 3 questions combine two of these in one expression.
+
+
+=== syllabus ===
+- Differentiate eˣ, ln x, sin x, cos x, tan x, tan⁻¹x and compositions of these
+- Differentiate products and quotients
+- Find and use the first derivative of a function defined implicitly or parametrically
+- Locate stationary points and determine their nature
+
+
+=== worksheets ===
+Practice worksheet | 9709-p3-differentiation-worksheet.pdf
+Worksheet answers | 9709-p3-differentiation-answers.pdf
+Step-by-step solutions | 9709-p3-differentiation-worksheet-solutions.pdf | solutions
+
+
+=== topical ===
+Topical questions | 9709-p3-differentiation-topical.pdf
+Mark scheme | 9709-p3-differentiation-topical-ms.pdf
+Step-by-step worked solutions | 9709-p3-differentiation-worked-solutions.pdf | solutions
+
+
+=== mistakes ===
+- Applying the quotient rule with the numerator and denominator terms the wrong way round.
+- Forgetting the chain rule inside a product or quotient.
+- In implicit differentiation, differentiating a y-term without attaching dy/dx.
+- In parametric work, dividing the derivatives the wrong way round: dy/dx is (dy/dt) ÷ (dx/dt).

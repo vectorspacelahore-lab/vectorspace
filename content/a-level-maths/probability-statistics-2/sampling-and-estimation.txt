@@ -1,0 +1,51 @@
+# =============================================================
+#  TOPIC PAGE — Probability & Statistics 2
+#  URL: /a-level-maths/probability-statistics-2/sampling-and-estimation/
+#
+#  Lecture videos are not on this page yet. When you have them, add a
+#  section like this and they'll appear above the notes:
+#
+#      === videos ===
+#      Part 1 — first idea | YOUTUBE_ID
+#      Part 2 — worked examples | YOUTUBE_ID
+#
+#  The two resource sections below already name the PDFs. Drop the real
+#  files into static/worksheets/ , static/papers/ and static/solutions/
+#  using exactly these filenames and the links switch on by themselves.
+#  Until then they show "Coming soon" — nothing is broken.
+# =============================================================
+
+=== meta ===
+title: Sampling and estimation
+order: 4
+description: Sampling and estimation for CIE Probability & Statistics 2 (9709) — syllabus points, worksheets, topical past papers and fully worked solutions.
+
+
+=== intro ===
+What a sample can tell you about the population it came from, and how confident you are entitled to be about it.
+
+
+=== syllabus ===
+- Understand the distinction between a sample and a population, and the need for randomness
+- Understand that the sample mean has a distribution, and use the central limit theorem
+- Calculate unbiased estimates of the population mean and variance from a sample
+- Determine and interpret a confidence interval for a population mean
+
+
+=== worksheets ===
+Practice worksheet | 9709-s2-sampling-and-estimation-worksheet.pdf
+Worksheet answers | 9709-s2-sampling-and-estimation-answers.pdf
+Step-by-step solutions | 9709-s2-sampling-and-estimation-worksheet-solutions.pdf | solutions
+
+
+=== topical ===
+Topical questions | 9709-s2-sampling-and-estimation-topical.pdf
+Mark scheme | 9709-s2-sampling-and-estimation-topical-ms.pdf
+Step-by-step worked solutions | 9709-s2-sampling-and-estimation-worked-solutions.pdf | solutions
+
+
+=== mistakes ===
+- Dividing by n rather than n − 1 when estimating the population variance from a sample.
+- Using the population standard deviation in place of the standard error of the mean.
+- Applying the central limit theorem to a small sample from a non-normal population.
+- Interpreting a 95% confidence interval as a 95% probability that the true mean lies inside it.

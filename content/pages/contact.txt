@@ -1,0 +1,25 @@
+# =============================================================
+#  CONTACT PAGE  —  /contact/
+#
+#  There is no form here. Your WhatsApp number, email and Instagram
+#  all come from content/site.txt, so you change them in one place
+#  and they update on every page of the site.
+# =============================================================
+
+=== meta ===
+title: Contact
+eyebrow: Get in touch
+headline: {highlight}Contact{/highlight}
+description: Get in touch with Ali Hashir — WhatsApp, email or Instagram. Questions about a topic, a broken link, or one of the courses.
+
+
+=== intro ===
+Help me make this better. If you've found a mistake in a document, hit a link that isn't working, spotted something missing, or think a topic could be explained more clearly — please tell me. Feedback of any kind genuinely improves what the next student finds here, and I'd much rather know than not.
+
+And for anything else at all — a question about a topic, a resource you'd like to see, or just to get in touch — reach out below.
+
+If you're asking about a course, the [courses page](/courses/) has the dates, fees and a WhatsApp button that tells me which one you mean.
+
+
+=== note ===
+I read everything, though replies can be slow during exam season. If you've found an error in a worked solution, tell me which question — I'll fix it and re-upload the same day.

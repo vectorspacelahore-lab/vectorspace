@@ -1,0 +1,58 @@
+# =============================================================
+#  TOPIC PAGE — Additional Mathematics
+#  URL: /add-maths/polynomials/
+#
+#  Lecture videos are not on this page yet. When you have them, add a
+#  section like this and they'll appear above the notes:
+#
+#      === videos ===
+#      Part 1 — first idea | YOUTUBE_ID
+#      Part 2 — worked examples | YOUTUBE_ID
+#
+#  The two resource sections below already name the PDFs. Drop the real
+#  files into static/worksheets/ , static/papers/ and static/solutions/
+#  using exactly these filenames and the links switch on by themselves.
+#  Until then they show "Coming soon" — nothing is broken.
+# =============================================================
+
+=== meta ===
+title: Polynomials
+order: 4
+description: Polynomials for CIE Additional Mathematics (4037) — syllabus points, worksheets, topical past papers and fully worked solutions.
+
+
+=== intro ===
+The remainder and factor theorems turn division into substitution. If you can find one root of a cubic you can factor it out and reduce the problem to a quadratic, which you already know how to solve completely.
+
+
+=== syllabus ===
+- Use the factor theorem and the remainder theorem
+- Divide a polynomial by a linear or quadratic divisor
+- Fully factorise a cubic polynomial given one factor, or found by trial
+- Solve cubic equations and sketch the resulting curves
+- Use the identity for the sum and difference of two cubes
+
+
+=== worksheets ===
+Polynomial long division | 4037-am-polynomials-long-division-worksheet.pdf
+Polynomial long division — answers | 4037-am-polynomials-long-division-answers.pdf
+The remainder theorem | 4037-am-polynomials-remainder-theorem-worksheet.pdf
+The remainder theorem — answers | 4037-am-polynomials-remainder-theorem-answers.pdf
+The factor theorem | 4037-am-polynomials-factor-theorem-worksheet.pdf
+The factor theorem — answers | 4037-am-polynomials-factor-theorem-answers.pdf
+Solving cubic equations | 4037-am-polynomials-cubic-equations-worksheet.pdf
+Solving cubic equations — answers | 4037-am-polynomials-cubic-equations-answers.pdf
+Step-by-step solutions | 4037-am-polynomials-worksheet-solutions.pdf | solutions
+
+
+=== topical ===
+Topical questions | 4037-am-polynomials-topical.pdf
+Mark scheme | 4037-am-polynomials-topical-ms.pdf
+Step-by-step worked solutions | 4037-am-polynomials-worked-solutions.pdf | solutions
+
+
+=== mistakes ===
+- Substituting x = a instead of x = −a when testing the factor (x + a).
+- Stopping after finding one root. A cubic has three roots, and the quadratic factor usually gives two more.
+- Making sign errors in the long-division layout — the most common single source of lost marks in this topic.
+- Forgetting the remainder theorem gives the remainder, not the quotient, when the question asks for the full division.

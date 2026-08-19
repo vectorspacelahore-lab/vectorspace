@@ -1,0 +1,51 @@
+# =============================================================
+#  TOPIC PAGE — Further Pure Mathematics 2
+#  URL: /further-maths/further-pure-2/complex-numbers/
+#
+#  Lecture videos are not on this page yet. When you have them, add a
+#  section like this and they'll appear above the notes:
+#
+#      === videos ===
+#      Part 1 — first idea | YOUTUBE_ID
+#      Part 2 — worked examples | YOUTUBE_ID
+#
+#  The two resource sections below already name the PDFs. Drop the real
+#  files into static/worksheets/ , static/papers/ and static/solutions/
+#  using exactly these filenames and the links switch on by themselves.
+#  Until then they show "Coming soon" — nothing is broken.
+# =============================================================
+
+=== meta ===
+title: Complex numbers
+order: 5
+description: Complex numbers for CIE Further Pure Mathematics 2 (9231) — syllabus points, worksheets, topical past papers and fully worked solutions.
+
+
+=== intro ===
+De Moivre's theorem turns powers and roots of complex numbers into simple arithmetic on the modulus and argument, and generates trigonometric identities as a by-product.
+
+
+=== syllabus ===
+- Use de Moivre's theorem for positive and negative integer exponents
+- Find the nth roots of a complex number and represent them on an Argand diagram
+- Use complex numbers to derive trigonometric identities
+- Use the exponential form re^(iθ) and sketch loci in the Argand diagram
+
+
+=== worksheets ===
+Practice worksheet | 9231-fp2-complex-numbers-worksheet.pdf
+Worksheet answers | 9231-fp2-complex-numbers-answers.pdf
+Step-by-step solutions | 9231-fp2-complex-numbers-worksheet-solutions.pdf | solutions
+
+
+=== topical ===
+Topical questions | 9231-fp2-complex-numbers-topical.pdf
+Mark scheme | 9231-fp2-complex-numbers-topical-ms.pdf
+Step-by-step worked solutions | 9231-fp2-complex-numbers-worked-solutions.pdf | solutions
+
+
+=== mistakes ===
+- Missing roots — there are always exactly n nth roots, spaced equally around a circle.
+- Getting the argument in the wrong quadrant. Sketch the point before computing.
+- Working in degrees when the exponential form requires radians.
+- Forgetting to take the nth root of the modulus as well as dividing the argument.

@@ -1,0 +1,51 @@
+# =============================================================
+#  TOPIC PAGE — Further Pure Mathematics 1
+#  URL: /further-maths/further-pure-1/rational-functions-and-graphs/
+#
+#  Lecture videos are not on this page yet. When you have them, add a
+#  section like this and they'll appear above the notes:
+#
+#      === videos ===
+#      Part 1 — first idea | YOUTUBE_ID
+#      Part 2 — worked examples | YOUTUBE_ID
+#
+#  The two resource sections below already name the PDFs. Drop the real
+#  files into static/worksheets/ , static/papers/ and static/solutions/
+#  using exactly these filenames and the links switch on by themselves.
+#  Until then they show "Coming soon" — nothing is broken.
+# =============================================================
+
+=== meta ===
+title: Rational functions and graphs
+order: 2
+description: Rational functions and graphs for CIE Further Pure Mathematics 1 (9231) — syllabus points, worksheets, topical past papers and fully worked solutions.
+
+
+=== intro ===
+A rational function is one algebraic expression divided by another. The interesting part is where it breaks: the curve can never touch the x-values that make the denominator zero, and it settles towards a fixed line as x gets very large. Find those lines and the shape of the graph follows.
+
+
+=== syllabus ===
+- Find the asymptotes of a rational function with linear or quadratic denominator
+- Sketch the graph of a rational function, showing asymptotes and intercepts
+- Determine the set of values a rational function can take
+- Sketch graphs of related curves, including y², |y| and 1/y
+
+
+=== worksheets ===
+Practice worksheet | 9231-fp1-rational-functions-and-graphs-worksheet.pdf
+Worksheet answers | 9231-fp1-rational-functions-and-graphs-answers.pdf
+Step-by-step solutions | 9231-fp1-rational-functions-and-graphs-worksheet-solutions.pdf | solutions
+
+
+=== topical ===
+Topical questions | 9231-fp1-rational-functions-and-graphs-topical.pdf
+Mark scheme | 9231-fp1-rational-functions-and-graphs-topical-ms.pdf
+Step-by-step worked solutions | 9231-fp1-rational-functions-and-graphs-worked-solutions.pdf | solutions
+
+
+=== mistakes ===
+- Finding the vertical asymptotes and forgetting the horizontal or oblique one.
+- Assuming a curve never crosses its horizontal asymptote — it often does.
+- Not testing the sign of the function either side of a vertical asymptote before sketching.
+- Using the discriminant to find the range but forgetting to exclude values where the denominator is zero.

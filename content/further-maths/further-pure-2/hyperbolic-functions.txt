@@ -1,0 +1,51 @@
+# =============================================================
+#  TOPIC PAGE — Further Pure Mathematics 2
+#  URL: /further-maths/further-pure-2/hyperbolic-functions/
+#
+#  Lecture videos are not on this page yet. When you have them, add a
+#  section like this and they'll appear above the notes:
+#
+#      === videos ===
+#      Part 1 — first idea | YOUTUBE_ID
+#      Part 2 — worked examples | YOUTUBE_ID
+#
+#  The two resource sections below already name the PDFs. Drop the real
+#  files into static/worksheets/ , static/papers/ and static/solutions/
+#  using exactly these filenames and the links switch on by themselves.
+#  Until then they show "Coming soon" — nothing is broken.
+# =============================================================
+
+=== meta ===
+title: Hyperbolic functions
+order: 1
+description: Hyperbolic functions for CIE Further Pure Mathematics 2 (9231) — syllabus points, worksheets, topical past papers and fully worked solutions.
+
+
+=== intro ===
+Functions built from exponentials that behave remarkably like the trigonometric ones, with the signs of a few identities flipped. They arise naturally in integration.
+
+
+=== syllabus ===
+- Understand the definitions of sinh x, cosh x and tanh x in terms of exponentials and sketch their graphs
+- Prove and use hyperbolic identities, including cosh²x − sinh²x = 1
+- Understand and use the inverse hyperbolic functions and their logarithmic forms
+- Solve equations involving hyperbolic functions
+
+
+=== worksheets ===
+Practice worksheet | 9231-fp2-hyperbolic-functions-worksheet.pdf
+Worksheet answers | 9231-fp2-hyperbolic-functions-answers.pdf
+Step-by-step solutions | 9231-fp2-hyperbolic-functions-worksheet-solutions.pdf | solutions
+
+
+=== topical ===
+Topical questions | 9231-fp2-hyperbolic-functions-topical.pdf
+Mark scheme | 9231-fp2-hyperbolic-functions-topical-ms.pdf
+Step-by-step worked solutions | 9231-fp2-hyperbolic-functions-worked-solutions.pdf | solutions
+
+
+=== mistakes ===
+- Using the trigonometric identity sin² + cos² = 1 instead of the hyperbolic one, where the sign differs.
+- Assuming cosh x can be negative — it cannot.
+- Forgetting that the inverse of cosh needs a restricted domain to be a function.
+- Losing a solution when solving a hyperbolic equation that reduces to a quadratic in eˣ.

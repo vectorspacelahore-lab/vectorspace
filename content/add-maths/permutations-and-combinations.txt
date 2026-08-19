@@ -1,0 +1,51 @@
+# =============================================================
+#  TOPIC PAGE — Additional Mathematics
+#  URL: /add-maths/permutations-and-combinations/
+#
+#  Lecture videos are not on this page yet. When you have them, add a
+#  section like this and they'll appear above the notes:
+#
+#      === videos ===
+#      Part 1 — first idea | YOUTUBE_ID
+#      Part 2 — worked examples | YOUTUBE_ID
+#
+#  The two resource sections below already name the PDFs. Drop the real
+#  files into static/worksheets/ , static/papers/ and static/solutions/
+#  using exactly these filenames and the links switch on by themselves.
+#  Until then they show "Coming soon" — nothing is broken.
+# =============================================================
+
+=== meta ===
+title: Permutations and Combinations
+order: 11
+description: Permutations and Combinations for CIE Additional Mathematics (4037) — syllabus points, worksheets, topical past papers and fully worked solutions.
+
+
+=== intro ===
+One question decides everything in this topic: does the order matter? If it does you want a permutation, if it doesn't you want a combination, and almost every lost mark traces back to answering that question wrongly.
+
+
+=== syllabus ===
+- Recognise and distinguish between permutations and combinations
+- Evaluate nPr and nCr and use them in problems
+- Solve problems about arrangements of objects in a line, including repetition and restriction
+- Solve problems about selections from a set
+
+
+=== worksheets ===
+Practice worksheet | 4037-am-permutations-and-combinations-worksheet.pdf
+Worksheet answers | 4037-am-permutations-and-combinations-answers.pdf
+Step-by-step solutions | 4037-am-permutations-and-combinations-worksheet-solutions.pdf | solutions
+
+
+=== topical ===
+Topical questions | 4037-am-permutations-and-combinations-topical.pdf
+Mark scheme | 4037-am-permutations-and-combinations-topical-ms.pdf
+Step-by-step worked solutions | 4037-am-permutations-and-combinations-worked-solutions.pdf | solutions
+
+
+=== mistakes ===
+- Using a permutation for a selection where order is irrelevant, such as choosing a committee.
+- Handling 'at least' conditions by adding cases incorrectly — often it's quicker to count the complement.
+- Forgetting to divide by the factorials of repeated letters when arranging a word with repeats.
+- Treating a restriction like 'two people must sit together' as separate when they should be blocked as one unit first.

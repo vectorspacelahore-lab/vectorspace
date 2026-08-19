@@ -1,0 +1,51 @@
+# =============================================================
+#  TOPIC PAGE — Pure Mathematics 3
+#  URL: /a-level-maths/pure-3/logarithmic-and-exponential-functions/
+#
+#  Lecture videos are not on this page yet. When you have them, add a
+#  section like this and they'll appear above the notes:
+#
+#      === videos ===
+#      Part 1 — first idea | YOUTUBE_ID
+#      Part 2 — worked examples | YOUTUBE_ID
+#
+#  The two resource sections below already name the PDFs. Drop the real
+#  files into static/worksheets/ , static/papers/ and static/solutions/
+#  using exactly these filenames and the links switch on by themselves.
+#  Until then they show "Coming soon" — nothing is broken.
+# =============================================================
+
+=== meta ===
+title: Logarithmic and exponential functions
+order: 2
+description: Logarithmic and exponential functions for CIE Pure Mathematics 3 (9709) — syllabus points, worksheets, topical past papers and fully worked solutions.
+
+
+=== intro ===
+Logarithms free the unknown from the exponent, and the natural exponential is the function that is its own derivative. Both feed directly into calculus and differential equations later.
+
+
+=== syllabus ===
+- Understand the relationship between logarithms and indices and use the laws of logarithms
+- Understand the definition and properties of eˣ and ln x, including their graphs
+- Solve equations of the form aˣ = b
+- Use logarithms to transform a relationship to linear form and find the constants
+
+
+=== worksheets ===
+Practice worksheet | 9709-p3-logarithmic-and-exponential-functions-worksheet.pdf
+Worksheet answers | 9709-p3-logarithmic-and-exponential-functions-answers.pdf
+Step-by-step solutions | 9709-p3-logarithmic-and-exponential-functions-worksheet-solutions.pdf | solutions
+
+
+=== topical ===
+Topical questions | 9709-p3-logarithmic-and-exponential-functions-topical.pdf
+Mark scheme | 9709-p3-logarithmic-and-exponential-functions-topical-ms.pdf
+Step-by-step worked solutions | 9709-p3-logarithmic-and-exponential-functions-worked-solutions.pdf | solutions
+
+
+=== mistakes ===
+- Expanding log(a + b) as log a + log b.
+- Taking logs of one term rather than the whole side of an equation.
+- Accepting a solution that requires the log of a negative number.
+- Confusing the gradient and intercept with the constants they represent after a log transformation.

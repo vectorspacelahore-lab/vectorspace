@@ -1,0 +1,52 @@
+# =============================================================
+#  TOPIC PAGE — Additional Mathematics
+#  URL: /add-maths/exponentials-and-logarithms/
+#
+#  Lecture videos are not on this page yet. When you have them, add a
+#  section like this and they'll appear above the notes:
+#
+#      === videos ===
+#      Part 1 — first idea | YOUTUBE_ID
+#      Part 2 — worked examples | YOUTUBE_ID
+#
+#  The two resource sections below already name the PDFs. Drop the real
+#  files into static/worksheets/ , static/papers/ and static/solutions/
+#  using exactly these filenames and the links switch on by themselves.
+#  Until then they show "Coming soon" — nothing is broken.
+# =============================================================
+
+=== meta ===
+title: Exponentials and Logarithms
+order: 6
+description: Exponentials and Logarithms for CIE Additional Mathematics (4037) — syllabus points, worksheets, topical past papers and fully worked solutions.
+
+
+=== intro ===
+Logarithms exist to get the unknown out of the exponent. Everything in this topic follows from that one purpose, plus three laws that turn multiplication into addition and powers into multiplication.
+
+
+=== syllabus ===
+- Understand the relationship between logarithms and indices, and use the laws of logarithms
+- Solve equations of the form aˣ = b
+- Understand and use the definition and properties of eˣ and ln x
+- Sketch graphs of exponential and logarithmic functions and their transformations
+- Use logarithms to transform a relationship of the form y = kxⁿ or y = k(aˣ) to straight-line form
+
+
+=== worksheets ===
+Practice worksheet | 4037-am-exponentials-and-logarithms-worksheet.pdf
+Worksheet answers | 4037-am-exponentials-and-logarithms-answers.pdf
+Step-by-step solutions | 4037-am-exponentials-and-logarithms-worksheet-solutions.pdf | solutions
+
+
+=== topical ===
+Topical questions | 4037-am-exponentials-and-logarithms-topical.pdf
+Mark scheme | 4037-am-exponentials-and-logarithms-topical-ms.pdf
+Step-by-step worked solutions | 4037-am-exponentials-and-logarithms-worked-solutions.pdf | solutions
+
+
+=== mistakes ===
+- Writing log(a + b) as log a + log b. The law applies to products, not sums.
+- Taking logs of both sides but only of one term when the equation has several.
+- Losing the restriction that you cannot take the log of zero or a negative number — check solutions back.
+- In straight-line-form questions, mixing up which variable is plotted on which axis after taking logs.

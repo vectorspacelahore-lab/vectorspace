@@ -1,0 +1,55 @@
+# =============================================================
+#  TOPIC PAGE — Further Pure Mathematics 1
+#  URL: /further-maths/further-pure-1/proof-by-induction/
+#
+#  Lecture videos are not on this page yet. When you have them, add a
+#  section like this and they'll appear above the notes:
+#
+#      === videos ===
+#      Part 1 — first idea | YOUTUBE_ID
+#      Part 2 — worked examples | YOUTUBE_ID
+#
+#  The two resource sections below already name the PDFs. Drop the real
+#  files into static/worksheets/ , static/papers/ and static/solutions/
+#  using exactly these filenames and the links switch on by themselves.
+#  Until then they show "Coming soon" — nothing is broken.
+# =============================================================
+
+=== meta ===
+title: Proof by induction
+order: 7
+description: Proof by induction for CIE Further Pure Mathematics 1 (9231) — syllabus points, worksheets, topical past papers and fully worked solutions.
+
+
+=== intro ===
+How do you prove a statement is true for **every** positive integer, when there are infinitely many of them to check? You can't test them one at a time, so induction does something cleverer.
+
+Think of an infinite row of dominoes. You show two things: that the first one falls, and that whenever any domino falls it knocks over the next. Those two facts together mean every domino falls, without you ever having to push them individually.
+
+Induction works the same way. Prove the statement for n = 1. Then assume it holds for some n = k, and use that assumption to prove it must also hold for n = k + 1. Since it's true for 1, it must be true for 2; since it's true for 2, it must be true for 3; and so on forever.
+
+
+=== syllabus ===
+- Use the method of mathematical induction to establish a given result
+- Apply induction to sums of series, divisibility properties, matrix powers, inequalities and derivatives
+- Set out an induction proof with a correct base case, inductive step and conclusion
+- Recognise when induction is the appropriate method
+
+
+=== worksheets ===
+Practice worksheet | 9231-fp1-proof-by-induction-worksheet.pdf
+Worksheet answers | 9231-fp1-proof-by-induction-answers.pdf
+Step-by-step solutions | 9231-fp1-proof-by-induction-worksheet-solutions.pdf | solutions
+
+
+=== topical ===
+Topical questions | 9231-fp1-proof-by-induction-topical.pdf
+Mark scheme | 9231-fp1-proof-by-induction-topical-ms.pdf
+Step-by-step worked solutions | 9231-fp1-proof-by-induction-worked-solutions.pdf | solutions
+
+
+=== mistakes ===
+- Omitting the base case, which invalidates the whole proof.
+- Assuming the result for n = k + 1 rather than for n = k. You assume it and then prove the next case.
+- Not making explicit use of the inductive assumption in the step — if it isn't used, the proof isn't an induction.
+- Leaving out the concluding statement about the result holding for all n.

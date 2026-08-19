@@ -1,0 +1,58 @@
+# =============================================================
+#  TOPIC PAGE — Additional Mathematics
+#  URL: /add-maths/trigonometry/
+#
+#  Lecture videos are not on this page yet. When you have them, add a
+#  section like this and they'll appear above the notes:
+#
+#      === videos ===
+#      Part 1 — first idea | YOUTUBE_ID
+#      Part 2 — worked examples | YOUTUBE_ID
+#
+#  The two resource sections below already name the PDFs. Drop the real
+#  files into static/worksheets/ , static/papers/ and static/solutions/
+#  using exactly these filenames and the links switch on by themselves.
+#  Until then they show "Coming soon" — nothing is broken.
+# =============================================================
+
+=== meta ===
+title: Trigonometry
+order: 8
+description: Trigonometry for CIE Additional Mathematics (4037) — syllabus points, worksheets, topical past papers and fully worked solutions.
+
+
+=== intro ===
+Three graphs, three identities, and an infinite number of solutions to keep track of. Most of the skill is in finding every solution inside the given interval rather than the first one your calculator hands you.
+
+
+=== syllabus ===
+- Sketch and use the graphs of sine, cosine and tangent, including transformations
+- Use the exact values of trigonometric functions for 30°, 45° and 60°
+- Use the identities sin θ / cos θ = tan θ and sin²θ + cos²θ = 1
+- Use the reciprocal functions secant, cosecant and cotangent
+- Solve trigonometric equations within a stated interval
+
+
+=== worksheets ===
+Trigonometric ratios and general angles | 4037-am-trigonometry-ws1-worksheet.pdf
+Trigonometric ratios and general angles — answers | 4037-am-trigonometry-ws1-answers.pdf
+Graphs of trigonometric functions | 4037-am-trigonometry-ws2-worksheet.pdf
+Graphs of trigonometric functions — answers | 4037-am-trigonometry-ws2-answers.pdf
+Proving trigonometric identities | 4037-am-trigonometry-ws3-worksheet.pdf
+Proving trigonometric identities — answers | 4037-am-trigonometry-ws3-answers.pdf
+Mixed problems | 4037-am-trigonometry-ws4-worksheet.pdf
+Mixed problems — answers | 4037-am-trigonometry-ws4-answers.pdf
+Step-by-step solutions | 4037-am-trigonometry-worksheet-solutions.pdf | solutions
+
+
+=== topical ===
+Topical questions | 4037-am-trigonometry-topical.pdf
+Mark scheme | 4037-am-trigonometry-topical-ms.pdf
+Step-by-step worked solutions | 4037-am-trigonometry-worked-solutions.pdf | solutions
+
+
+=== mistakes ===
+- Giving only the calculator's answer and missing the other solutions in the interval. Sketch the graph every time.
+- Dividing through by cos x or sin x and losing a whole family of solutions. Factorise instead.
+- Adjusting the interval incorrectly when the argument is 2x or (x + 30°) — widen the interval first, solve, then convert back.
+- Working in degrees when the interval is given in radians, or the reverse.

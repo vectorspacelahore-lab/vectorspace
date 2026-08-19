@@ -1,0 +1,81 @@
+# =============================================================
+#  ABOUT PAGE  —  /about/
+#
+#  The most important page on the site for trust. A student deciding
+#  whether to rely on your solutions, and a parent deciding whether to
+#  enrol, both end up here.
+# =============================================================
+
+=== meta ===
+title: About
+eyebrow: Who's teaching
+headline: Ali Hashir
+description: Ali Hashir has taught mathematics for ten years. Vector Space exists to make CIE Further Mathematics 9231 genuinely accessible, with high-quality resources that are completely free.
+
+
+# --- THE PORTRAIT CARD, laid out like your Instagram post: photo,
+#     headline with the opening words highlighted, then the standfirst.
+#     Swap the photo by putting a new file in static/img/ and changing
+#     the filename below. Landscape works best (roughly 4:3). ---
+=== card ===
+photo: /img/ali-hashir.jpg
+alt: Ali Hashir, mathematics teacher
+eyebrow: Who's teaching
+headline: {highlight}Ten years{/highlight} at the board
+lede: I've spent the last decade teaching Cambridge Mathematics. Somewhere along the way it stopped being work and became an obsession.
+stat: **1000+** students taught so far
+
+
+=== body ===
+I'm Ali Hashir, and I've been teaching mathematics for ten years.
+
+It started in 2016, as a volunteer at an orphanage. I wasn't planning on a teaching career — I just liked explaining things, and it turned out the explaining was the part I couldn't put down. A thousand or so students later, I still haven't.
+
+## Background
+
+I studied Physics at the **National University of Sciences and Technology (NUST), Islamabad**, and afterwards went to **RWTH Aachen University, Germany** to study for a masters in **Data Science**.
+
+Physics is where I learned that mathematics isn't a collection of procedures — it's a language for describing how things actually behave. Data science is where I saw how much of the modern world rests on two ideas students meet in Further Maths: matrices and probability. That's a large part of why I teach the subject the way I do.
+
+## Why Further Mathematics
+
+Because almost nobody teaches it, and the students who choose it deserve better than working through it alone.
+
+Very few teachers take on 9231. When my own students went looking for help — a set of notes that made sense, a worked solution that showed its reasoning rather than just its answer — there was very little out there. Additional Mathematics has entire websites devoted to it. Further Mathematics has scraps, scattered across forums and file dumps.
+
+**So that's the mission: make Further Mathematics accessible.** Every topic on the syllabus, properly explained, with notes, worksheets, topical questions and full worked solutions — all of it on this site, all of it free, and all of it staying free.
+
+## Why these documents keep changing
+
+For most maths subjects there is no shortage of material. What there is a shortage of is material that ever gets better. A PDF goes up in 2019, a student spots an error in 2021, and it's still there in 2026 — because nobody owns it any more.
+
+I wanted to build the opposite of that: resources under **version control**, treated as living documents rather than finished ones.
+
+- Find a question that teaches something well, and it goes in.
+- Someone reports a mistake, and it gets corrected.
+- Work out a clearer way to explain a step, and the explanation is replaced.
+
+Every one of those changes is re-uploaded, so what you open today is the best version that exists — not the version I happened to finish first. It also means the correction one student sends me quietly improves the sheet for everyone who opens it afterwards.
+
+That's why there's a **Found a mistake?** panel on every page that carries documents. It isn't decoration. It's how this works.
+
+## How I teach
+
+Curiosity, then exploration, then understanding.
+
+I won't hand you a technique before you know why it exists. We start with a problem worth being curious about and we go looking — we try the obvious things, watch them get ugly, and only then meet the method that rescues us. It arrives as an answer to a question you were already asking, rather than a rule to memorise.
+
+That order is the whole of it. A method you were handed is something you revise. A method you saw the need for is something you understand, and understanding is what survives a question phrased in a way you've never seen. Once you know *why* something works, you don't forget it.
+
+## Get in touch
+
+If something here is wrong, or a link is broken, please tell me — I would much rather know. If you're a student and something isn't clicking, that's worth telling me too; it usually means the explanation needs fixing rather than you.
+
+
+# --- The dark panel on the right. One item per line: Bold bit | rest of it ---
+=== aside ===
+Ten years | teaching mathematics
+1000+ students | taught since 2016
+Physics, NUST | and postgraduate study at RWTH Aachen
+Motivation first | why the technique exists, before the technique
+Free | every resource on this site, always

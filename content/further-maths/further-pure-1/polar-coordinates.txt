@@ -1,0 +1,60 @@
+# =============================================================
+#  TOPIC PAGE — Further Pure Mathematics 1
+#  URL: /further-maths/further-pure-1/polar-coordinates/
+#
+#  Lecture videos are not on this page yet. When you have them, add a
+#  section like this and they'll appear above the notes:
+#
+#      === videos ===
+#      Part 1 — first idea | YOUTUBE_ID
+#      Part 2 — worked examples | YOUTUBE_ID
+#
+#  The two resource sections below already name the PDFs. Drop the real
+#  files into static/worksheets/ , static/papers/ and static/solutions/
+#  using exactly these filenames and the links switch on by themselves.
+#  Until then they show "Coming soon" — nothing is broken.
+# =============================================================
+
+=== meta ===
+title: Polar coordinates
+order: 5
+description: Polar coordinates for CIE Further Pure Mathematics 1 (9231) — syllabus points, worksheets, topical past papers and fully worked solutions.
+
+
+=== intro ===
+Describing a point by how far out and at what angle, rather than across and up. Curves that are awkward in Cartesian form often become simple.
+
+
+=== syllabus ===
+- Understand the relationship between Cartesian and polar coordinates and convert between them
+- Sketch simple polar curves for a given range of θ
+- Find the area of a sector of a polar curve using the formula ½∫r² dθ
+- Find the maximum value of r, and the points on a curve where x or y is greatest
+
+
+=== worksheets ===
+Practice worksheet | 9231-fp1-polar-coordinates-worksheet.pdf
+Worksheet answers | 9231-fp1-polar-coordinates-answers.pdf
+Step-by-step solutions | 9231-fp1-polar-coordinates-worksheet-solutions.pdf | solutions
+
+
+# --- An EXTRA resource block. The line starting with > is the heading,
+#     the plain line under it is the explanation, then Label | file | folder.
+#     Add one of these to any topic that needs something one-off. ---
+=== extra ===
+> Trouble sketching polar curves?
+Print this out and sketch straight onto it. Working on a ready-made radial grid takes the guesswork out of plotting r against θ, and lets you concentrate on the shape of the curve rather than on drawing accurate circles. Once the grid feels familiar you will find you can sketch these curves on plain paper without it.
+Polar grid paper | 9231-fp1-polar-coordinates-grid.pdf | notes
+
+
+=== topical ===
+Topical questions | 9231-fp1-polar-coordinates-topical.pdf
+Mark scheme | 9231-fp1-polar-coordinates-topical-ms.pdf
+Step-by-step worked solutions | 9231-fp1-polar-coordinates-worked-solutions.pdf | solutions
+
+
+=== mistakes ===
+- Forgetting the ½ in the polar area formula, or squaring after integrating rather than before.
+- Using the wrong limits — they must correspond to the part of the curve being described.
+- Getting the angle in the wrong quadrant when converting from Cartesian coordinates.
+- Sketching a curve for a range of θ where r is negative without handling it correctly.

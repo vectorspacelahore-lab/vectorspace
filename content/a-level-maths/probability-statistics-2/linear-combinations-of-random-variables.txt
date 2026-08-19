@@ -1,0 +1,51 @@
+# =============================================================
+#  TOPIC PAGE — Probability & Statistics 2
+#  URL: /a-level-maths/probability-statistics-2/linear-combinations-of-random-variables/
+#
+#  Lecture videos are not on this page yet. When you have them, add a
+#  section like this and they'll appear above the notes:
+#
+#      === videos ===
+#      Part 1 — first idea | YOUTUBE_ID
+#      Part 2 — worked examples | YOUTUBE_ID
+#
+#  The two resource sections below already name the PDFs. Drop the real
+#  files into static/worksheets/ , static/papers/ and static/solutions/
+#  using exactly these filenames and the links switch on by themselves.
+#  Until then they show "Coming soon" — nothing is broken.
+# =============================================================
+
+=== meta ===
+title: Linear combinations of random variables
+order: 2
+description: Linear combinations of random variables for CIE Probability & Statistics 2 (9709) — syllabus points, worksheets, topical past papers and fully worked solutions.
+
+
+=== intro ===
+What happens to the mean and variance when random variables are added, scaled or combined. The rule for variance is the one people get wrong.
+
+
+=== syllabus ===
+- Use the results for E(aX + b) and Var(aX + b)
+- Use the results for E(aX + bY) and Var(aX + bY) for independent X and Y
+- Use these results with normal, Poisson and binomial variables
+- Solve problems involving the sum and difference of independent random variables
+
+
+=== worksheets ===
+Practice worksheet | 9709-s2-linear-combinations-of-random-variables-worksheet.pdf
+Worksheet answers | 9709-s2-linear-combinations-of-random-variables-answers.pdf
+Step-by-step solutions | 9709-s2-linear-combinations-of-random-variables-worksheet-solutions.pdf | solutions
+
+
+=== topical ===
+Topical questions | 9709-s2-linear-combinations-of-random-variables-topical.pdf
+Mark scheme | 9709-s2-linear-combinations-of-random-variables-topical-ms.pdf
+Step-by-step worked solutions | 9709-s2-linear-combinations-of-random-variables-worked-solutions.pdf | solutions
+
+
+=== mistakes ===
+- Writing Var(aX + b) as a Var(X) + b. The constant disappears and the multiplier is squared.
+- Subtracting variances for X − Y. Variances add, whichever way the means combine.
+- Applying these results to variables that are not independent.
+- Confusing the sum of n observations with n times a single observation — they have different variances.

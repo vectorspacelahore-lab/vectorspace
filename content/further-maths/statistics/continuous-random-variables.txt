@@ -1,0 +1,51 @@
+# =============================================================
+#  TOPIC PAGE — Further Probability & Statistics
+#  URL: /further-maths/statistics/continuous-random-variables/
+#
+#  Lecture videos are not on this page yet. When you have them, add a
+#  section like this and they'll appear above the notes:
+#
+#      === videos ===
+#      Part 1 — first idea | YOUTUBE_ID
+#      Part 2 — worked examples | YOUTUBE_ID
+#
+#  The two resource sections below already name the PDFs. Drop the real
+#  files into static/worksheets/ , static/papers/ and static/solutions/
+#  using exactly these filenames and the links switch on by themselves.
+#  Until then they show "Coming soon" — nothing is broken.
+# =============================================================
+
+=== meta ===
+title: Continuous random variables
+order: 1
+description: Continuous random variables for CIE Further Probability & Statistics (9231) — syllabus points, worksheets, topical past papers and fully worked solutions.
+
+
+=== intro ===
+A variable that can take any value in a range, described by a density function. Probability becomes area, and sums become integrals.
+
+
+=== syllabus ===
+- Use a probability density function to find probabilities, mean and variance
+- Find and use the cumulative distribution function
+- Find the median, quartiles and other percentiles of a continuous distribution
+- Find the distribution of a function of a continuous random variable
+
+
+=== worksheets ===
+Practice worksheet | 9231-stat-continuous-random-variables-worksheet.pdf
+Worksheet answers | 9231-stat-continuous-random-variables-answers.pdf
+Step-by-step solutions | 9231-stat-continuous-random-variables-worksheet-solutions.pdf | solutions
+
+
+=== topical ===
+Topical questions | 9231-stat-continuous-random-variables-topical.pdf
+Mark scheme | 9231-stat-continuous-random-variables-topical-ms.pdf
+Step-by-step worked solutions | 9231-stat-continuous-random-variables-worked-solutions.pdf | solutions
+
+
+=== mistakes ===
+- Integrating over the wrong interval, or over regions where the density is zero.
+- Forgetting that the total area under the density function must be 1.
+- Using E(X²) as the variance without subtracting the square of the mean.
+- Confusing the density function with the cumulative distribution function when finding the median.

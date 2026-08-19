@@ -1,0 +1,52 @@
+# =============================================================
+#  TOPIC PAGE — Pure Mathematics 3
+#  URL: /a-level-maths/pure-3/integration/
+#
+#  Lecture videos are not on this page yet. When you have them, add a
+#  section like this and they'll appear above the notes:
+#
+#      === videos ===
+#      Part 1 — first idea | YOUTUBE_ID
+#      Part 2 — worked examples | YOUTUBE_ID
+#
+#  The two resource sections below already name the PDFs. Drop the real
+#  files into static/worksheets/ , static/papers/ and static/solutions/
+#  using exactly these filenames and the links switch on by themselves.
+#  Until then they show "Coming soon" — nothing is broken.
+# =============================================================
+
+=== meta ===
+title: Integration
+order: 5
+description: Integration for CIE Pure Mathematics 3 (9709) — syllabus points, worksheets, topical past papers and fully worked solutions.
+
+
+=== intro ===
+Standard forms, substitution, parts and partial fractions. The skill is recognising which method a given integral wants before starting.
+
+
+=== syllabus ===
+- Integrate eᵃˣ⁺ᵇ, 1/(ax + b), sin(ax + b), cos(ax + b) and sec²(ax + b)
+- Integrate rational functions by means of decomposition into partial fractions
+- Recognise and integrate expressions of the form f′(x)/f(x)
+- Integrate by parts and by substitution
+- Use definite integration to find areas and volumes of revolution
+
+
+=== worksheets ===
+Practice worksheet | 9709-p3-integration-worksheet.pdf
+Worksheet answers | 9709-p3-integration-answers.pdf
+Step-by-step solutions | 9709-p3-integration-worksheet-solutions.pdf | solutions
+
+
+=== topical ===
+Topical questions | 9709-p3-integration-topical.pdf
+Mark scheme | 9709-p3-integration-topical-ms.pdf
+Step-by-step worked solutions | 9709-p3-integration-worked-solutions.pdf | solutions
+
+
+=== mistakes ===
+- Choosing u and dv the wrong way round in integration by parts, making the integral harder.
+- Forgetting to change the limits when using a substitution in a definite integral.
+- Missing that an integral is of the form f′(x)/f(x) and attempting something much longer.
+- Losing the modulus signs inside logarithms.

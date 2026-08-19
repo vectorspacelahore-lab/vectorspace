@@ -1,0 +1,51 @@
+# =============================================================
+#  TOPIC PAGE — Mechanics
+#  URL: /a-level-maths/mechanics/work-energy-and-power/
+#
+#  Lecture videos are not on this page yet. When you have them, add a
+#  section like this and they'll appear above the notes:
+#
+#      === videos ===
+#      Part 1 — first idea | YOUTUBE_ID
+#      Part 2 — worked examples | YOUTUBE_ID
+#
+#  The two resource sections below already name the PDFs. Drop the real
+#  files into static/worksheets/ , static/papers/ and static/solutions/
+#  using exactly these filenames and the links switch on by themselves.
+#  Until then they show "Coming soon" — nothing is broken.
+# =============================================================
+
+=== meta ===
+title: Work, energy and power
+order: 6
+description: Work, energy and power for CIE Mechanics (9709) — syllabus points, worksheets, topical past papers and fully worked solutions.
+
+
+=== intro ===
+An alternative to force-and-acceleration that ignores the detail of the journey. If a question gives speeds at two points and no time, this is usually the faster route.
+
+
+=== syllabus ===
+- Understand and use the concept of work done by a force
+- Understand and use kinetic energy and gravitational potential energy
+- Use the work-energy principle and the principle of conservation of energy
+- Understand and use the relationship between power, work and time
+
+
+=== worksheets ===
+Practice worksheet | 9709-mech-work-energy-and-power-worksheet.pdf
+Worksheet answers | 9709-mech-work-energy-and-power-answers.pdf
+Step-by-step solutions | 9709-mech-work-energy-and-power-worksheet-solutions.pdf | solutions
+
+
+=== topical ===
+Topical questions | 9709-mech-work-energy-and-power-topical.pdf
+Mark scheme | 9709-mech-work-energy-and-power-topical-ms.pdf
+Step-by-step worked solutions | 9709-mech-work-energy-and-power-worked-solutions.pdf | solutions
+
+
+=== mistakes ===
+- Forgetting that work done by a force at an angle uses the component along the displacement.
+- Omitting the work done against friction when applying conservation of energy.
+- Using ½mv rather than ½mv² for kinetic energy.
+- Confusing power with force — power is force times velocity, not force alone.

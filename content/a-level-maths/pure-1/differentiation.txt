@@ -1,0 +1,52 @@
+# =============================================================
+#  TOPIC PAGE — Pure Mathematics 1
+#  URL: /a-level-maths/pure-1/differentiation/
+#
+#  Lecture videos are not on this page yet. When you have them, add a
+#  section like this and they'll appear above the notes:
+#
+#      === videos ===
+#      Part 1 — first idea | YOUTUBE_ID
+#      Part 2 — worked examples | YOUTUBE_ID
+#
+#  The two resource sections below already name the PDFs. Drop the real
+#  files into static/worksheets/ , static/papers/ and static/solutions/
+#  using exactly these filenames and the links switch on by themselves.
+#  Until then they show "Coming soon" — nothing is broken.
+# =============================================================
+
+=== meta ===
+title: Differentiation
+order: 7
+description: Differentiation for CIE Pure Mathematics 1 (9709) — syllabus points, worksheets, topical past papers and fully worked solutions.
+
+
+=== intro ===
+The rate at which a function changes. From it come gradients, tangents, normals, stationary points and every optimisation question in the paper.
+
+
+=== syllabus ===
+- Understand the gradient of a curve as a limit and use the notations f′(x) and dy/dx
+- Differentiate xⁿ and simple sums, differences and constant multiples
+- Apply differentiation to gradients, tangents, normals and stationary points
+- Determine the nature of stationary points
+- Use differentiation with connected rates of change and small increments
+
+
+=== worksheets ===
+Practice worksheet | 9709-p1-differentiation-worksheet.pdf
+Worksheet answers | 9709-p1-differentiation-answers.pdf
+Step-by-step solutions | 9709-p1-differentiation-worksheet-solutions.pdf | solutions
+
+
+=== topical ===
+Topical questions | 9709-p1-differentiation-topical.pdf
+Mark scheme | 9709-p1-differentiation-topical-ms.pdf
+Step-by-step worked solutions | 9709-p1-differentiation-worked-solutions.pdf | solutions
+
+
+=== mistakes ===
+- Not rewriting roots and fractions as powers of x before differentiating.
+- Finding a stationary point and not classifying it when the question asks which kind it is.
+- Using the tangent gradient for the normal instead of its negative reciprocal.
+- Setting up connected rates of change with the chain of derivatives inverted.

@@ -1,0 +1,51 @@
+# =============================================================
+#  TOPIC PAGE — Additional Mathematics
+#  URL: /add-maths/series/
+#
+#  Lecture videos are not on this page yet. When you have them, add a
+#  section like this and they'll appear above the notes:
+#
+#      === videos ===
+#      Part 1 — first idea | YOUTUBE_ID
+#      Part 2 — worked examples | YOUTUBE_ID
+#
+#  The two resource sections below already name the PDFs. Drop the real
+#  files into static/worksheets/ , static/papers/ and static/solutions/
+#  using exactly these filenames and the links switch on by themselves.
+#  Until then they show "Coming soon" — nothing is broken.
+# =============================================================
+
+=== meta ===
+title: Series
+order: 10
+description: Series for CIE Additional Mathematics (4037) — syllabus points, worksheets, topical past papers and fully worked solutions.
+
+
+=== intro ===
+Arithmetic and geometric progressions, and the one genuinely surprising result in the syllabus: that an infinite sum can be finite, provided the terms shrink fast enough.
+
+
+=== syllabus ===
+- Recognise arithmetic and geometric progressions and use their nth-term formulas
+- Use the formulas for the sum of the first n terms of an arithmetic and a geometric progression
+- Use the condition |r| < 1 for convergence and find the sum to infinity
+- Solve problems involving progressions in context
+
+
+=== worksheets ===
+Practice worksheet | 4037-am-series-worksheet.pdf
+Worksheet answers | 4037-am-series-answers.pdf
+Step-by-step solutions | 4037-am-series-worksheet-solutions.pdf | solutions
+
+
+=== topical ===
+Topical questions | 4037-am-series-topical.pdf
+Mark scheme | 4037-am-series-topical-ms.pdf
+Step-by-step worked solutions | 4037-am-series-worked-solutions.pdf | solutions
+
+
+=== mistakes ===
+- Mixing up the arithmetic and geometric sum formulas under pressure. Identify which one it is first, and write it down.
+- Using the sum-to-infinity formula when |r| ≥ 1, where it has no meaning.
+- Confusing the nth term with the sum of n terms — read whether the question wants a single term or a total.
+- Off-by-one errors: the 10th term uses n = 10, but the sum from the 5th to the 10th is S₁₀ − S₄.

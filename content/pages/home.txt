@@ -1,0 +1,35 @@
+# =============================================================
+#  HOME PAGE  —  /
+#
+#  This works as a landing page. Most visitors arrive by tapping the
+#  link in your Instagram bio, on a phone, with no context. In one
+#  screen they should know what this is and where their subject lives.
+#
+#  Wrap words in {highlight}like this{/highlight} to give them the
+#  yellow block behind the text.
+# =============================================================
+
+=== meta ===
+title: Home
+description: Free lecture videos, revision notes, worksheets and worked past-paper solutions for CIE Further Mathematics 9231 and Additional Mathematics 4037 & 0606. Taught by Ali Hashir.
+
+
+=== hero ===
+eyebrow: Vector Space
+headline: Maths made {highlight}accessible.{/highlight}
+sub: Notes, worksheets, topical questions and fully worked past papers for CIE Further Mathematics and Additional Mathematics. New worksheets go up every week. Free, and always will be.
+
+
+# --- The small chips under the headline. One per line. ---
+=== hero_meta ===
+New worksheets every week
+Free — no sign-up
+CIE syllabus order
+
+
+# --- The short "who's behind this" strip, which links to the About page.
+#     Keep it to two or three sentences — the full story lives at /about/. ---
+=== about ===
+I'm Ali Hashir. I've taught Cambridge Mathematics for ten years, and over a thousand students have come through my classes since 2016.
+
+Everything here is free because Further Mathematics should be accessible to anyone who wants to learn it — not only to students who happen to find a teacher for it.

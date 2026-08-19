@@ -1,0 +1,52 @@
+# =============================================================
+#  TOPIC PAGE — Further Pure Mathematics 1
+#  URL: /further-maths/further-pure-1/matrices/
+#
+#  Lecture videos are not on this page yet. When you have them, add a
+#  section like this and they'll appear above the notes:
+#
+#      === videos ===
+#      Part 1 — first idea | YOUTUBE_ID
+#      Part 2 — worked examples | YOUTUBE_ID
+#
+#  The two resource sections below already name the PDFs. Drop the real
+#  files into static/worksheets/ , static/papers/ and static/solutions/
+#  using exactly these filenames and the links switch on by themselves.
+#  Until then they show "Coming soon" — nothing is broken.
+# =============================================================
+
+=== meta ===
+title: Matrices
+order: 4
+description: Matrices for CIE Further Pure Mathematics 1 (9231) — syllabus points, worksheets, topical past papers and fully worked solutions.
+
+
+=== intro ===
+A matrix is a grid of numbers that describes what a transformation does to the plane — a rotation, a reflection, a stretch. Writing it this way means you can do algebra with transformations: applying one after another becomes multiplication, and undoing one becomes finding an inverse.
+
+
+=== syllabus ===
+- Carry out matrix addition, subtraction and multiplication
+- Evaluate determinants of 2×2 and 3×3 matrices and recognise singular matrices
+- Find the inverse of a non-singular 2×2 or 3×3 matrix
+- Understand the relationship between a matrix and the linear transformation it represents
+- Solve systems of linear equations using matrices, and interpret the geometry of the solutions
+
+
+=== worksheets ===
+Practice worksheet | 9231-fp1-matrices-worksheet.pdf
+Worksheet answers | 9231-fp1-matrices-answers.pdf
+Step-by-step solutions | 9231-fp1-matrices-worksheet-solutions.pdf | solutions
+
+
+=== topical ===
+Topical questions | 9231-fp1-matrices-topical.pdf
+Mark scheme | 9231-fp1-matrices-topical-ms.pdf
+Step-by-step worked solutions | 9231-fp1-matrices-worked-solutions.pdf | solutions
+
+
+=== mistakes ===
+- Multiplying matrices in the wrong order — in a composite transformation the first one applied goes on the right.
+- Sign errors in the 3×3 determinant expansion; the middle term is subtracted.
+- Writing the inverse of a 2×2 without swapping the leading diagonal and negating the other two.
+- Treating a zero determinant as an error rather than as information about the transformation.

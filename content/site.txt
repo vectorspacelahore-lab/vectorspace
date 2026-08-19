@@ -1,0 +1,83 @@
+# =============================================================
+#  SITE SETTINGS
+#  Every value here appears across the whole site.
+#  Format is "name: value" — one per line. Don't remove the names.
+#  Lines starting with # are notes to you and are ignored.
+# =============================================================
+
+=== settings ===
+domain: https://www.vectorspace.pk
+site_name: Vector Space
+tagline: Further Mathematics, made accessible
+handle: @vectorspacepk
+author: Ali Hashir
+job_title: Mathematics teacher
+locality: Lahore
+country: PK
+
+# --- how people reach you. Update these and they change everywhere. ---
+email: vectorspacepk@gmail.com
+whatsapp: 923065177387
+whatsapp_channel:
+instagram: https://www.instagram.com/vectorspacepk
+youtube: https://www.youtube.com/@vectorspacepk
+
+# --- the Google Form students fill in to register for a course.
+#     Registration happens here; WhatsApp is for questions. ---
+registration_form: https://forms.gle/DFBR71bgUNZ6TMoC9
+
+# --- the image shown when someone shares a link in WhatsApp or Instagram.
+#     Put a 1200x630 image at static/img/og-default.png ---
+og_image: /img/og-default.png
+
+
+# =============================================================
+#  SUBJECTS
+#  One block per subject. "status: live" shows it in the nav.
+#  "status: soon" keeps it hidden until you're ready.
+#  Format:  slug | name | codes | level | glyph | status | one-line description
+# =============================================================
+
+=== subjects ===
+further-maths | Further Mathematics | 9231 | A Level | Σ | live | Four papers — pure, mechanics and statistics — taught in full, with worked solutions.
+a-level-maths | A Level Mathematics | 9709 | A Level | ∂ | soon | Pure, mechanics and probability & statistics, paper by paper.
+add-maths | Additional Mathematics | 4037 & 0606 | O Level / IGCSE | ∫ | live | Every chapter of Add Maths, with lecture videos, notes and past papers.
+o-level-maths | O Level Mathematics | 4024 & 0580 | O Level / IGCSE | π | soon | Core and extended O Level and IGCSE Mathematics.
+
+
+# =============================================================
+#  PAGE LAYOUT PER SUBJECT
+#  How a subject's papers are shown on its own page.
+#    cards      — a grid of cards, one per paper (Further Maths uses this)
+#    dropdowns  — one dropdown per paper, chapters listed inside
+#  Subjects with no papers always show a plain grid of chapters.
+#  Format:  subject-slug | layout
+# =============================================================
+
+=== layouts ===
+further-maths | dropdowns
+a-level-maths | dropdowns
+
+
+# =============================================================
+#  PAPERS  (sections inside a subject)
+#  Format:  subject-slug | paper-slug | label | name | one-line description
+#
+#  "label" is the small yellow tag shown above the paper name — write it
+#  out in full ("Paper 1"), exactly as you want it to appear.
+# =============================================================
+
+=== papers ===
+further-maths | further-pure-1 | Paper 1 | Further Pure Mathematics 1 | Roots and coefficients, series, matrices, polar coordinates, vectors and proof.
+further-maths | further-pure-2 | Paper 2 | Further Pure Mathematics 2 | Hyperbolic functions, matrices, further calculus, complex numbers and differential equations.
+further-maths | mechanics | Paper 3 | Further Mechanics | Projectiles, rigid bodies, circular motion, Hooke's law, variable forces and momentum.
+further-maths | statistics | Paper 4 | Further Probability & Statistics | Continuous random variables, inference, hypothesis tests and generating functions.
+
+# A Level Mathematics 9709. Paper 2 (Pure Mathematics 2) is the AS-only route
+# and isn't listed — the full A Level is P1 + P3 plus two applied papers.
+# To add it, copy a line below and make a content/a-level-maths/pure-2/ folder.
+a-level-maths | pure-1 | Paper 1 | Pure Mathematics 1 | Quadratics, functions, coordinate geometry, trigonometry, series and calculus.
+a-level-maths | pure-3 | Paper 3 | Pure Mathematics 3 | Algebra, logarithms, calculus, numerical methods, vectors, differential equations and complex numbers.
+a-level-maths | mechanics | Paper 4 | Mechanics | Kinematics, forces and Newton's laws, friction, work, energy, power and momentum.
+a-level-maths | probability-statistics-1 | Paper 5 | Probability & Statistics 1 | Representing data, location and spread, counting, probability, discrete distributions and the normal distribution.
+a-level-maths | probability-statistics-2 | Paper 6 | Probability & Statistics 2 | Poisson, linear combinations, continuous random variables, sampling and hypothesis tests.

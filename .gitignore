@@ -1,0 +1,11 @@
+# The built site. GitHub rebuilds this itself on every push, so there's
+# no need to commit it. Delete this line if you'd rather commit it.
+docs/
+
+# Mac clutter
+.DS_Store
+._*
+
+# Python
+__pycache__/
+*.pyc

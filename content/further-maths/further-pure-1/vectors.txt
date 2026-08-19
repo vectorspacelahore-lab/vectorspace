@@ -1,0 +1,52 @@
+# =============================================================
+#  TOPIC PAGE — Further Pure Mathematics 1
+#  URL: /further-maths/further-pure-1/vectors/
+#
+#  Lecture videos are not on this page yet. When you have them, add a
+#  section like this and they'll appear above the notes:
+#
+#      === videos ===
+#      Part 1 — first idea | YOUTUBE_ID
+#      Part 2 — worked examples | YOUTUBE_ID
+#
+#  The two resource sections below already name the PDFs. Drop the real
+#  files into static/worksheets/ , static/papers/ and static/solutions/
+#  using exactly these filenames and the links switch on by themselves.
+#  Until then they show "Coming soon" — nothing is broken.
+# =============================================================
+
+=== meta ===
+title: Vectors
+order: 6
+description: Vectors for CIE Further Pure Mathematics 1 (9231) — syllabus points, worksheets, topical past papers and fully worked solutions.
+
+
+=== intro ===
+Lines and planes in three dimensions, and the two products that make the geometry tractable: the scalar product for angles and the vector product for perpendiculars.
+
+
+=== syllabus ===
+- Use the equation of a line in vector and Cartesian form
+- Use the equation of a plane in vector, scalar product and Cartesian form
+- Calculate the vector product and use it to find areas and normals
+- Find the angle between two lines, a line and a plane, or two planes
+- Find the distance from a point to a line or a plane, and between two skew lines
+
+
+=== worksheets ===
+Practice worksheet | 9231-fp1-vectors-worksheet.pdf
+Worksheet answers | 9231-fp1-vectors-answers.pdf
+Step-by-step solutions | 9231-fp1-vectors-worksheet-solutions.pdf | solutions
+
+
+=== topical ===
+Topical questions | 9231-fp1-vectors-topical.pdf
+Mark scheme | 9231-fp1-vectors-topical-ms.pdf
+Step-by-step worked solutions | 9231-fp1-vectors-worked-solutions.pdf | solutions
+
+
+=== mistakes ===
+- Confusing the scalar and vector products, or their geometric meanings.
+- Concluding two lines intersect after checking only two of the three components.
+- Using the angle between a line and the normal to a plane as the angle with the plane itself.
+- Forgetting the modulus when finding the distance between two skew lines — the formula gives a signed value, and distance is never negative.

@@ -1,0 +1,51 @@
+# =============================================================
+#  TOPIC PAGE — Further Pure Mathematics 2
+#  URL: /further-maths/further-pure-2/integration/
+#
+#  Lecture videos are not on this page yet. When you have them, add a
+#  section like this and they'll appear above the notes:
+#
+#      === videos ===
+#      Part 1 — first idea | YOUTUBE_ID
+#      Part 2 — worked examples | YOUTUBE_ID
+#
+#  The two resource sections below already name the PDFs. Drop the real
+#  files into static/worksheets/ , static/papers/ and static/solutions/
+#  using exactly these filenames and the links switch on by themselves.
+#  Until then they show "Coming soon" — nothing is broken.
+# =============================================================
+
+=== meta ===
+title: Integration
+order: 4
+description: Integration for CIE Further Pure Mathematics 2 (9231) — syllabus points, worksheets, topical past papers and fully worked solutions.
+
+
+=== intro ===
+Reduction formulas, arc length, surface area and improper integrals — the techniques for integrals that resist the standard methods.
+
+
+=== syllabus ===
+- Derive and use reduction formulas for the evaluation of definite integrals
+- Use integration to find arc lengths and surface areas of revolution
+- Evaluate improper integrals and recognise when they diverge
+- Use hyperbolic and trigonometric substitutions
+
+
+=== worksheets ===
+Practice worksheet | 9231-fp2-integration-worksheet.pdf
+Worksheet answers | 9231-fp2-integration-answers.pdf
+Step-by-step solutions | 9231-fp2-integration-worksheet-solutions.pdf | solutions
+
+
+=== topical ===
+Topical questions | 9231-fp2-integration-topical.pdf
+Mark scheme | 9231-fp2-integration-topical-ms.pdf
+Step-by-step worked solutions | 9231-fp2-integration-worked-solutions.pdf | solutions
+
+
+=== mistakes ===
+- Deriving a reduction formula but not stating the base case needed to use it.
+- Forgetting to change the limits after a substitution in a definite integral.
+- Treating an improper integral as ordinary without taking the limit, and so missing a divergence.
+- Losing the square root or the factor of 2π in arc length and surface area formulas.

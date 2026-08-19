@@ -1,0 +1,52 @@
+# =============================================================
+#  TOPIC PAGE — Additional Mathematics
+#  URL: /add-maths/differentiation/
+#
+#  Lecture videos are not on this page yet. When you have them, add a
+#  section like this and they'll appear above the notes:
+#
+#      === videos ===
+#      Part 1 — first idea | YOUTUBE_ID
+#      Part 2 — worked examples | YOUTUBE_ID
+#
+#  The two resource sections below already name the PDFs. Drop the real
+#  files into static/worksheets/ , static/papers/ and static/solutions/
+#  using exactly these filenames and the links switch on by themselves.
+#  Until then they show "Coming soon" — nothing is broken.
+# =============================================================
+
+=== meta ===
+title: Differentiation
+order: 13
+description: Differentiation for CIE Additional Mathematics (4037) — syllabus points, worksheets, topical past papers and fully worked solutions.
+
+
+=== intro ===
+The derivative measures how fast something changes. Once you can find one, you can find gradients, tangents, maxima, minima and rates of change — which is most of the applied content in the paper.
+
+
+=== syllabus ===
+- Differentiate xⁿ, eˣ, ln x, sin x, cos x and tan x
+- Use the chain, product and quotient rules
+- Find the equations of tangents and normals to a curve
+- Find and classify stationary points using the first or second derivative
+- Apply differentiation to connected rates of change and small increments
+
+
+=== worksheets ===
+Practice worksheet | 4037-am-differentiation-worksheet.pdf
+Worksheet answers | 4037-am-differentiation-answers.pdf
+Step-by-step solutions | 4037-am-differentiation-worksheet-solutions.pdf | solutions
+
+
+=== topical ===
+Topical questions | 4037-am-differentiation-topical.pdf
+Mark scheme | 4037-am-differentiation-topical-ms.pdf
+Step-by-step worked solutions | 4037-am-differentiation-worked-solutions.pdf | solutions
+
+
+=== mistakes ===
+- Using the product rule where the chain rule is needed, or applying both at once without brackets.
+- Finding stationary points but not classifying them, when the question asks for a maximum or minimum specifically.
+- Using the gradient of the tangent for the normal. The normal's gradient is the negative reciprocal.
+- In rates-of-change problems, setting up the chain of derivatives in the wrong order.

@@ -1,0 +1,140 @@
+# =============================================================
+#  PAST PAPERS PAGE  —  /add-maths/past-papers/
+#
+#  A file named exactly "past-papers.txt" inside a subject folder becomes
+#  that subject's past papers page, and gets a band at the foot of the
+#  subject page. It is NOT treated as a topic.
+#
+#  You do NOT need to delete rows for files you haven't made yet. If a PDF
+#  named here isn't in static/ , the site shows "Coming soon" instead of a
+#  broken link, and the build lists what's missing.
+# =============================================================
+
+=== meta ===
+headline: Past papers
+sub: Every Additional Mathematics question paper, mark scheme and solved paper by session, plus the same questions sorted by topic.
+description: CIE O Level and IGCSE Additional Mathematics 4037 and 0606 past papers — question papers, mark schemes and fully solved papers by session.
+
+
+=== intro ===
+Two ways to use these. **Topical** papers group every past question on a single topic together — the right tool while you're still learning something. **Whole papers by session** are full exams under timed conditions, which is what you want in the last few weeks.
+
+Each session row has the question paper, the official mark scheme, and my own solved paper showing the working rather than just the answers.
+
+
+# =============================================================
+#  TOPICAL PAST PAPERS
+#
+#  A line starting with  >  opens a new dropdown on the page.
+#  Every line under it is:
+#     Topic name | questions | mark scheme | worked solutions
+#  Questions and mark schemes go in static/papers/
+#  Your own worked solutions go in static/solutions/
+#  None of these files exist yet, so every row shows "Coming soon"
+#  until you drop the PDFs in using exactly these filenames.
+# =============================================================
+=== topical ===
+> Additional Mathematics — all chapters
+1. Simultaneous Equations | 4037-am-simultaneous-equations-topical.pdf | 4037-am-simultaneous-equations-topical-ms.pdf | 4037-am-simultaneous-equations-worked-solutions.pdf
+2. Quadratics | 4037-am-quadratics-topical.pdf | 4037-am-quadratics-topical-ms.pdf | 4037-am-quadratics-worked-solutions.pdf
+3. Functions | 4037-am-functions-topical.pdf | 4037-am-functions-topical-ms.pdf | 4037-am-functions-worked-solutions.pdf
+4. Polynomials | 4037-am-polynomials-topical.pdf | 4037-am-polynomials-topical-ms.pdf | 4037-am-polynomials-worked-solutions.pdf
+5. Coordinate Geometry | 4037-am-coordinate-geometry-topical.pdf | 4037-am-coordinate-geometry-topical-ms.pdf | 4037-am-coordinate-geometry-worked-solutions.pdf
+6. Exponentials and Logarithms | 4037-am-exponentials-and-logarithms-topical.pdf | 4037-am-exponentials-and-logarithms-topical-ms.pdf | 4037-am-exponentials-and-logarithms-worked-solutions.pdf
+7. Circular Measure | 4037-am-circular-measure-topical.pdf | 4037-am-circular-measure-topical-ms.pdf | 4037-am-circular-measure-worked-solutions.pdf
+8. Trigonometry | 4037-am-trigonometry-topical.pdf | 4037-am-trigonometry-topical-ms.pdf | 4037-am-trigonometry-worked-solutions.pdf
+9. Binomial Theorem | 4037-am-binomial-theorem-topical.pdf | 4037-am-binomial-theorem-topical-ms.pdf | 4037-am-binomial-theorem-worked-solutions.pdf
+10. Series | 4037-am-series-topical.pdf | 4037-am-series-topical-ms.pdf | 4037-am-series-worked-solutions.pdf
+11. Permutations and Combinations | 4037-am-permutations-and-combinations-topical.pdf | 4037-am-permutations-and-combinations-topical-ms.pdf | 4037-am-permutations-and-combinations-worked-solutions.pdf
+12. Vectors | 4037-am-vectors-topical.pdf | 4037-am-vectors-topical-ms.pdf | 4037-am-vectors-worked-solutions.pdf
+13. Differentiation | 4037-am-differentiation-topical.pdf | 4037-am-differentiation-topical-ms.pdf | 4037-am-differentiation-worked-solutions.pdf
+14. Integration | 4037-am-integration-topical.pdf | 4037-am-integration-topical-ms.pdf | 4037-am-integration-worked-solutions.pdf
+15. Kinematics | 4037-am-kinematics-topical.pdf | 4037-am-kinematics-topical-ms.pdf | 4037-am-kinematics-worked-solutions.pdf
+
+
+# =============================================================
+#  YEARLY PAST PAPERS
+#
+#  A line starting with  >  opens a new dropdown — one per SESSION,
+#  e.g. "May/June 2025", "Oct/Nov 2025", "Feb/March 2025".
+#  Every line under it is:
+#     Variant | question paper | mark scheme | solved paper
+#  Question papers and mark schemes go in static/papers/
+#  Your own solved papers go in static/solutions/
+#  Leave any filename blank, or name a file you haven't uploaded, and
+#  that link shows "Coming soon" instead of breaking.
+# =============================================================
+=== yearly ===
+> Oct/Nov 2025
+12 | 4037-w25-qp-12.pdf | 4037-w25-ms-12.pdf | 4037-w25-solved-12.pdf
+13 | 4037-w25-qp-13.pdf | 4037-w25-ms-13.pdf | 4037-w25-solved-13.pdf
+22 | 4037-w25-qp-22.pdf | 4037-w25-ms-22.pdf | 4037-w25-solved-22.pdf
+23 | 4037-w25-qp-23.pdf | 4037-w25-ms-23.pdf | 4037-w25-solved-23.pdf
+
+> May/June 2025
+11 | 4037-s25-qp-11.pdf | 4037-s25-ms-11.pdf | 4037-s25-solved-11.pdf
+12 | 4037-s25-qp-12.pdf | 4037-s25-ms-12.pdf | 4037-s25-solved-12.pdf
+21 | 4037-s25-qp-21.pdf | 4037-s25-ms-21.pdf | 4037-s25-solved-21.pdf
+22 | 4037-s25-qp-22.pdf | 4037-s25-ms-22.pdf | 4037-s25-solved-22.pdf
+
+> Oct/Nov 2024
+12 | 4037-w24-qp-12.pdf | 4037-w24-ms-12.pdf | 4037-w24-solved-12.pdf
+13 | 4037-w24-qp-13.pdf | 4037-w24-ms-13.pdf | 4037-w24-solved-13.pdf
+22 | 4037-w24-qp-22.pdf | 4037-w24-ms-22.pdf | 4037-w24-solved-22.pdf
+23 | 4037-w24-qp-23.pdf | 4037-w24-ms-23.pdf | 4037-w24-solved-23.pdf
+
+> May/June 2024
+11 | 4037-s24-qp-11.pdf | 4037-s24-ms-11.pdf | 4037-s24-solved-11.pdf
+12 | 4037-s24-qp-12.pdf | 4037-s24-ms-12.pdf | 4037-s24-solved-12.pdf
+21 | 4037-s24-qp-21.pdf | 4037-s24-ms-21.pdf | 4037-s24-solved-21.pdf
+22 | 4037-s24-qp-22.pdf | 4037-s24-ms-22.pdf | 4037-s24-solved-22.pdf
+
+> Oct/Nov 2023
+12 | 4037-w23-qp-12.pdf | 4037-w23-ms-12.pdf | 4037-w23-solved-12.pdf
+13 | 4037-w23-qp-13.pdf | 4037-w23-ms-13.pdf | 4037-w23-solved-13.pdf
+22 | 4037-w23-qp-22.pdf | 4037-w23-ms-22.pdf | 4037-w23-solved-22.pdf
+23 | 4037-w23-qp-23.pdf | 4037-w23-ms-23.pdf | 4037-w23-solved-23.pdf
+
+> May/June 2023
+11 | 4037-s23-qp-11.pdf | 4037-s23-ms-11.pdf | 4037-s23-solved-11.pdf
+12 | 4037-s23-qp-12.pdf | 4037-s23-ms-12.pdf | 4037-s23-solved-12.pdf
+21 | 4037-s23-qp-21.pdf | 4037-s23-ms-21.pdf | 4037-s23-solved-21.pdf
+22 | 4037-s23-qp-22.pdf | 4037-s23-ms-22.pdf | 4037-s23-solved-22.pdf
+
+> Oct/Nov 2022
+12 | 4037-w22-qp-12.pdf | 4037-w22-ms-12.pdf | 4037-w22-solved-12.pdf
+13 | 4037-w22-qp-13.pdf | 4037-w22-ms-13.pdf | 4037-w22-solved-13.pdf
+22 | 4037-w22-qp-22.pdf | 4037-w22-ms-22.pdf | 4037-w22-solved-22.pdf
+23 | 4037-w22-qp-23.pdf | 4037-w22-ms-23.pdf | 4037-w22-solved-23.pdf
+
+> May/June 2022
+11 | 4037-s22-qp-11.pdf | 4037-s22-ms-11.pdf | 4037-s22-solved-11.pdf
+12 | 4037-s22-qp-12.pdf | 4037-s22-ms-12.pdf | 4037-s22-solved-12.pdf
+21 | 4037-s22-qp-21.pdf | 4037-s22-ms-21.pdf | 4037-s22-solved-21.pdf
+22 | 4037-s22-qp-22.pdf | 4037-s22-ms-22.pdf | 4037-s22-solved-22.pdf
+
+> Oct/Nov 2021
+12 | 4037-w21-qp-12.pdf | 4037-w21-ms-12.pdf | 4037-w21-solved-12.pdf
+13 | 4037-w21-qp-13.pdf | 4037-w21-ms-13.pdf | 4037-w21-solved-13.pdf
+22 | 4037-w21-qp-22.pdf | 4037-w21-ms-22.pdf | 4037-w21-solved-22.pdf
+23 | 4037-w21-qp-23.pdf | 4037-w21-ms-23.pdf | 4037-w21-solved-23.pdf
+
+> May/June 2021
+11 | 4037-s21-qp-11.pdf | 4037-s21-ms-11.pdf | 4037-s21-solved-11.pdf
+12 | 4037-s21-qp-12.pdf | 4037-s21-ms-12.pdf | 4037-s21-solved-12.pdf
+14 | 4037-s21-qp-14.pdf | 4037-s21-ms-14.pdf | 4037-s21-solved-14.pdf
+21 | 4037-s21-qp-21.pdf | 4037-s21-ms-21.pdf | 4037-s21-solved-21.pdf
+22 | 4037-s21-qp-22.pdf | 4037-s21-ms-22.pdf | 4037-s21-solved-22.pdf
+24 | 4037-s21-qp-24.pdf | 4037-s21-ms-24.pdf | 4037-s21-solved-24.pdf
+
+> Oct/Nov 2020
+12 | 4037-w20-qp-12.pdf | 4037-w20-ms-12.pdf | 4037-w20-solved-12.pdf
+13 | 4037-w20-qp-13.pdf | 4037-w20-ms-13.pdf | 4037-w20-solved-13.pdf
+22 | 4037-w20-qp-22.pdf | 4037-w20-ms-22.pdf | 4037-w20-solved-22.pdf
+23 | 4037-w20-qp-23.pdf | 4037-w20-ms-23.pdf | 4037-w20-solved-23.pdf
+
+> May/June 2020
+11 | 4037-s20-qp-11.pdf | 4037-s20-ms-11.pdf | 4037-s20-solved-11.pdf
+12 | 4037-s20-qp-12.pdf | 4037-s20-ms-12.pdf | 4037-s20-solved-12.pdf
+21 | 4037-s20-qp-21.pdf | 4037-s20-ms-21.pdf | 4037-s20-solved-21.pdf
+22 | 4037-s20-qp-22.pdf | 4037-s20-ms-22.pdf | 4037-s20-solved-22.pdf

@@ -1,0 +1,54 @@
+# =============================================================
+#  TOPIC PAGE — Additional Mathematics
+#  URL: /add-maths/coordinate-geometry/
+#
+#  Lecture videos are not on this page yet. When you have them, add a
+#  section like this and they'll appear above the notes:
+#
+#      === videos ===
+#      Part 1 — first idea | YOUTUBE_ID
+#      Part 2 — worked examples | YOUTUBE_ID
+#
+#  The two resource sections below already name the PDFs. Drop the real
+#  files into static/worksheets/ , static/papers/ and static/solutions/
+#  using exactly these filenames and the links switch on by themselves.
+#  Until then they show "Coming soon" — nothing is broken.
+# =============================================================
+
+=== meta ===
+title: Coordinate Geometry
+order: 5
+description: Coordinate Geometry for CIE Additional Mathematics (4037) — syllabus points, worksheets, topical past papers and fully worked solutions.
+
+
+=== intro ===
+Straight lines, midpoints, distances and perpendicularity, applied to shapes on a grid. Nearly every question is a disguise: prove a shape is a rhombus, find where two lines meet, or turn a non-linear relationship into a straight line.
+
+
+=== syllabus ===
+- Find the length, gradient and midpoint of a line segment
+- Find the equation of a straight line given sufficient information
+- Use the relationship between gradients of parallel and perpendicular lines
+- Interpret and use equations of straight lines in problems involving shapes
+- Transform a given relationship to straight-line form and use the gradient and intercept
+
+
+=== worksheets ===
+Coordinate geometry with straight lines | 4037-am-coordinate-geometry-straight-lines-worksheet.pdf
+Coordinate geometry with straight lines — answers | 4037-am-coordinate-geometry-straight-lines-answers.pdf
+Coordinate geometry of the circle | 4037-am-coordinate-geometry-circles-worksheet.pdf
+Coordinate geometry of the circle — answers | 4037-am-coordinate-geometry-circles-answers.pdf
+Step-by-step solutions | 4037-am-coordinate-geometry-worksheet-solutions.pdf | solutions
+
+
+=== topical ===
+Topical questions | 4037-am-coordinate-geometry-topical.pdf
+Mark scheme | 4037-am-coordinate-geometry-topical-ms.pdf
+Step-by-step worked solutions | 4037-am-coordinate-geometry-worked-solutions.pdf | solutions
+
+
+=== mistakes ===
+- Using m₁m₂ = 1 for perpendicular lines instead of m₁m₂ = −1.
+- Confusing the midpoint and gradient formulas — one adds, the other subtracts.
+- In straight-line-form questions, forgetting that the gradient and intercept refer to the transformed variables, not x and y.
+- Leaving an equation in a form the question didn't ask for. Read whether it wants y = mx + c or ax + by + c = 0.

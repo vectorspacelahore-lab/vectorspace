@@ -1,0 +1,51 @@
+# =============================================================
+#  TOPIC PAGE — Mechanics
+#  URL: /a-level-maths/mechanics/displacement-velocity-and-acceleration/
+#
+#  Lecture videos are not on this page yet. When you have them, add a
+#  section like this and they'll appear above the notes:
+#
+#      === videos ===
+#      Part 1 — first idea | YOUTUBE_ID
+#      Part 2 — worked examples | YOUTUBE_ID
+#
+#  The two resource sections below already name the PDFs. Drop the real
+#  files into static/worksheets/ , static/papers/ and static/solutions/
+#  using exactly these filenames and the links switch on by themselves.
+#  Until then they show "Coming soon" — nothing is broken.
+# =============================================================
+
+=== meta ===
+title: Displacement, velocity and acceleration
+order: 1
+description: Displacement, velocity and acceleration for CIE Mechanics (9709) — syllabus points, worksheets, topical past papers and fully worked solutions.
+
+
+=== intro ===
+The three quantities that describe motion, and the distinction between the scalar and vector versions of each. Getting this straight early saves a great deal of confusion later.
+
+
+=== syllabus ===
+- Understand the difference between distance and displacement, and speed and velocity
+- Interpret displacement-time and velocity-time graphs
+- Use the gradient of a displacement-time graph as velocity
+- Use the gradient and area under a velocity-time graph as acceleration and displacement
+
+
+=== worksheets ===
+Practice worksheet | 9709-mech-displacement-velocity-and-acceleration-worksheet.pdf
+Worksheet answers | 9709-mech-displacement-velocity-and-acceleration-answers.pdf
+Step-by-step solutions | 9709-mech-displacement-velocity-and-acceleration-worksheet-solutions.pdf | solutions
+
+
+=== topical ===
+Topical questions | 9709-mech-displacement-velocity-and-acceleration-topical.pdf
+Mark scheme | 9709-mech-displacement-velocity-and-acceleration-topical-ms.pdf
+Step-by-step worked solutions | 9709-mech-displacement-velocity-and-acceleration-worked-solutions.pdf | solutions
+
+
+=== mistakes ===
+- Treating distance and displacement as the same thing when the object reverses direction.
+- Reading the area under a displacement-time graph as though it meant something.
+- Ignoring the sign of velocity, which carries the direction of travel.
+- Assuming a straight line on a velocity-time graph means constant velocity rather than constant acceleration.

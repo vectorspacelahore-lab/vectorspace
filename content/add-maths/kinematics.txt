@@ -1,0 +1,51 @@
+# =============================================================
+#  TOPIC PAGE — Additional Mathematics
+#  URL: /add-maths/kinematics/
+#
+#  Lecture videos are not on this page yet. When you have them, add a
+#  section like this and they'll appear above the notes:
+#
+#      === videos ===
+#      Part 1 — first idea | YOUTUBE_ID
+#      Part 2 — worked examples | YOUTUBE_ID
+#
+#  The two resource sections below already name the PDFs. Drop the real
+#  files into static/worksheets/ , static/papers/ and static/solutions/
+#  using exactly these filenames and the links switch on by themselves.
+#  Until then they show "Coming soon" — nothing is broken.
+# =============================================================
+
+=== meta ===
+title: Kinematics
+order: 15
+description: Kinematics for CIE Additional Mathematics (4037) — syllabus points, worksheets, topical past papers and fully worked solutions.
+
+
+=== intro ===
+Motion described by calculus. Displacement, velocity and acceleration are linked by differentiation one way and integration the other, and the whole topic is knowing which direction you're travelling in.
+
+
+=== syllabus ===
+- Apply differentiation and integration to displacement, velocity and acceleration
+- Use the relationships v = ds/dt and a = dv/dt
+- Find displacement from velocity and velocity from acceleration by integration
+- Solve problems involving maximum displacement, instantaneous rest and distance travelled
+
+
+=== worksheets ===
+Practice worksheet | 4037-am-kinematics-worksheet.pdf
+Worksheet answers | 4037-am-kinematics-answers.pdf
+Step-by-step solutions | 4037-am-kinematics-worksheet-solutions.pdf | solutions
+
+
+=== topical ===
+Topical questions | 4037-am-kinematics-topical.pdf
+Mark scheme | 4037-am-kinematics-topical-ms.pdf
+Step-by-step worked solutions | 4037-am-kinematics-worked-solutions.pdf | solutions
+
+
+=== mistakes ===
+- Confusing distance travelled with displacement when the object changes direction. Find when v = 0 and split the journey.
+- Differentiating when you should integrate. Going from displacement to velocity differentiates; the reverse integrates.
+- Forgetting the constant of integration and losing the initial condition the question gave you.
+- Assuming the particle is at rest when acceleration is zero — that's when velocity is at a maximum or minimum.

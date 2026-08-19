@@ -1,0 +1,51 @@
+# =============================================================
+#  TOPIC PAGE — Further Pure Mathematics 2
+#  URL: /further-maths/further-pure-2/differential-equations/
+#
+#  Lecture videos are not on this page yet. When you have them, add a
+#  section like this and they'll appear above the notes:
+#
+#      === videos ===
+#      Part 1 — first idea | YOUTUBE_ID
+#      Part 2 — worked examples | YOUTUBE_ID
+#
+#  The two resource sections below already name the PDFs. Drop the real
+#  files into static/worksheets/ , static/papers/ and static/solutions/
+#  using exactly these filenames and the links switch on by themselves.
+#  Until then they show "Coming soon" — nothing is broken.
+# =============================================================
+
+=== meta ===
+title: Differential equations
+order: 6
+description: Differential equations for CIE Further Pure Mathematics 2 (9231) — syllabus points, worksheets, topical past papers and fully worked solutions.
+
+
+=== intro ===
+Second order equations and first order equations solved with an integrating factor. The solution splits into a complementary function and a particular integral.
+
+
+=== syllabus ===
+- Find and use an integrating factor to solve a first order linear differential equation
+- Solve second order linear equations with constant coefficients, finding the complementary function
+- Find a particular integral for standard forms of the right-hand side
+- Use substitutions to reduce an equation to a standard form and interpret solutions in context
+
+
+=== worksheets ===
+Practice worksheet | 9231-fp2-differential-equations-worksheet.pdf
+Worksheet answers | 9231-fp2-differential-equations-answers.pdf
+Step-by-step solutions | 9231-fp2-differential-equations-worksheet-solutions.pdf | solutions
+
+
+=== topical ===
+Topical questions | 9231-fp2-differential-equations-topical.pdf
+Mark scheme | 9231-fp2-differential-equations-topical-ms.pdf
+Step-by-step worked solutions | 9231-fp2-differential-equations-worked-solutions.pdf | solutions
+
+
+=== mistakes ===
+- Omitting the particular integral and giving only the complementary function.
+- Choosing a particular integral of the same form as part of the complementary function without multiplying by x.
+- Forgetting to multiply the whole equation by the integrating factor, not just one side.
+- Applying initial conditions to the complementary function before adding the particular integral.

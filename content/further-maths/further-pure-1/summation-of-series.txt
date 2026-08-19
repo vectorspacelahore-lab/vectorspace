@@ -1,0 +1,51 @@
+# =============================================================
+#  TOPIC PAGE — Further Pure Mathematics 1
+#  URL: /further-maths/further-pure-1/summation-of-series/
+#
+#  Lecture videos are not on this page yet. When you have them, add a
+#  section like this and they'll appear above the notes:
+#
+#      === videos ===
+#      Part 1 — first idea | YOUTUBE_ID
+#      Part 2 — worked examples | YOUTUBE_ID
+#
+#  The two resource sections below already name the PDFs. Drop the real
+#  files into static/worksheets/ , static/papers/ and static/solutions/
+#  using exactly these filenames and the links switch on by themselves.
+#  Until then they show "Coming soon" — nothing is broken.
+# =============================================================
+
+=== meta ===
+title: Summation of series
+order: 3
+description: Summation of series for CIE Further Pure Mathematics 1 (9231) — syllabus points, worksheets, topical past papers and fully worked solutions.
+
+
+=== intro ===
+Adding up a pattern of terms exactly. The method of differences is the elegant one: write each term as a difference so nearly everything cancels.
+
+
+=== syllabus ===
+- Use the standard results for Σr, Σr² and Σr³
+- Use the method of differences to obtain the sum of a finite series
+- Recognise a telescoping series and identify which terms survive
+- Find the sum to infinity of a convergent series where appropriate
+
+
+=== worksheets ===
+Practice worksheet | 9231-fp1-summation-of-series-worksheet.pdf
+Worksheet answers | 9231-fp1-summation-of-series-answers.pdf
+Step-by-step solutions | 9231-fp1-summation-of-series-worksheet-solutions.pdf | solutions
+
+
+=== topical ===
+Topical questions | 9231-fp1-summation-of-series-topical.pdf
+Mark scheme | 9231-fp1-summation-of-series-topical-ms.pdf
+Step-by-step worked solutions | 9231-fp1-summation-of-series-worked-solutions.pdf | solutions
+
+
+=== mistakes ===
+- Applying Σr from 1 to n when the series starts elsewhere. Subtract the earlier part.
+- In the method of differences, not writing out enough terms to see which ones actually cancel.
+- Forgetting that Σ of a constant over n terms is n times that constant, not the constant.
+- Assuming a series converges without checking the remaining terms tend to zero.

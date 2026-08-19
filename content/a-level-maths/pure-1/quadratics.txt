@@ -1,0 +1,52 @@
+# =============================================================
+#  TOPIC PAGE — Pure Mathematics 1
+#  URL: /a-level-maths/pure-1/quadratics/
+#
+#  Lecture videos are not on this page yet. When you have them, add a
+#  section like this and they'll appear above the notes:
+#
+#      === videos ===
+#      Part 1 — first idea | YOUTUBE_ID
+#      Part 2 — worked examples | YOUTUBE_ID
+#
+#  The two resource sections below already name the PDFs. Drop the real
+#  files into static/worksheets/ , static/papers/ and static/solutions/
+#  using exactly these filenames and the links switch on by themselves.
+#  Until then they show "Coming soon" — nothing is broken.
+# =============================================================
+
+=== meta ===
+title: Quadratics
+order: 1
+description: Quadratics for CIE Pure Mathematics 1 (9709) — syllabus points, worksheets, topical past papers and fully worked solutions.
+
+
+=== intro ===
+Everything a quadratic can do is visible in its completed-square form. Vertex, range, symmetry and the number of roots all fall out of a(x + p)² + q without a sketch.
+
+
+=== syllabus ===
+- Carry out the process of completing the square and use it to locate the vertex and sketch the graph
+- Find the discriminant and use it to determine the number of real roots
+- Solve quadratic equations and quadratic inequalities in one unknown
+- Solve simultaneous equations where one is linear and one is quadratic
+- Recognise and solve equations that are quadratic in some function of x
+
+
+=== worksheets ===
+Practice worksheet | 9709-p1-quadratics-worksheet.pdf
+Worksheet answers | 9709-p1-quadratics-answers.pdf
+Step-by-step solutions | 9709-p1-quadratics-worksheet-solutions.pdf | solutions
+
+
+=== topical ===
+Topical questions | 9709-p1-quadratics-topical.pdf
+Mark scheme | 9709-p1-quadratics-topical-ms.pdf
+Step-by-step worked solutions | 9709-p1-quadratics-worked-solutions.pdf | solutions
+
+
+=== mistakes ===
+- Not factoring out the coefficient of x² before completing the square.
+- Reading the vertex of a(x + p)² + q as (p, q) rather than (−p, q).
+- Writing a quadratic inequality's answer as a single interval when the solution is two separate regions.
+- Solving a disguised quadratic for the substitution and forgetting to convert back to x.

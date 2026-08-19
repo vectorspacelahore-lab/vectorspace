@@ -1,0 +1,52 @@
+# =============================================================
+#  TOPIC PAGE — Pure Mathematics 1
+#  URL: /a-level-maths/pure-1/functions/
+#
+#  Lecture videos are not on this page yet. When you have them, add a
+#  section like this and they'll appear above the notes:
+#
+#      === videos ===
+#      Part 1 — first idea | YOUTUBE_ID
+#      Part 2 — worked examples | YOUTUBE_ID
+#
+#  The two resource sections below already name the PDFs. Drop the real
+#  files into static/worksheets/ , static/papers/ and static/solutions/
+#  using exactly these filenames and the links switch on by themselves.
+#  Until then they show "Coming soon" — nothing is broken.
+# =============================================================
+
+=== meta ===
+title: Functions
+order: 2
+description: Functions for CIE Pure Mathematics 1 (9709) — syllabus points, worksheets, topical past papers and fully worked solutions.
+
+
+=== intro ===
+A function is a rule plus a domain, and the domain is where most marks are won or lost. Composition, inverses and transformations all depend on being precise about what is allowed in.
+
+
+=== syllabus ===
+- Understand the terms function, domain, range, one-one, inverse and composition
+- Identify the range of a given function and find the composition of two functions
+- Determine whether a function is one-one and find the inverse of a one-one function
+- Illustrate the relation between a one-one function and its inverse using graphs
+- Understand and use transformations of graphs: translations, stretches and reflections
+
+
+=== worksheets ===
+Practice worksheet | 9709-p1-functions-worksheet.pdf
+Worksheet answers | 9709-p1-functions-answers.pdf
+Step-by-step solutions | 9709-p1-functions-worksheet-solutions.pdf | solutions
+
+
+=== topical ===
+Topical questions | 9709-p1-functions-topical.pdf
+Mark scheme | 9709-p1-functions-topical-ms.pdf
+Step-by-step worked solutions | 9709-p1-functions-worked-solutions.pdf | solutions
+
+
+=== mistakes ===
+- Applying fg and gf the wrong way round. The function nearest x acts first.
+- Finding an inverse without first restricting the domain to make the function one-one.
+- Combining two transformations in the wrong order — a stretch then a translation is not the same as the reverse.
+- Stating the range of an inverse as the range of the original rather than its domain.

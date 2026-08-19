@@ -1,0 +1,52 @@
+# =============================================================
+#  TOPIC PAGE — Pure Mathematics 3
+#  URL: /a-level-maths/pure-3/vectors/
+#
+#  Lecture videos are not on this page yet. When you have them, add a
+#  section like this and they'll appear above the notes:
+#
+#      === videos ===
+#      Part 1 — first idea | YOUTUBE_ID
+#      Part 2 — worked examples | YOUTUBE_ID
+#
+#  The two resource sections below already name the PDFs. Drop the real
+#  files into static/worksheets/ , static/papers/ and static/solutions/
+#  using exactly these filenames and the links switch on by themselves.
+#  Until then they show "Coming soon" — nothing is broken.
+# =============================================================
+
+=== meta ===
+title: Vectors
+order: 7
+description: Vectors for CIE Pure Mathematics 3 (9709) — syllabus points, worksheets, topical past papers and fully worked solutions.
+
+
+=== intro ===
+Lines and planes in three dimensions. Once a line is written as a point plus a multiple of a direction, questions about angles, intersections and distances become routine.
+
+
+=== syllabus ===
+- Use standard notation for vectors and carry out addition, subtraction and multiplication by a scalar
+- Use unit vectors, displacement vectors and position vectors
+- Calculate the scalar product and use it to find angles and to test perpendicularity
+- Understand the vector equation of a line and determine whether two lines are parallel, intersect or are skew
+- Find the point of intersection of two lines when it exists
+
+
+=== worksheets ===
+Practice worksheet | 9709-p3-vectors-worksheet.pdf
+Worksheet answers | 9709-p3-vectors-answers.pdf
+Step-by-step solutions | 9709-p3-vectors-worksheet-solutions.pdf | solutions
+
+
+=== topical ===
+Topical questions | 9709-p3-vectors-topical.pdf
+Mark scheme | 9709-p3-vectors-topical-ms.pdf
+Step-by-step worked solutions | 9709-p3-vectors-worked-solutions.pdf | solutions
+
+
+=== mistakes ===
+- Concluding two lines intersect after solving only two of the three component equations. Always check the third.
+- Taking the angle between two lines without using the magnitudes in the scalar product formula.
+- Confusing the position vector of a point with the direction vector of the line.
+- Giving an obtuse angle where the acute one was asked for — take the modulus of the scalar product.

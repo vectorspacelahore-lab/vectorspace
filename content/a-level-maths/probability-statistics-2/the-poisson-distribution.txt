@@ -1,0 +1,51 @@
+# =============================================================
+#  TOPIC PAGE — Probability & Statistics 2
+#  URL: /a-level-maths/probability-statistics-2/the-poisson-distribution/
+#
+#  Lecture videos are not on this page yet. When you have them, add a
+#  section like this and they'll appear above the notes:
+#
+#      === videos ===
+#      Part 1 — first idea | YOUTUBE_ID
+#      Part 2 — worked examples | YOUTUBE_ID
+#
+#  The two resource sections below already name the PDFs. Drop the real
+#  files into static/worksheets/ , static/papers/ and static/solutions/
+#  using exactly these filenames and the links switch on by themselves.
+#  Until then they show "Coming soon" — nothing is broken.
+# =============================================================
+
+=== meta ===
+title: The Poisson distribution
+order: 1
+description: The Poisson distribution for CIE Probability & Statistics 2 (9709) — syllabus points, worksheets, topical past papers and fully worked solutions.
+
+
+=== intro ===
+A model for rare events occurring at random over an interval. One parameter does all the work, and both the mean and the variance equal it.
+
+
+=== syllabus ===
+- Use the Poisson distribution as a model and calculate probabilities
+- Use the fact that the mean and variance of a Poisson distribution are both equal to λ
+- Use the Poisson distribution as an approximation to the binomial where appropriate
+- Use the normal distribution as an approximation to the Poisson where appropriate
+
+
+=== worksheets ===
+Practice worksheet | 9709-s2-the-poisson-distribution-worksheet.pdf
+Worksheet answers | 9709-s2-the-poisson-distribution-answers.pdf
+Step-by-step solutions | 9709-s2-the-poisson-distribution-worksheet-solutions.pdf | solutions
+
+
+=== topical ===
+Topical questions | 9709-s2-the-poisson-distribution-topical.pdf
+Mark scheme | 9709-s2-the-poisson-distribution-topical-ms.pdf
+Step-by-step worked solutions | 9709-s2-the-poisson-distribution-worked-solutions.pdf | solutions
+
+
+=== mistakes ===
+- Not scaling λ to match the interval in the question.
+- Using a Poisson approximation when n is small or p is not small.
+- Forgetting the continuity correction in a normal approximation to the Poisson.
+- Adding the parameters of two Poisson variables when they are not independent.

@@ -1,0 +1,350 @@
+# =============================================================
+#  PAST PAPERS PAGE  —  /a-level-maths/past-papers/
+#
+#  A file named exactly "past-papers.txt" inside a subject folder becomes
+#  that subject's past papers page, and gets a band at the foot of the
+#  subject page. It is NOT treated as a topic.
+#
+#  You do NOT need to delete rows for files you haven't made yet. If a PDF
+#  named here isn't in static/ , the site shows "Coming soon" instead of a
+#  broken link, and the build lists what's missing.
+# =============================================================
+
+=== meta ===
+headline: Past papers
+sub: Every A Level Mathematics question paper, mark scheme and solved paper by session, plus the same questions sorted by topic.
+description: CIE A Level Mathematics 9709 past papers — question papers, mark schemes and fully solved papers by session.
+
+
+=== intro ===
+Two ways to use these. **Topical** papers group every past question on a single topic together — the right tool while you're still learning something. **Whole papers by session** are full exams under timed conditions, which is what you want in the last few weeks.
+
+Each session row has the question paper, the official mark scheme, and my own solved paper showing the working rather than just the answers.
+
+
+# =============================================================
+#  TOPICAL PAST PAPERS
+#
+#  A line starting with  >  opens a new dropdown on the page.
+#  Every line under it is:
+#     Topic name | questions | mark scheme | worked solutions
+#  Questions and mark schemes go in static/papers/
+#  Your own worked solutions go in static/solutions/
+#  None of these files exist yet, so every row shows "Coming soon"
+#  until you drop the PDFs in using exactly these filenames.
+# =============================================================
+=== topical ===
+> Paper 1 — Pure Mathematics 1
+1.1 Quadratics | 9709-p1-quadratics-topical.pdf | 9709-p1-quadratics-topical-ms.pdf | 9709-p1-quadratics-worked-solutions.pdf
+1.2 Functions | 9709-p1-functions-topical.pdf | 9709-p1-functions-topical-ms.pdf | 9709-p1-functions-worked-solutions.pdf
+1.3 Coordinate geometry | 9709-p1-coordinate-geometry-topical.pdf | 9709-p1-coordinate-geometry-topical-ms.pdf | 9709-p1-coordinate-geometry-worked-solutions.pdf
+1.4 Circular measure | 9709-p1-circular-measure-topical.pdf | 9709-p1-circular-measure-topical-ms.pdf | 9709-p1-circular-measure-worked-solutions.pdf
+1.5 Trigonometry | 9709-p1-trigonometry-topical.pdf | 9709-p1-trigonometry-topical-ms.pdf | 9709-p1-trigonometry-worked-solutions.pdf
+1.6 Series | 9709-p1-series-topical.pdf | 9709-p1-series-topical-ms.pdf | 9709-p1-series-worked-solutions.pdf
+1.7 Differentiation | 9709-p1-differentiation-topical.pdf | 9709-p1-differentiation-topical-ms.pdf | 9709-p1-differentiation-worked-solutions.pdf
+1.8 Integration | 9709-p1-integration-topical.pdf | 9709-p1-integration-topical-ms.pdf | 9709-p1-integration-worked-solutions.pdf
+
+> Paper 3 — Pure Mathematics 3
+2.1 Algebra | 9709-p3-algebra-topical.pdf | 9709-p3-algebra-topical-ms.pdf | 9709-p3-algebra-worked-solutions.pdf
+2.2 Logarithmic and exponential functions | 9709-p3-logarithmic-and-exponential-functions-topical.pdf | 9709-p3-logarithmic-and-exponential-functions-topical-ms.pdf | 9709-p3-logarithmic-and-exponential-functions-worked-solutions.pdf
+2.3 Trigonometry | 9709-p3-trigonometry-topical.pdf | 9709-p3-trigonometry-topical-ms.pdf | 9709-p3-trigonometry-worked-solutions.pdf
+2.4 Differentiation | 9709-p3-differentiation-topical.pdf | 9709-p3-differentiation-topical-ms.pdf | 9709-p3-differentiation-worked-solutions.pdf
+2.5 Integration | 9709-p3-integration-topical.pdf | 9709-p3-integration-topical-ms.pdf | 9709-p3-integration-worked-solutions.pdf
+2.6 Numerical solution of equations | 9709-p3-numerical-solution-of-equations-topical.pdf | 9709-p3-numerical-solution-of-equations-topical-ms.pdf | 9709-p3-numerical-solution-of-equations-worked-solutions.pdf
+2.7 Vectors | 9709-p3-vectors-topical.pdf | 9709-p3-vectors-topical-ms.pdf | 9709-p3-vectors-worked-solutions.pdf
+2.8 Differential equations | 9709-p3-differential-equations-topical.pdf | 9709-p3-differential-equations-topical-ms.pdf | 9709-p3-differential-equations-worked-solutions.pdf
+2.9 Complex numbers | 9709-p3-complex-numbers-topical.pdf | 9709-p3-complex-numbers-topical-ms.pdf | 9709-p3-complex-numbers-worked-solutions.pdf
+
+> Paper 4 — Mechanics
+3.1 Displacement, velocity and acceleration | 9709-mech-displacement-velocity-and-acceleration-topical.pdf | 9709-mech-displacement-velocity-and-acceleration-topical-ms.pdf | 9709-mech-displacement-velocity-and-acceleration-worked-solutions.pdf
+3.2 Constant acceleration formulae | 9709-mech-constant-acceleration-formulae-topical.pdf | 9709-mech-constant-acceleration-formulae-topical-ms.pdf | 9709-mech-constant-acceleration-formulae-worked-solutions.pdf
+3.3 Variable acceleration | 9709-mech-variable-acceleration-topical.pdf | 9709-mech-variable-acceleration-topical-ms.pdf | 9709-mech-variable-acceleration-worked-solutions.pdf
+3.4 Forces and Newton's laws | 9709-mech-forces-and-newtons-laws-topical.pdf | 9709-mech-forces-and-newtons-laws-topical-ms.pdf | 9709-mech-forces-and-newtons-laws-worked-solutions.pdf
+3.5 Friction | 9709-mech-friction-topical.pdf | 9709-mech-friction-topical-ms.pdf | 9709-mech-friction-worked-solutions.pdf
+3.6 Work, energy and power | 9709-mech-work-energy-and-power-topical.pdf | 9709-mech-work-energy-and-power-topical-ms.pdf | 9709-mech-work-energy-and-power-worked-solutions.pdf
+3.7 Momentum | 9709-mech-momentum-topical.pdf | 9709-mech-momentum-topical-ms.pdf | 9709-mech-momentum-worked-solutions.pdf
+
+> Paper 5 — Probability & Statistics 1
+4.1 Representation of data | 9709-s1-representation-of-data-topical.pdf | 9709-s1-representation-of-data-topical-ms.pdf | 9709-s1-representation-of-data-worked-solutions.pdf
+4.2 Measures of location and spread | 9709-s1-measures-of-location-and-spread-topical.pdf | 9709-s1-measures-of-location-and-spread-topical-ms.pdf | 9709-s1-measures-of-location-and-spread-worked-solutions.pdf
+4.3 Permutations and combinations | 9709-s1-permutations-and-combinations-topical.pdf | 9709-s1-permutations-and-combinations-topical-ms.pdf | 9709-s1-permutations-and-combinations-worked-solutions.pdf
+4.4 Probability | 9709-s1-probability-topical.pdf | 9709-s1-probability-topical-ms.pdf | 9709-s1-probability-worked-solutions.pdf
+4.5 Discrete probability distributions | 9709-s1-discrete-probability-distributions-topical.pdf | 9709-s1-discrete-probability-distributions-topical-ms.pdf | 9709-s1-discrete-probability-distributions-worked-solutions.pdf
+4.6 The normal distribution | 9709-s1-the-normal-distribution-topical.pdf | 9709-s1-the-normal-distribution-topical-ms.pdf | 9709-s1-the-normal-distribution-worked-solutions.pdf
+
+> Paper 6 — Probability & Statistics 2
+5.1 The Poisson distribution | 9709-s2-the-poisson-distribution-topical.pdf | 9709-s2-the-poisson-distribution-topical-ms.pdf | 9709-s2-the-poisson-distribution-worked-solutions.pdf
+5.2 Linear combinations of random variables | 9709-s2-linear-combinations-of-random-variables-topical.pdf | 9709-s2-linear-combinations-of-random-variables-topical-ms.pdf | 9709-s2-linear-combinations-of-random-variables-worked-solutions.pdf
+5.3 Continuous random variables | 9709-s2-continuous-random-variables-topical.pdf | 9709-s2-continuous-random-variables-topical-ms.pdf | 9709-s2-continuous-random-variables-worked-solutions.pdf
+5.4 Sampling and estimation | 9709-s2-sampling-and-estimation-topical.pdf | 9709-s2-sampling-and-estimation-topical-ms.pdf | 9709-s2-sampling-and-estimation-worked-solutions.pdf
+5.5 Hypothesis tests | 9709-s2-hypothesis-tests-topical.pdf | 9709-s2-hypothesis-tests-topical-ms.pdf | 9709-s2-hypothesis-tests-worked-solutions.pdf
+
+
+# =============================================================
+#  YEARLY PAST PAPERS
+#
+#  A line starting with  >  opens a new dropdown — one per SESSION,
+#  e.g. "May/June 2025", "Oct/Nov 2025", "Feb/March 2025".
+#  Every line under it is:
+#     Variant | question paper | mark scheme | solved paper
+#  Question papers and mark schemes go in static/papers/
+#  Your own solved papers go in static/solutions/
+#  Leave any filename blank, or name a file you haven't uploaded, and
+#  that link shows "Coming soon" instead of breaking.
+# =============================================================
+=== yearly ===
+> Oct/Nov 2025
+11 | 9709-w25-qp-11.pdf | 9709-w25-ms-11.pdf | 9709-w25-solved-11.pdf
+12 | 9709-w25-qp-12.pdf | 9709-w25-ms-12.pdf | 9709-w25-solved-12.pdf
+13 | 9709-w25-qp-13.pdf | 9709-w25-ms-13.pdf | 9709-w25-solved-13.pdf
+15 | 9709-w25-qp-15.pdf | 9709-w25-ms-15.pdf | 9709-w25-solved-15.pdf
+31 | 9709-w25-qp-31.pdf | 9709-w25-ms-31.pdf | 9709-w25-solved-31.pdf
+32 | 9709-w25-qp-32.pdf | 9709-w25-ms-32.pdf | 9709-w25-solved-32.pdf
+33 | 9709-w25-qp-33.pdf | 9709-w25-ms-33.pdf | 9709-w25-solved-33.pdf
+35 | 9709-w25-qp-35.pdf | 9709-w25-ms-35.pdf | 9709-w25-solved-35.pdf
+41 | 9709-w25-qp-41.pdf | 9709-w25-ms-41.pdf | 9709-w25-solved-41.pdf
+42 | 9709-w25-qp-42.pdf | 9709-w25-ms-42.pdf | 9709-w25-solved-42.pdf
+43 | 9709-w25-qp-43.pdf | 9709-w25-ms-43.pdf | 9709-w25-solved-43.pdf
+45 | 9709-w25-qp-45.pdf | 9709-w25-ms-45.pdf | 9709-w25-solved-45.pdf
+51 | 9709-w25-qp-51.pdf | 9709-w25-ms-51.pdf | 9709-w25-solved-51.pdf
+52 | 9709-w25-qp-52.pdf | 9709-w25-ms-52.pdf | 9709-w25-solved-52.pdf
+53 | 9709-w25-qp-53.pdf | 9709-w25-ms-53.pdf | 9709-w25-solved-53.pdf
+55 | 9709-w25-qp-55.pdf | 9709-w25-ms-55.pdf | 9709-w25-solved-55.pdf
+61 | 9709-w25-qp-61.pdf | 9709-w25-ms-61.pdf | 9709-w25-solved-61.pdf
+62 | 9709-w25-qp-62.pdf | 9709-w25-ms-62.pdf | 9709-w25-solved-62.pdf
+63 | 9709-w25-qp-63.pdf | 9709-w25-ms-63.pdf | 9709-w25-solved-63.pdf
+65 | 9709-w25-qp-65.pdf | 9709-w25-ms-65.pdf | 9709-w25-solved-65.pdf
+
+> May/June 2025
+11 | 9709-s25-qp-11.pdf | 9709-s25-ms-11.pdf | 9709-s25-solved-11.pdf
+12 | 9709-s25-qp-12.pdf | 9709-s25-ms-12.pdf | 9709-s25-solved-12.pdf
+13 | 9709-s25-qp-13.pdf | 9709-s25-ms-13.pdf | 9709-s25-solved-13.pdf
+15 | 9709-s25-qp-15.pdf | 9709-s25-ms-15.pdf | 9709-s25-solved-15.pdf
+31 | 9709-s25-qp-31.pdf | 9709-s25-ms-31.pdf | 9709-s25-solved-31.pdf
+32 | 9709-s25-qp-32.pdf | 9709-s25-ms-32.pdf | 9709-s25-solved-32.pdf
+33 | 9709-s25-qp-33.pdf | 9709-s25-ms-33.pdf | 9709-s25-solved-33.pdf
+35 | 9709-s25-qp-35.pdf | 9709-s25-ms-35.pdf | 9709-s25-solved-35.pdf
+41 | 9709-s25-qp-41.pdf | 9709-s25-ms-41.pdf | 9709-s25-solved-41.pdf
+42 | 9709-s25-qp-42.pdf | 9709-s25-ms-42.pdf | 9709-s25-solved-42.pdf
+43 | 9709-s25-qp-43.pdf | 9709-s25-ms-43.pdf | 9709-s25-solved-43.pdf
+45 | 9709-s25-qp-45.pdf | 9709-s25-ms-45.pdf | 9709-s25-solved-45.pdf
+51 | 9709-s25-qp-51.pdf | 9709-s25-ms-51.pdf | 9709-s25-solved-51.pdf
+52 | 9709-s25-qp-52.pdf | 9709-s25-ms-52.pdf | 9709-s25-solved-52.pdf
+53 | 9709-s25-qp-53.pdf | 9709-s25-ms-53.pdf | 9709-s25-solved-53.pdf
+55 | 9709-s25-qp-55.pdf | 9709-s25-ms-55.pdf | 9709-s25-solved-55.pdf
+61 | 9709-s25-qp-61.pdf | 9709-s25-ms-61.pdf | 9709-s25-solved-61.pdf
+62 | 9709-s25-qp-62.pdf | 9709-s25-ms-62.pdf | 9709-s25-solved-62.pdf
+63 | 9709-s25-qp-63.pdf | 9709-s25-ms-63.pdf | 9709-s25-solved-63.pdf
+65 | 9709-s25-qp-65.pdf | 9709-s25-ms-65.pdf | 9709-s25-solved-65.pdf
+
+> Feb/March 2025
+12 | 9709-m25-qp-12.pdf | 9709-m25-ms-12.pdf | 9709-m25-solved-12.pdf
+32 | 9709-m25-qp-32.pdf | 9709-m25-ms-32.pdf | 9709-m25-solved-32.pdf
+42 | 9709-m25-qp-42.pdf | 9709-m25-ms-42.pdf | 9709-m25-solved-42.pdf
+52 | 9709-m25-qp-52.pdf | 9709-m25-ms-52.pdf | 9709-m25-solved-52.pdf
+62 | 9709-m25-qp-62.pdf | 9709-m25-ms-62.pdf | 9709-m25-solved-62.pdf
+
+> Oct/Nov 2024
+11 | 9709-w24-qp-11.pdf | 9709-w24-ms-11.pdf | 9709-w24-solved-11.pdf
+12 | 9709-w24-qp-12.pdf | 9709-w24-ms-12.pdf | 9709-w24-solved-12.pdf
+13 | 9709-w24-qp-13.pdf | 9709-w24-ms-13.pdf | 9709-w24-solved-13.pdf
+31 | 9709-w24-qp-31.pdf | 9709-w24-ms-31.pdf | 9709-w24-solved-31.pdf
+32 | 9709-w24-qp-32.pdf | 9709-w24-ms-32.pdf | 9709-w24-solved-32.pdf
+33 | 9709-w24-qp-33.pdf | 9709-w24-ms-33.pdf | 9709-w24-solved-33.pdf
+41 | 9709-w24-qp-41.pdf | 9709-w24-ms-41.pdf | 9709-w24-solved-41.pdf
+42 | 9709-w24-qp-42.pdf | 9709-w24-ms-42.pdf | 9709-w24-solved-42.pdf
+43 | 9709-w24-qp-43.pdf | 9709-w24-ms-43.pdf | 9709-w24-solved-43.pdf
+51 | 9709-w24-qp-51.pdf | 9709-w24-ms-51.pdf | 9709-w24-solved-51.pdf
+52 | 9709-w24-qp-52.pdf | 9709-w24-ms-52.pdf | 9709-w24-solved-52.pdf
+53 | 9709-w24-qp-53.pdf | 9709-w24-ms-53.pdf | 9709-w24-solved-53.pdf
+61 | 9709-w24-qp-61.pdf | 9709-w24-ms-61.pdf | 9709-w24-solved-61.pdf
+62 | 9709-w24-qp-62.pdf | 9709-w24-ms-62.pdf | 9709-w24-solved-62.pdf
+63 | 9709-w24-qp-63.pdf | 9709-w24-ms-63.pdf | 9709-w24-solved-63.pdf
+
+> May/June 2024
+11 | 9709-s24-qp-11.pdf | 9709-s24-ms-11.pdf | 9709-s24-solved-11.pdf
+12 | 9709-s24-qp-12.pdf | 9709-s24-ms-12.pdf | 9709-s24-solved-12.pdf
+13 | 9709-s24-qp-13.pdf | 9709-s24-ms-13.pdf | 9709-s24-solved-13.pdf
+31 | 9709-s24-qp-31.pdf | 9709-s24-ms-31.pdf | 9709-s24-solved-31.pdf
+32 | 9709-s24-qp-32.pdf | 9709-s24-ms-32.pdf | 9709-s24-solved-32.pdf
+33 | 9709-s24-qp-33.pdf | 9709-s24-ms-33.pdf | 9709-s24-solved-33.pdf
+41 | 9709-s24-qp-41.pdf | 9709-s24-ms-41.pdf | 9709-s24-solved-41.pdf
+42 | 9709-s24-qp-42.pdf | 9709-s24-ms-42.pdf | 9709-s24-solved-42.pdf
+43 | 9709-s24-qp-43.pdf | 9709-s24-ms-43.pdf | 9709-s24-solved-43.pdf
+51 | 9709-s24-qp-51.pdf | 9709-s24-ms-51.pdf | 9709-s24-solved-51.pdf
+52 | 9709-s24-qp-52.pdf | 9709-s24-ms-52.pdf | 9709-s24-solved-52.pdf
+53 | 9709-s24-qp-53.pdf | 9709-s24-ms-53.pdf | 9709-s24-solved-53.pdf
+61 | 9709-s24-qp-61.pdf | 9709-s24-ms-61.pdf | 9709-s24-solved-61.pdf
+62 | 9709-s24-qp-62.pdf | 9709-s24-ms-62.pdf | 9709-s24-solved-62.pdf
+63 | 9709-s24-qp-63.pdf | 9709-s24-ms-63.pdf | 9709-s24-solved-63.pdf
+
+> Feb/March 2024
+12 | 9709-m24-qp-12.pdf | 9709-m24-ms-12.pdf | 9709-m24-solved-12.pdf
+32 | 9709-m24-qp-32.pdf | 9709-m24-ms-32.pdf | 9709-m24-solved-32.pdf
+42 | 9709-m24-qp-42.pdf | 9709-m24-ms-42.pdf | 9709-m24-solved-42.pdf
+52 | 9709-m24-qp-52.pdf | 9709-m24-ms-52.pdf | 9709-m24-solved-52.pdf
+62 | 9709-m24-qp-62.pdf | 9709-m24-ms-62.pdf | 9709-m24-solved-62.pdf
+
+> Oct/Nov 2023
+11 | 9709-w23-qp-11.pdf | 9709-w23-ms-11.pdf | 9709-w23-solved-11.pdf
+12 | 9709-w23-qp-12.pdf | 9709-w23-ms-12.pdf | 9709-w23-solved-12.pdf
+13 | 9709-w23-qp-13.pdf | 9709-w23-ms-13.pdf | 9709-w23-solved-13.pdf
+31 | 9709-w23-qp-31.pdf | 9709-w23-ms-31.pdf | 9709-w23-solved-31.pdf
+32 | 9709-w23-qp-32.pdf | 9709-w23-ms-32.pdf | 9709-w23-solved-32.pdf
+33 | 9709-w23-qp-33.pdf | 9709-w23-ms-33.pdf | 9709-w23-solved-33.pdf
+41 | 9709-w23-qp-41.pdf | 9709-w23-ms-41.pdf | 9709-w23-solved-41.pdf
+42 | 9709-w23-qp-42.pdf | 9709-w23-ms-42.pdf | 9709-w23-solved-42.pdf
+43 | 9709-w23-qp-43.pdf | 9709-w23-ms-43.pdf | 9709-w23-solved-43.pdf
+51 | 9709-w23-qp-51.pdf | 9709-w23-ms-51.pdf | 9709-w23-solved-51.pdf
+52 | 9709-w23-qp-52.pdf | 9709-w23-ms-52.pdf | 9709-w23-solved-52.pdf
+53 | 9709-w23-qp-53.pdf | 9709-w23-ms-53.pdf | 9709-w23-solved-53.pdf
+61 | 9709-w23-qp-61.pdf | 9709-w23-ms-61.pdf | 9709-w23-solved-61.pdf
+62 | 9709-w23-qp-62.pdf | 9709-w23-ms-62.pdf | 9709-w23-solved-62.pdf
+63 | 9709-w23-qp-63.pdf | 9709-w23-ms-63.pdf | 9709-w23-solved-63.pdf
+
+> May/June 2023
+11 | 9709-s23-qp-11.pdf | 9709-s23-ms-11.pdf | 9709-s23-solved-11.pdf
+12 | 9709-s23-qp-12.pdf | 9709-s23-ms-12.pdf | 9709-s23-solved-12.pdf
+13 | 9709-s23-qp-13.pdf | 9709-s23-ms-13.pdf | 9709-s23-solved-13.pdf
+31 | 9709-s23-qp-31.pdf | 9709-s23-ms-31.pdf | 9709-s23-solved-31.pdf
+32 | 9709-s23-qp-32.pdf | 9709-s23-ms-32.pdf | 9709-s23-solved-32.pdf
+33 | 9709-s23-qp-33.pdf | 9709-s23-ms-33.pdf | 9709-s23-solved-33.pdf
+41 | 9709-s23-qp-41.pdf | 9709-s23-ms-41.pdf | 9709-s23-solved-41.pdf
+42 | 9709-s23-qp-42.pdf | 9709-s23-ms-42.pdf | 9709-s23-solved-42.pdf
+43 | 9709-s23-qp-43.pdf | 9709-s23-ms-43.pdf | 9709-s23-solved-43.pdf
+51 | 9709-s23-qp-51.pdf | 9709-s23-ms-51.pdf | 9709-s23-solved-51.pdf
+52 | 9709-s23-qp-52.pdf | 9709-s23-ms-52.pdf | 9709-s23-solved-52.pdf
+53 | 9709-s23-qp-53.pdf | 9709-s23-ms-53.pdf | 9709-s23-solved-53.pdf
+61 | 9709-s23-qp-61.pdf | 9709-s23-ms-61.pdf | 9709-s23-solved-61.pdf
+62 | 9709-s23-qp-62.pdf | 9709-s23-ms-62.pdf | 9709-s23-solved-62.pdf
+63 | 9709-s23-qp-63.pdf | 9709-s23-ms-63.pdf | 9709-s23-solved-63.pdf
+
+> Feb/March 2023
+12 | 9709-m23-qp-12.pdf | 9709-m23-ms-12.pdf | 9709-m23-solved-12.pdf
+32 | 9709-m23-qp-32.pdf | 9709-m23-ms-32.pdf | 9709-m23-solved-32.pdf
+42 | 9709-m23-qp-42.pdf | 9709-m23-ms-42.pdf | 9709-m23-solved-42.pdf
+52 | 9709-m23-qp-52.pdf | 9709-m23-ms-52.pdf | 9709-m23-solved-52.pdf
+62 | 9709-m23-qp-62.pdf | 9709-m23-ms-62.pdf | 9709-m23-solved-62.pdf
+
+> Oct/Nov 2022
+11 | 9709-w22-qp-11.pdf | 9709-w22-ms-11.pdf | 9709-w22-solved-11.pdf
+12 | 9709-w22-qp-12.pdf | 9709-w22-ms-12.pdf | 9709-w22-solved-12.pdf
+13 | 9709-w22-qp-13.pdf | 9709-w22-ms-13.pdf | 9709-w22-solved-13.pdf
+31 | 9709-w22-qp-31.pdf | 9709-w22-ms-31.pdf | 9709-w22-solved-31.pdf
+32 | 9709-w22-qp-32.pdf | 9709-w22-ms-32.pdf | 9709-w22-solved-32.pdf
+33 | 9709-w22-qp-33.pdf | 9709-w22-ms-33.pdf | 9709-w22-solved-33.pdf
+41 | 9709-w22-qp-41.pdf | 9709-w22-ms-41.pdf | 9709-w22-solved-41.pdf
+42 | 9709-w22-qp-42.pdf | 9709-w22-ms-42.pdf | 9709-w22-solved-42.pdf
+43 | 9709-w22-qp-43.pdf | 9709-w22-ms-43.pdf | 9709-w22-solved-43.pdf
+51 | 9709-w22-qp-51.pdf | 9709-w22-ms-51.pdf | 9709-w22-solved-51.pdf
+52 | 9709-w22-qp-52.pdf | 9709-w22-ms-52.pdf | 9709-w22-solved-52.pdf
+53 | 9709-w22-qp-53.pdf | 9709-w22-ms-53.pdf | 9709-w22-solved-53.pdf
+61 | 9709-w22-qp-61.pdf | 9709-w22-ms-61.pdf | 9709-w22-solved-61.pdf
+62 | 9709-w22-qp-62.pdf | 9709-w22-ms-62.pdf | 9709-w22-solved-62.pdf
+63 | 9709-w22-qp-63.pdf | 9709-w22-ms-63.pdf | 9709-w22-solved-63.pdf
+
+> May/June 2022
+11 | 9709-s22-qp-11.pdf | 9709-s22-ms-11.pdf | 9709-s22-solved-11.pdf
+12 | 9709-s22-qp-12.pdf | 9709-s22-ms-12.pdf | 9709-s22-solved-12.pdf
+13 | 9709-s22-qp-13.pdf | 9709-s22-ms-13.pdf | 9709-s22-solved-13.pdf
+31 | 9709-s22-qp-31.pdf | 9709-s22-ms-31.pdf | 9709-s22-solved-31.pdf
+32 | 9709-s22-qp-32.pdf | 9709-s22-ms-32.pdf | 9709-s22-solved-32.pdf
+33 | 9709-s22-qp-33.pdf | 9709-s22-ms-33.pdf | 9709-s22-solved-33.pdf
+41 | 9709-s22-qp-41.pdf | 9709-s22-ms-41.pdf | 9709-s22-solved-41.pdf
+42 | 9709-s22-qp-42.pdf | 9709-s22-ms-42.pdf | 9709-s22-solved-42.pdf
+43 | 9709-s22-qp-43.pdf | 9709-s22-ms-43.pdf | 9709-s22-solved-43.pdf
+51 | 9709-s22-qp-51.pdf | 9709-s22-ms-51.pdf | 9709-s22-solved-51.pdf
+52 | 9709-s22-qp-52.pdf | 9709-s22-ms-52.pdf | 9709-s22-solved-52.pdf
+53 | 9709-s22-qp-53.pdf | 9709-s22-ms-53.pdf | 9709-s22-solved-53.pdf
+61 | 9709-s22-qp-61.pdf | 9709-s22-ms-61.pdf | 9709-s22-solved-61.pdf
+62 | 9709-s22-qp-62.pdf | 9709-s22-ms-62.pdf | 9709-s22-solved-62.pdf
+63 | 9709-s22-qp-63.pdf | 9709-s22-ms-63.pdf | 9709-s22-solved-63.pdf
+
+> Feb/March 2022
+12 | 9709-m22-qp-12.pdf | 9709-m22-ms-12.pdf | 9709-m22-solved-12.pdf
+32 | 9709-m22-qp-32.pdf | 9709-m22-ms-32.pdf | 9709-m22-solved-32.pdf
+42 | 9709-m22-qp-42.pdf | 9709-m22-ms-42.pdf | 9709-m22-solved-42.pdf
+52 | 9709-m22-qp-52.pdf | 9709-m22-ms-52.pdf | 9709-m22-solved-52.pdf
+62 | 9709-m22-qp-62.pdf | 9709-m22-ms-62.pdf | 9709-m22-solved-62.pdf
+
+> Oct/Nov 2021
+11 | 9709-w21-qp-11.pdf | 9709-w21-ms-11.pdf | 9709-w21-solved-11.pdf
+12 | 9709-w21-qp-12.pdf | 9709-w21-ms-12.pdf | 9709-w21-solved-12.pdf
+13 | 9709-w21-qp-13.pdf | 9709-w21-ms-13.pdf | 9709-w21-solved-13.pdf
+31 | 9709-w21-qp-31.pdf | 9709-w21-ms-31.pdf | 9709-w21-solved-31.pdf
+32 | 9709-w21-qp-32.pdf | 9709-w21-ms-32.pdf | 9709-w21-solved-32.pdf
+33 | 9709-w21-qp-33.pdf | 9709-w21-ms-33.pdf | 9709-w21-solved-33.pdf
+41 | 9709-w21-qp-41.pdf | 9709-w21-ms-41.pdf | 9709-w21-solved-41.pdf
+42 | 9709-w21-qp-42.pdf | 9709-w21-ms-42.pdf | 9709-w21-solved-42.pdf
+43 | 9709-w21-qp-43.pdf | 9709-w21-ms-43.pdf | 9709-w21-solved-43.pdf
+51 | 9709-w21-qp-51.pdf | 9709-w21-ms-51.pdf | 9709-w21-solved-51.pdf
+52 | 9709-w21-qp-52.pdf | 9709-w21-ms-52.pdf | 9709-w21-solved-52.pdf
+53 | 9709-w21-qp-53.pdf | 9709-w21-ms-53.pdf | 9709-w21-solved-53.pdf
+61 | 9709-w21-qp-61.pdf | 9709-w21-ms-61.pdf | 9709-w21-solved-61.pdf
+62 | 9709-w21-qp-62.pdf | 9709-w21-ms-62.pdf | 9709-w21-solved-62.pdf
+63 | 9709-w21-qp-63.pdf | 9709-w21-ms-63.pdf | 9709-w21-solved-63.pdf
+
+> May/June 2021
+11 | 9709-s21-qp-11.pdf | 9709-s21-ms-11.pdf | 9709-s21-solved-11.pdf
+12 | 9709-s21-qp-12.pdf | 9709-s21-ms-12.pdf | 9709-s21-solved-12.pdf
+13 | 9709-s21-qp-13.pdf | 9709-s21-ms-13.pdf | 9709-s21-solved-13.pdf
+31 | 9709-s21-qp-31.pdf | 9709-s21-ms-31.pdf | 9709-s21-solved-31.pdf
+32 | 9709-s21-qp-32.pdf | 9709-s21-ms-32.pdf | 9709-s21-solved-32.pdf
+33 | 9709-s21-qp-33.pdf | 9709-s21-ms-33.pdf | 9709-s21-solved-33.pdf
+41 | 9709-s21-qp-41.pdf | 9709-s21-ms-41.pdf | 9709-s21-solved-41.pdf
+42 | 9709-s21-qp-42.pdf | 9709-s21-ms-42.pdf | 9709-s21-solved-42.pdf
+43 | 9709-s21-qp-43.pdf | 9709-s21-ms-43.pdf | 9709-s21-solved-43.pdf
+51 | 9709-s21-qp-51.pdf | 9709-s21-ms-51.pdf | 9709-s21-solved-51.pdf
+52 | 9709-s21-qp-52.pdf | 9709-s21-ms-52.pdf | 9709-s21-solved-52.pdf
+53 | 9709-s21-qp-53.pdf | 9709-s21-ms-53.pdf | 9709-s21-solved-53.pdf
+61 | 9709-s21-qp-61.pdf | 9709-s21-ms-61.pdf | 9709-s21-solved-61.pdf
+62 | 9709-s21-qp-62.pdf | 9709-s21-ms-62.pdf | 9709-s21-solved-62.pdf
+63 | 9709-s21-qp-63.pdf | 9709-s21-ms-63.pdf | 9709-s21-solved-63.pdf
+
+> Feb/March 2021
+12 | 9709-m21-qp-12.pdf | 9709-m21-ms-12.pdf | 9709-m21-solved-12.pdf
+32 | 9709-m21-qp-32.pdf | 9709-m21-ms-32.pdf | 9709-m21-solved-32.pdf
+42 | 9709-m21-qp-42.pdf | 9709-m21-ms-42.pdf | 9709-m21-solved-42.pdf
+52 | 9709-m21-qp-52.pdf | 9709-m21-ms-52.pdf | 9709-m21-solved-52.pdf
+62 | 9709-m21-qp-62.pdf | 9709-m21-ms-62.pdf | 9709-m21-solved-62.pdf
+
+> Oct/Nov 2020
+11 | 9709-w20-qp-11.pdf | 9709-w20-ms-11.pdf | 9709-w20-solved-11.pdf
+12 | 9709-w20-qp-12.pdf | 9709-w20-ms-12.pdf | 9709-w20-solved-12.pdf
+13 | 9709-w20-qp-13.pdf | 9709-w20-ms-13.pdf | 9709-w20-solved-13.pdf
+31 | 9709-w20-qp-31.pdf | 9709-w20-ms-31.pdf | 9709-w20-solved-31.pdf
+32 | 9709-w20-qp-32.pdf | 9709-w20-ms-32.pdf | 9709-w20-solved-32.pdf
+33 | 9709-w20-qp-33.pdf | 9709-w20-ms-33.pdf | 9709-w20-solved-33.pdf
+41 | 9709-w20-qp-41.pdf | 9709-w20-ms-41.pdf | 9709-w20-solved-41.pdf
+42 | 9709-w20-qp-42.pdf | 9709-w20-ms-42.pdf | 9709-w20-solved-42.pdf
+43 | 9709-w20-qp-43.pdf | 9709-w20-ms-43.pdf | 9709-w20-solved-43.pdf
+51 | 9709-w20-qp-51.pdf | 9709-w20-ms-51.pdf | 9709-w20-solved-51.pdf
+52 | 9709-w20-qp-52.pdf | 9709-w20-ms-52.pdf | 9709-w20-solved-52.pdf
+53 | 9709-w20-qp-53.pdf | 9709-w20-ms-53.pdf | 9709-w20-solved-53.pdf
+61 | 9709-w20-qp-61.pdf | 9709-w20-ms-61.pdf | 9709-w20-solved-61.pdf
+62 | 9709-w20-qp-62.pdf | 9709-w20-ms-62.pdf | 9709-w20-solved-62.pdf
+63 | 9709-w20-qp-63.pdf | 9709-w20-ms-63.pdf | 9709-w20-solved-63.pdf
+
+> May/June 2020
+11 | 9709-s20-qp-11.pdf | 9709-s20-ms-11.pdf | 9709-s20-solved-11.pdf
+12 | 9709-s20-qp-12.pdf | 9709-s20-ms-12.pdf | 9709-s20-solved-12.pdf
+13 | 9709-s20-qp-13.pdf | 9709-s20-ms-13.pdf | 9709-s20-solved-13.pdf
+31 | 9709-s20-qp-31.pdf | 9709-s20-ms-31.pdf | 9709-s20-solved-31.pdf
+32 | 9709-s20-qp-32.pdf | 9709-s20-ms-32.pdf | 9709-s20-solved-32.pdf
+33 | 9709-s20-qp-33.pdf | 9709-s20-ms-33.pdf | 9709-s20-solved-33.pdf
+41 | 9709-s20-qp-41.pdf | 9709-s20-ms-41.pdf | 9709-s20-solved-41.pdf
+42 | 9709-s20-qp-42.pdf | 9709-s20-ms-42.pdf | 9709-s20-solved-42.pdf
+43 | 9709-s20-qp-43.pdf | 9709-s20-ms-43.pdf | 9709-s20-solved-43.pdf
+51 | 9709-s20-qp-51.pdf | 9709-s20-ms-51.pdf | 9709-s20-solved-51.pdf
+52 | 9709-s20-qp-52.pdf | 9709-s20-ms-52.pdf | 9709-s20-solved-52.pdf
+53 | 9709-s20-qp-53.pdf | 9709-s20-ms-53.pdf | 9709-s20-solved-53.pdf
+61 | 9709-s20-qp-61.pdf | 9709-s20-ms-61.pdf | 9709-s20-solved-61.pdf
+62 | 9709-s20-qp-62.pdf | 9709-s20-ms-62.pdf | 9709-s20-solved-62.pdf
+63 | 9709-s20-qp-63.pdf | 9709-s20-ms-63.pdf | 9709-s20-solved-63.pdf
+
+> Feb/March 2020
+12 | 9709-m20-qp-12.pdf | 9709-m20-ms-12.pdf | 9709-m20-solved-12.pdf
+32 | 9709-m20-qp-32.pdf | 9709-m20-ms-32.pdf | 9709-m20-solved-32.pdf
+42 | 9709-m20-qp-42.pdf | 9709-m20-ms-42.pdf | 9709-m20-solved-42.pdf
+52 | 9709-m20-qp-52.pdf | 9709-m20-ms-52.pdf | 9709-m20-solved-52.pdf
+62 | 9709-m20-qp-62.pdf | 9709-m20-ms-62.pdf | 9709-m20-solved-62.pdf

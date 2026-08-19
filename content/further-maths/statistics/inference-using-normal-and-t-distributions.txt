@@ -1,0 +1,51 @@
+# =============================================================
+#  TOPIC PAGE — Further Probability & Statistics
+#  URL: /further-maths/statistics/inference-using-normal-and-t-distributions/
+#
+#  Lecture videos are not on this page yet. When you have them, add a
+#  section like this and they'll appear above the notes:
+#
+#      === videos ===
+#      Part 1 — first idea | YOUTUBE_ID
+#      Part 2 — worked examples | YOUTUBE_ID
+#
+#  The two resource sections below already name the PDFs. Drop the real
+#  files into static/worksheets/ , static/papers/ and static/solutions/
+#  using exactly these filenames and the links switch on by themselves.
+#  Until then they show "Coming soon" — nothing is broken.
+# =============================================================
+
+=== meta ===
+title: Inference using normal and t-distributions
+order: 2
+description: Inference using normal and t-distributions for CIE Further Probability & Statistics (9231) — syllabus points, worksheets, topical past papers and fully worked solutions.
+
+
+=== intro ===
+Using a sample to say something about a population, and being honest about the uncertainty. The t-distribution handles small samples where the normal would be over-confident.
+
+
+=== syllabus ===
+- Calculate unbiased estimates of the population mean and variance
+- Formulate hypotheses and carry out tests for a population mean using a normal distribution
+- Use the t-distribution for small samples from a normal population with unknown variance
+- Determine and interpret confidence intervals for a population mean and for a difference of means
+
+
+=== worksheets ===
+Practice worksheet | 9231-stat-inference-using-normal-and-t-distributions-worksheet.pdf
+Worksheet answers | 9231-stat-inference-using-normal-and-t-distributions-answers.pdf
+Step-by-step solutions | 9231-stat-inference-using-normal-and-t-distributions-worksheet-solutions.pdf | solutions
+
+
+=== topical ===
+Topical questions | 9231-stat-inference-using-normal-and-t-distributions-topical.pdf
+Mark scheme | 9231-stat-inference-using-normal-and-t-distributions-topical-ms.pdf
+Step-by-step worked solutions | 9231-stat-inference-using-normal-and-t-distributions-worked-solutions.pdf | solutions
+
+
+=== mistakes ===
+- Using the normal distribution where the sample is small and the variance unknown.
+- Dividing by n rather than n − 1 when estimating the population variance.
+- Reading the t-table with the wrong number of degrees of freedom.
+- Stating a conclusion without reference to the context of the question.

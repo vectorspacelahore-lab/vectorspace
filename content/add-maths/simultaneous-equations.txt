@@ -1,0 +1,51 @@
+# =============================================================
+#  TOPIC PAGE — Additional Mathematics
+#  URL: /add-maths/simultaneous-equations/
+#
+#  Lecture videos are not on this page yet. When you have them, add a
+#  section like this and they'll appear above the notes:
+#
+#      === videos ===
+#      Part 1 — first idea | YOUTUBE_ID
+#      Part 2 — worked examples | YOUTUBE_ID
+#
+#  The two resource sections below already name the PDFs. Drop the real
+#  files into static/worksheets/ , static/papers/ and static/solutions/
+#  using exactly these filenames and the links switch on by themselves.
+#  Until then they show "Coming soon" — nothing is broken.
+# =============================================================
+
+=== meta ===
+title: Simultaneous Equations
+order: 1
+description: Simultaneous Equations for CIE Additional Mathematics (4037) — syllabus points, worksheets, topical past papers and fully worked solutions.
+
+
+=== intro ===
+Two equations, two unknowns — but now one of them can be a curve. Solving a linear equation together with a quadratic is really asking where a line meets a curve, and the discriminant of the equation you end up with tells you whether it cuts, touches, or misses entirely.
+
+
+=== syllabus ===
+- Solve simultaneous equations in two unknowns where one equation is linear and one is quadratic
+- Interpret the solutions as the points of intersection of a line and a curve
+- Use the discriminant to determine whether a line intersects, is tangent to, or does not meet a curve
+- Find the condition for a line to be a tangent to a curve
+
+
+=== worksheets ===
+Practice worksheet | 4037-am-simultaneous-equations-worksheet.pdf
+Practice worksheet — answers | 4037-am-simultaneous-equations-answers.pdf
+Step-by-step solutions | 4037-am-simultaneous-equations-worksheet-solutions.pdf | solutions
+
+
+=== topical ===
+Topical questions | 4037-am-simultaneous-equations-topical.pdf
+Mark scheme | 4037-am-simultaneous-equations-topical-ms.pdf
+Step-by-step worked solutions | 4037-am-simultaneous-equations-worked-solutions.pdf | solutions
+
+
+=== mistakes ===
+- Substituting the quadratic into the linear equation instead of the other way round. Always rearrange the linear one first.
+- Finding the x-values and stopping. Each x needs its matching y, and they must be paired correctly.
+- Squaring both sides carelessly and introducing solutions that don't satisfy the original equations. Always check them back.
+- Setting the discriminant equal to zero for 'intersects' when tangency needs = 0 and intersection needs > 0.

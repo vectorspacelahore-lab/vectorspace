@@ -1,0 +1,51 @@
+# =============================================================
+#  TOPIC PAGE — Further Probability & Statistics
+#  URL: /further-maths/statistics/tests/
+#
+#  Lecture videos are not on this page yet. When you have them, add a
+#  section like this and they'll appear above the notes:
+#
+#      === videos ===
+#      Part 1 — first idea | YOUTUBE_ID
+#      Part 2 — worked examples | YOUTUBE_ID
+#
+#  The two resource sections below already name the PDFs. Drop the real
+#  files into static/worksheets/ , static/papers/ and static/solutions/
+#  using exactly these filenames and the links switch on by themselves.
+#  Until then they show "Coming soon" — nothing is broken.
+# =============================================================
+
+=== meta ===
+title: Chi-squared tests
+order: 3
+description: Chi-squared tests for CIE Further Probability & Statistics (9231) — syllabus points, worksheets, topical past papers and fully worked solutions.
+
+
+=== intro ===
+A test for whether observed frequencies differ from what a model predicts, and for whether two categorical variables are related.
+
+
+=== syllabus ===
+- Calculate expected frequencies for a goodness-of-fit test
+- Carry out a goodness-of-fit test for given distributions
+- Carry out a test for independence in a contingency table
+- Determine the correct number of degrees of freedom and combine classes where expected frequencies are small
+
+
+=== worksheets ===
+Practice worksheet | 9231-stat-chi-squared-tests-worksheet.pdf
+Worksheet answers | 9231-stat-chi-squared-tests-answers.pdf
+Step-by-step solutions | 9231-stat-chi-squared-tests-worksheet-solutions.pdf | solutions
+
+
+=== topical ===
+Topical questions | 9231-stat-chi-squared-tests-topical.pdf
+Mark scheme | 9231-stat-chi-squared-tests-topical-ms.pdf
+Step-by-step worked solutions | 9231-stat-chi-squared-tests-worked-solutions.pdf | solutions
+
+
+=== mistakes ===
+- Not combining classes where the expected frequency falls below 5.
+- Using the wrong degrees of freedom, particularly after estimating a parameter from the data.
+- Calculating the test statistic with observed and expected values interchanged.
+- Concluding 'the variables are independent' rather than 'there is insufficient evidence of association'.
